@@ -1,0 +1,20 @@
+.container-fluid {
+  align-items: end !important;
+}
+
+.navbar {
+  margin: 0 8%;
+}
+
+.nav-link {
+  padding: 4px !important;
+}
+
+.btn-autogestion {
+  font-family: "Roboto", serif !important;
+  font-weight: 450;
+  font-size: 16px;
+  color: white;
+  background: rgb(1, 161, 154);
+  background: linear-gradient(162deg, rgb(1, 161, 154) 8%, rgb(0, 125, 138) 67%, rgb(0, 88, 85) 97%);
+}/*# sourceMappingURL=nav-bar.css.map */
