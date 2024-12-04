@@ -17,4 +17,8 @@
   color: white;
   background: rgb(1, 161, 154);
   background: linear-gradient(162deg, rgb(1, 161, 154) 8%, rgb(0, 125, 138) 67%, rgb(0, 88, 85) 97%);
+}
+
+.collpasenavbar {
+  display: none;
 }/*# sourceMappingURL=nav-bar.css.map */
