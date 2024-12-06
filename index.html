@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./assets/img/navbar/logo-das.svg" type="image/png">
     <title>DAS web</title>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="nav-bar.css"/>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Fuentes de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +20,11 @@
 <body>
 
 
-
-    <nav class="navbar navbar-expand-lg">
+<!-- Navbar header -->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
         <div class="container-fluid">
-
-
             <!-- Navbar redes -->
-            <div class="collapse navbar-collapse flex-grow-0 d-none d-lg-block">
+            <div class="collapse navbar-collapse flex-grow-0">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
@@ -50,141 +48,220 @@
                     </li>
                 </ul>
             </div>
-
-
-
             <!-- Logo DAS -->
-            <a href="/index.html">
+            <a href="index.html">
                 <img class="" src="./assets/img/navbar/logo-das.svg" alt="">					  
             </a>
-
-
             <!-- Btn autogestion -->
             <button class="btn btn-autogestion" type="button">Autogestión</button>
-
-
-            <!-- Menu hamburgesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            
-            
-
-
         </div>
     </nav>
-    <div class="d-lg-none">
-        <div class="navbar-collapse collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <!-- <li class="nav-item">
 
-                        <a class=" accordion-button active" aria-current="page" href="#">INICIO</a>
-    
-                </li> -->
-                <li>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" a>
-                                    CARTILLA
-                                </button>
-                            </h2>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    CARTILLA
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>GUARDIAS</li>
-                                        <li>INTERNACIONES</li>
-                                        <li>CONSULTORIOS EXTERNOS</li>
-                                        <li>ESTUDIOS Y LABORATORIOS</li>
-                                        <li>ONDONTOLOGÍA</li>
-                                        <li>FARMACIAS</li>
-                                        <li>ÓPTICAS</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    SEDE ALSINA
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>ONDONTOLOGÍA</li>
-                                        <li>SALUD MENTAL</li>
-                                        <li>COBERTURA MEDICACIÓN</li>
-                                        <li>VACUNATORIO</li>
-                                        <li>OTRAS COBERTURAS</li>
-                                        <li>SOLICITUD DE RECETAS</li>
-                                        <li>AFILIACIONES</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    PROGRAMAS
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>CHEQUEO ANUAL GINECOLOGICO</li>
-                                        <li>CHEQUEO ANUAL DE SALUD</li>
-                                        <li>PROGRAMA DISCAPACIDAD</li>
-                                        <li>PROGRAMA DIABETES</li>
-                                        <li>PLAN MATERNO INFANTIL</li>
-                                        <li>ODONTOPEDIATRÍA</li>
-                                        <li>INGRESO ESCOLAR</li>
-                                        <li>ADULTOS MAYORES</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    INSTITUCIONAL
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>HISTORIA</li>
-                                        <li>COMISIÓN ADMINISTRADORA</li>
-                                        <li>LICITACIONES Y COMPRAS</li>
-                                        <li>GESTIÓN DE CALIDAD</li>
-                                        <li>NOTICIAS</li>
-                                        <li>CONTACTO</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">AUTOGESTIÓN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">GUÍA DE TRÁMITES</a>
-                </li>
+
+
+
+    <!-- Navbar Bottom -->
+      <ul class="nav navbarbot">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CARTILLA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">GUARDIAS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">INTERNACIONES</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">CONSULTORIOS EXTERNOS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">ESTUDIOS Y LABORATORIOS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">ONDONTOLOGÍA</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">FARMACIAS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">ÓPTICAS</a></li>
             </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SEDE ALSINA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">ONDONTOLOGÍA</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">SALUD MENTAL</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">COBERTURA MEDICACIÓN</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">VACUNATORIO</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">OTRAS COBERTURAS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">SOLICITUD DE RECETAS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">AFILIACIONES</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PROGRAMAS
+            </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">CHEQUEO ANUAL GINECOLOGICO</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">CHEQUEO ANUAL DE SALUD</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">PROGRAMA DISCAPACIDAD</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">PROGRAMA DIABETES</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">PLAN MATERNO INFANTIL</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">ODONTOPEDIATRÍA</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">INGRESO ESCOLAR</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">ADULTOS MAYORES</a></li>
+        </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                INSTITUCIONAL
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">HISTORIA</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">COMISIÓN ADMINISTRADORA</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">LICITACIONES Y COMPRAS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">GESTIÓN DE CALIDAD</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">NOTICIAS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">CONTACTO</a></li>
+            </ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GUÍA DE TRÁMITES</a>
+        </li>
+      </ul>
+
+
+
+<!-- Menu hamburgesa Small -->
+    <nav class="navbar d-lg-none">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img class="logosm" src="./assets/img/navbar/logo-das.svg" alt="">					  
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CARTILLA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">GUARDIAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">INTERNACIONES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">CONSULTORIOS EXTERNOS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ESTUDIOS Y LABORATORIOS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ONDONTOLOGÍA</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">FARMACIAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ÓPTICAS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SEDE ALSINA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ONDONTOLOGÍA</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">SALUD MENTAL</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">COBERTURA MEDICACIÓN</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">VACUNATORIO</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">OTRAS COBERTURAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">SOLICITUD DE RECETAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">AFILIACIONES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PROGRAMAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">CHEQUEO ANUAL GINECOLOGICO</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">CHEQUEO ANUAL DE SALUD</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">PROGRAMA DISCAPACIDAD</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">PROGRAMA DIABETES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">PLAN MATERNO INFANTIL</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ODONTOPEDIATRÍA</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">INGRESO ESCOLAR</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ADULTOS MAYORES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    INSTITUCIONAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HISTORIA</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">COMISIÓN ADMINISTRADORA</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">LICITACIONES Y COMPRAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">GESTIÓN DE CALIDAD</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">NOTICIAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">CONTACTO</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">AUTOGESTIÓN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GUÍA DE TRÁMITES</a>
+              </li>
+              <li class="nav-item d-flex">
+                <a class="nav-link" href="#"><img src="./assets/img/navbar/logo-wpp.svg" alt="wpp"></a>
+                <a class="nav-link" href="#"><img src="./assets/img/navbar/logo-ig.svg" alt="instagram"></a>
+                <a class="nav-link" href="#"><img src="./assets/img/navbar/logo-fb.svg" alt="facebook"></a>
+                <a class="nav-link" href="#"><img src="./assets/img/navbar/logo-yt.svg" alt="youtube"></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+    </nav>
 
 
 
@@ -193,6 +270,6 @@
 
 
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
