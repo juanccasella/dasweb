@@ -28,7 +28,6 @@ body {
 
 .navbarbot {
   justify-content: center;
-  background-color: rgb(1, 161, 154);
   gap: 4%;
 }
 .navbarbot .nav-item a {

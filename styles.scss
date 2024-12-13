@@ -1,25 +1,84 @@
-:root {
-	--bs-verde1: rgb(1,161,154) !important;
-	--bs-verde1-bg-subtle: #F8C7CA !important;
-	--bs-verde1-border-subtle: #B8B8B8 !important;
-	--bs-verde1-text-emphasis: #CC6800 !important;
-}
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/variables-dark";
+@import "./node_modules/bootstrap/scss/maps";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/root";
 
-.btn-verde1 {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: var(--bs-verde1) !important;
-    --bs-btn-border-color: var(--bs-verde1) !important;
-    --bs-btn-hover-color: #fff !important;
-    --bs-btn-hover-bg: var(--bs-verde1-text-emphasis) !important;
-    --bs-btn-hover-border-color: var(--bs-verde1-text-emphasis) !important;
-    --bs-btn-focus-shadow-rgb: 97, 130, 170;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--bs-verde1-text-emphasis) !important;
-    --bs-btn-active-border-color: var(--bs-verde1-text-emphasis) !important;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: var(--bs-verde1) !important;
-    --bs-btn-disabled-border-color: var(--bs-verde1) !important;
-    --bs-gradient: none;
-}
-@import "./node_modules/bootstrap/scss/bootstrap.scss"
+
+$custom-colors: (
+    // Verdes
+    "verde-1": #69C6B5,
+    "verde-2": #00AE97,
+    "verde-3": #008372,
+    "verde-4":#215E6A
+);
+
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+$utilities: (
+    "background-colors": (
+        property: background-color,
+        class: bg,
+        values: map-merge($theme-colors, $custom-colors)
+    )
+);
+
+// Verde
+// verde-1:#69C6B5
+// verde-2:#00AE97
+// verde-3:#008372
+// verde-4:#215E6A
+
+// VerdeV
+// verdeV-1:#cae2a3
+// verdeV-2:#b4d67c
+// verdeV-3:#8dbc57
+// verdeV-4:#638041
+
+// Azul
+// azul-1:#aad9f5
+// azul-2:#52c3dd
+// azul-3:#3992a9
+// azul-4:#067d8a
+
+// AzulV
+// azulV-1:#93bee6
+// azulV-2:#48a2da
+// azulV-3:#4274b7
+// azulV-4:#303e99
+
+// Naranja
+// naranja-1:#fff1cd
+// naranja-2:#faaa3b
+// naranja-3:#f58220
+// naranja-4:#cb6a28
+
+// Violeta
+// violeta-1:#dbc9df
+// violeta-2:#b595c5
+// violeta-3:#8961a9
+// violeta-4:#604476
+
+// Marron
+// marron-1:#f3c09c
+// marron-2:#c09170
+// marron-3:#c25527
+// marron-4:#8f3e1e
+
+// Rosa
+// rosa-1:#f8c7ca
+// rosa-2:#f09096
+// rosa-3:#ea4c50
+// rosa-4:#cb2c30
+
+// Gris
+// #E1E1E1
+// #656667
+// #B8B8B8
+// #4B4B4C
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
