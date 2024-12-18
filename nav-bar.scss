@@ -1,35 +1,23 @@
 body{
   font-family: "Roboto", serif !important;
 }
-.container-fluid{
-    align-items: end !important;
-    div{
-      width: 150px;
-    }
-  }
-  .navbar{
-    margin: 0 8%;
-    .nav-item a{
-      padding: 2px !important;
-    }
-    .navbar-brand{
-      margin: 0px;
-    }
-    .btn-autogestion{
-        font-weight: 450;
-        font-size: 16px;
-        color: white !important;
-        background: rgb(1,161,154);
-        background: linear-gradient(162deg, rgba(1,161,154,1) 8%, rgba(0,125,138,1) 67%, rgba(0,88,85,1) 97%);
-    }
-  }
 
+.w-90{
+  width: 90% !important;
+  max-width: none !important;
+}
+
+.btn-autogestion{
+    font-weight: 400;
+    font-size: 16px;
+    color: white !important;
+    background: rgb(1,161,154);
+    background: linear-gradient(162deg, rgba(1,161,154,1) 8%, rgba(0,125,138,1) 67%, rgba(0,88,85,1) 97%);
+}
 
 
 .navbarbot{
-    justify-content: center;
-    // background-color: rgb(1, 161, 154);
-    gap: 4%;
+    gap: 2%;
     .nav-item a{
       color: white;
     }
@@ -38,55 +26,61 @@ body{
       }
   }
   
-  .logosm{
-    width: 60px;
-  }
+@media (max-width: 1200px) {
+.navbarbot{
+  gap: 1%;
+}
+}
+
+//   .logosm{
+//     width: 60px;
+//   }
 
 /* Pantallas grandes */
-@media (min-width: 1200px) {
-  body {
-  }
-}
+// @media (min-width: 1200px) {
+//   body {
+//   }
+// }
 
 /* Pantallas de notebook */
-@media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    .navbar{
-      margin: 0 3%;
-      .btn-autogestion{
-        font-size: 12px;
-      }
-    }
-    .navbarbot{
-      gap: 1%;
-      font-size: 12px;
-      font-weight: bold;
-    }
-  }
-}
+// @media (min-width: 992px) and (max-width: 1199px) {
+//   body {
+//     .navbar{
+//       margin: 0 3%;
+//       .btn-autogestion{
+//         font-size: 12px;
+//       }
+//     }
+//     .navbarbot{
+//       gap: 1%;
+//       font-size: 12px;
+//       font-weight: bold;
+//     }
+//   }
+// }
 
 /* Pantallas de tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  body {
-    .navbar{
-      margin: 0 3%;
-      .btn-autogestion{
-        font-size: 12px;
-      }
-    }
-    .navbarbot{
-      gap: 1%;
-      font-size: 12px;
-      font-weight: bold;
-    }
-  }
-}
+// @media (min-width: 768px) and (max-width: 991px) {
+//   body {
+//     .navbar{
+//       margin: 0 3%;
+//       .btn-autogestion{
+//         font-size: 12px;
+//       }
+//     }
+//     .navbarbot{
+//       gap: 1%;
+//       font-size: 12px;
+//       font-weight: bold;
+//     }
+//   }
+// }
 
 /* Pantallas de celular */
-@media (max-width: 767px) {
-  body {
-  }
-}
+// @media (max-width: 767px) {
+//   body {
+//   }
+// }
 
 
 // sm-576px

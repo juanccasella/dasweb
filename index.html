@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="nav-bar.css"/>
     <link rel="stylesheet" href="carousel.css"/>
     <link rel="stylesheet" href="btn-home.css"/>
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Fuentes de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,53 +26,42 @@
 
 
 <!-- Navbar header -->
-
-<!-- Pasar a row -->
-    <nav class="navbar navbar-expand-lg d-none d-md-flex">
-        <div class="container-fluid">
-            <!-- Navbar redes -->
-            <div class="flex-grow-0">
-                <ul class="navbar-nav navredes">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <img src="./assets/iconos/navbar/logo-wpp.svg" alt="wpp">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/iconos/navbar/logo-ig.svg" alt="instagram">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/iconos/navbar/logo-fb.svg" alt="facebook">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/iconos/navbar/logo-yt.svg" alt="youtube">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Logo DAS -->
-            <div>
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/iconos/navbar/logo-das.svg" alt="">
-                </a>
-            </div>
-            <!-- Btn autogestion -->
-            <div>
-                <button class="btn btn-autogestion" type="button">Autogestión</button>
+    <nav class="navbar d-none d-md-flex">
+        <div class="container w-90">
+            <div class="row align-items-end w-100 m-0">
+                <!-- Redes Sociales -->
+                <div class="col-md-4 d-flex gap-1">
+                    <a class="nav-link" href="#" aria-label="WhatsApp">
+                        <img src="./assets/iconos/navbar/logo-wpp.svg" alt="Logo de WhatsApp">
+                    </a>
+                    <a class="nav-link" href="#" aria-label="Instagram">
+                        <img src="./assets/iconos/navbar/logo-ig.svg" alt="Logo de Instagram">
+                    </a>
+                    <a class="nav-link" href="#" aria-label="Facebook">
+                        <img src="./assets/iconos/navbar/logo-fb.svg" alt="Logo de Facebook">
+                    </a>
+                    <a class="nav-link" href="#" aria-label="YouTube">
+                        <img src="./assets/iconos/navbar/logo-yt.svg" alt="Logo de YouTube">
+                    </a>
+                </div>
+                <!-- Logo DAS -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/iconos/navbar/logo-das.svg" alt="Logo DAS">
+                    </a>
+                </div>
+                <!-- Botón Autogestión -->
+                <div class="col-md-4 d-flex justify-content-end">
+                    <button class="btn btn-autogestion" type="button">Autogestión</button>
+                </div>
             </div>
         </div>
     </nav>
 
 
-
-
+    
     <!-- Navbar Bottom -->
-    <ul class="nav navbarbot d-none d-md-flex bg-verde-2">
+    <ul class="nav navbarbot d-none d-md-flex justify-content-center bg-verde-2">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">INICIO</a>    
         </li>
@@ -274,7 +265,11 @@
 
 
 <!-- Carousel -->
-    <div id="carouselHome" class="carousel slide d-none d-md-block carouselContainer mt-3">
+ <!-- RESETAR TODOS LOS ESTILOS DE EL CAROUSEL
+ RESETAR TODOS LOS ESTILOS DE EL CAROUSEL
+ RESETAR TODOS LOS ESTILOS DE EL CAROUSEL
+ RESETAR TODOS LOS ESTILOS DE EL CAROUSEL -->
+    <div id="carouselHome" class="carousel slide d-none d-md-block carouselContainer mt-3 w-90">
         <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="cartillaMedica"></button>
         <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="token"></button>
@@ -284,9 +279,9 @@
                 <img src="./assets/img/slider/cartilla.png" class="d-block w-50" alt="...">
                 <div class="carousel-caption d-flex align-items-center text-end w-50">
                     <div class="d-block">
-                        <p class="text-start">Prestaciones y servicios</p>
-                        <h5 class="text-start">Encontrá todo lo que necesitás en nuestra cartilla médica</h5>
-                        <button type="button" class="btn btn-verde-2 mt-3">Ver más</button>
+                        <h5 class="text-start text-gris-2">Prestaciones y servicios</h5>
+                        <h2 class="text-start text-verde-2">Encontrá todo lo que necesitás en nuestra cartilla médica</h2>
+                        <button type="button" class="btn text-blanco btn-verde-2 mt-3">Ver más  <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -294,9 +289,9 @@
                 <img src="./assets/img/slider/token.jpg" class="d-block w-50" alt="...">
                 <div class="carousel-caption d-flex align-items-center text-end w-50">
                     <div class="d-block">
-                        <p class="text-start">Nuevo factor de validación</p>
-                        <h5 class="text-start">Obtené el token de seguridad para prestaciones OMINT/DAS</h5>
-                        <button type="button" class="btn btn-verde-2 mt-3">Ver más</button>
+                        <h5 class="text-start text-gris-2">Nuevo factor de validación</h5>
+                        <h2 class="text-start text-verde-2">Obtené el token de seguridad para prestaciones OMINT/DAS</h2>
+                        <button type="button" class="btn text-blanco btn-verde-2 mt-3">Ver más  <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -318,7 +313,7 @@
                 <div class="icon-container d-flex">
                     <img src="./assets/iconos/telefonos/emergencias.svg"></img>
                     <div>
-                        <h5>Urgencias y emergencias médicas</h5>
+                        <h4>URGENCIAS Y EMERGENCIAS MÉDICAS</h4>
                         <p>0810-999-767-3876 / (011) 5289-8110</p>
                     </div>
                 </div>
@@ -328,7 +323,7 @@
             <div class="icon-container d-flex">
             <img src="./assets/iconos/telefonos/cip.svg"></img>
                 <div>
-                    <h5>Atención personalizada (turnos y gestiones)</h5>
+                    <h4 class="text-verde-2">ATENCIÓN PERSONALIZADA (TURNOS Y GESTIONES)</h4>
                     <p>Teléfono: 0810-222-0317</p>
                 </div>
             </div>
@@ -577,7 +572,7 @@
             <div class="vr" style="width: 2px; background-color: #000; margin: 0 15px;"></div>
             <div class="">
                 <h5>Dirección de Ayuda Social para el Personal del Congreso de la Nación</h5>
-                <P>Teléfono: 0810-222-0317 – Interno: 1556 || Dirección: Adolfo Alsina 1825, C1090 AAA, Cdad. Autónoma de Buenos Aires</P>
+                <P>Teléfono: 0810-222-0317 - Interno: 1556 || Dirección: Adolfo Alsina 1825, C1090 AAA, Cdad. Autónoma de Buenos Aires</P>
                 <P>Nota: La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
             </div>
             <div class="vr" style="width: 2px; background-color: #000; margin: 0 15px;"></div>

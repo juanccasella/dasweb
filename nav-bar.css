@@ -2,24 +2,13 @@ body {
   font-family: "Roboto", serif !important;
 }
 
-.container-fluid {
-  align-items: end !important;
-}
-.container-fluid div {
-  width: 150px;
+.w-90 {
+  width: 90% !important;
+  max-width: none !important;
 }
 
-.navbar {
-  margin: 0 8%;
-}
-.navbar .nav-item a {
-  padding: 2px !important;
-}
-.navbar .navbar-brand {
-  margin: 0px;
-}
-.navbar .btn-autogestion {
-  font-weight: 450;
+.btn-autogestion {
+  font-weight: 400;
   font-size: 16px;
   color: white !important;
   background: rgb(1, 161, 154);
@@ -27,8 +16,7 @@ body {
 }
 
 .navbarbot {
-  justify-content: center;
-  gap: 4%;
+  gap: 2%;
 }
 .navbarbot .nav-item a {
   color: white;
@@ -37,37 +25,12 @@ body {
   color: rgb(1, 161, 154) !important;
 }
 
-.logosm {
-  width: 60px;
+@media (max-width: 1200px) {
+  .navbarbot {
+    gap: 1%;
+  }
 }
-
 /* Pantallas grandes */
 /* Pantallas de notebook */
-@media (min-width: 992px) and (max-width: 1199px) {
-  body .navbar {
-    margin: 0 3%;
-  }
-  body .navbar .btn-autogestion {
-    font-size: 12px;
-  }
-  body .navbarbot {
-    gap: 1%;
-    font-size: 12px;
-    font-weight: bold;
-  }
-}
 /* Pantallas de tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  body .navbar {
-    margin: 0 3%;
-  }
-  body .navbar .btn-autogestion {
-    font-size: 12px;
-  }
-  body .navbarbot {
-    gap: 1%;
-    font-size: 12px;
-    font-weight: bold;
-  }
-}
 /* Pantallas de celular *//*# sourceMappingURL=nav-bar.css.map */

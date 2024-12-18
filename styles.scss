@@ -51,12 +51,18 @@ $custom-colors: (
     "Gris-1": #E1E1E1,
     "Gris-2": #656667,
     "Gris-3": #B8B8B8,
-    "Gris-4": #4B4B4C
+    "Gris-4": #4B4B4C,
+    //Blanco
+    "blanco": #ffff
 );
 
-
-// Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+@each $name, $color in $custom-colors {
+    .text-#{$name} {
+      color: $color !important;
+    }
+  }
 
 
 $utilities: (
@@ -67,58 +73,15 @@ $utilities: (
     )
 );
 
-// Verde
-// verde-1:#69C6B5
-// verde-2:#00AE97
-// verde-3:#008372
-// verde-4:#215E6A
+$grid-breakpoints: (
+  xs: 0,        // Extra small
+  sm: 480px,    // Small
+  md: 920px,    // Medium
+  lg: 1024px,   // Large
+  xl: 1280px,   // Extra large
+  xxl: 1536px   // Extra extra large
+);
 
-// VerdeV
-// verdeV-1:#cae2a3
-// verdeV-2:#b4d67c
-// verdeV-3:#8dbc57
-// verdeV-4:#638041
 
-// Azul
-// azul-1:#aad9f5
-// azul-2:#52c3dd
-// azul-3:#3992a9
-// azul-4:#067d8a
-
-// AzulV
-// azulV-1:#93bee6
-// azulV-2:#48a2da
-// azulV-3:#4274b7
-// azulV-4:#303e99
-
-// Naranja
-// naranja-1:#fff1cd
-// naranja-2:#faaa3b
-// naranja-3:#f58220
-// naranja-4:#cb6a28
-
-// Violeta
-// violeta-1:#dbc9df
-// violeta-2:#b595c5
-// violeta-3:#8961a9
-// violeta-4:#604476
-
-// Marron
-// marron-1:#f3c09c
-// marron-2:#c09170
-// marron-3:#c25527
-// marron-4:#8f3e1e
-
-// Rosa
-// rosa-1:#f8c7ca
-// rosa-2:#f09096
-// rosa-3:#ea4c50
-// rosa-4:#cb2c30
-
-// Gris
-// #E1E1E1
-// #656667
-// #B8B8B8
-// #4B4B4C
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
