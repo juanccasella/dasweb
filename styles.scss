@@ -48,12 +48,13 @@ $custom-colors: (
     "rosa-3":#ea4c50,
     "rosa-4":#cb2c30,
     // Gris
-    "Gris-1": #E1E1E1,
-    "Gris-2": #656667,
-    "Gris-3": #B8B8B8,
-    "Gris-4": #4B4B4C,
+    "gris-1": #E1E1E1,
+    "gris-2": #656667,
+    "gris-3": #B8B8B8,
+    "gris-4": #4B4B4C,
     //Blanco
-    "blanco": #ffff
+    "blanco": #ffff,
+    "negro": #000000
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -73,14 +74,12 @@ $utilities: (
     )
 );
 
-$grid-breakpoints: (
-  xs: 0,        // Extra small
-  sm: 480px,    // Small
-  md: 920px,    // Medium
-  lg: 1024px,   // Large
-  xl: 1280px,   // Extra large
-  xxl: 1536px   // Extra extra large
-);
+
+// sm-576px
+// md-768
+// lg-992
+// xl-1200
+// xxl-1400
 
 
 
