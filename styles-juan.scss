@@ -10,9 +10,10 @@ body{
 }
 
 .w-90{
-width: 90% !important;
-max-width: none !important;
+    width: 90% !important;
+    max-width: none !important;
 }
+
 
 /* Estilos del navbar */
 .btn-autogestion{
@@ -54,5 +55,19 @@ max-width: none !important;
             height: 50px !important;
             border-radius: 8px;
         }
+    }
+}
+
+
+/* Telefonos utiles */
+// .telefonos-container{
+//     width: 90% !important;
+//     max-width: none !important;
+// }
+
+
+@media (max-width: 1119px){
+    .telefonos-home{
+        
     }
 }
