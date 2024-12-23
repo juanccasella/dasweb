@@ -45,6 +45,9 @@ body {
   height: 50px !important;
   border-radius: 8px;
 }
+.carouselContainer .carousel-titulo {
+  font-size: 45px;
+}
 
 /* Telefonos utiles */
 @media (max-width: 1199px) {
@@ -75,5 +78,8 @@ body {
   }
   .telefonos-container .row .col-10 {
     width: 100% !important;
+  }
+  .telefonos-container .row .col-10 .telefonos-titulo {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=styles-juan.css.map */
