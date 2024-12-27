@@ -5,6 +5,7 @@
 // xxl-1400
 
 
+
 body{
     font-family: "Roboto", serif !important;
 }
@@ -66,11 +67,9 @@ body{
     .telefonos-home{
         border: 2px solid #B8B8B8;
         border-radius: 8px;
-        margin: 1.5rem;
+        margin: 1.5rem 0;
         padding: 1.5rem;
         .telefonos-icono{
-            width: 50px;
-            height: auto;
             margin-right: 1.5rem;
         }
         .telefonos-texto{
@@ -87,14 +86,47 @@ body{
 
 @media (max-width: 991px){
     .telefonos-container{
-        width: 100% !important;
+        // width: 100% !important;
         .row{
             .col-10{
-                width: 100% !important;
+                // width: 100% !important;
                 .telefonos-titulo{
                     font-size: 1rem;
                 }
             }
         }
     }
+}
+
+.container-botones{
+    max-width: 100% !important; 
+}
+
+@media (max-width: 1199px){
+    .container-botones{
+        padding: 0 !important;
+        width: 100% !important;
+        .card{
+            border-radius: 0px !important;
+        }
+    }
+}
+
+/* GUÍA DE TRAMITES */
+.dropdown-item-tramites{
+    color: #00AE97;
+    font-size: 1.25rem;
+}
+
+.dropdown-item-tramites:hover{
+
+    color: #52c3dd !important;
+}
+
+/* NOTICIAS */
+.noticia-img{
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }

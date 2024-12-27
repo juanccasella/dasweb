@@ -4,6 +4,7 @@
 @import "./node_modules/bootstrap/scss/maps";
 @import "./node_modules/bootstrap/scss/mixins";
 @import "./node_modules/bootstrap/scss/root";
+@import "./node_modules/bootstrap/scss/utilities";
 
 
 $custom-colors: (
@@ -52,9 +53,10 @@ $custom-colors: (
     "gris-2": #656667,
     "gris-3": #B8B8B8,
     "gris-4": #4B4B4C,
-    //Blanco
+    //Blanco, Negro y Transparente
     "blanco": #ffff,
-    "negro": #000000
+    "negro": #000000,
+    "transparente": rgba(0, 0, 0, 0)
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -67,13 +69,17 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 $utilities: (
-    "background-colors": (
-        property: background-color,
-        class: bg,
-        values: map-merge($theme-colors, $custom-colors)
-    )
+  "border-colors": (
+      property: border-color,
+      class: border,
+      values: map-merge($theme-colors, $custom-colors)
+  ),
+  "background-colors": (
+      property: background-color,
+      class: bg,
+      values: map-merge($theme-colors, $custom-colors)
+  )
 );
-
 
 // sm-576px
 // md-768
