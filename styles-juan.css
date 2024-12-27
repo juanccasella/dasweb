@@ -106,4 +106,25 @@ body {
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Footer */
+.logo-casas {
+  max-height: 90px !important;
+}
+
+@media (max-width: 1199px) {
+  .logo-casas {
+    max-height: 65px !important;
+  }
+}
+.footer-body {
+  padding: 3rem 0 5rem 0;
+}
+
+.footer-bot-text {
+  font-size: 0.7rem;
+}
+.footer-bot-text h5 {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=styles-juan.css.map */
