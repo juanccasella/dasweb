@@ -100,6 +100,28 @@ body {
 }
 
 /* NOTICIAS */
+.card-body {
+  display: flex;
+  flex-direction: column; /* Organiza el contenido en columna */
+  overflow: hidden;
+}
+
+.card-text {
+  display: -webkit-box; /* Configura un contenedor flexible compatible con múltiples líneas */
+  -webkit-line-clamp: 3; /* Trunca el texto después de 3 líneas */
+  -webkit-box-orient: vertical; /* Configura la orientación vertical del texto */
+  overflow: hidden; /* Oculta el contenido que excede el área */
+  text-overflow: ellipsis; /* Muestra "..." si el texto excede el límite */
+  max-height: 4.5em; /* Ajusta la altura máxima para 3 líneas (con line-height: 1.5em) */
+  line-height: 1.5em; /* Define el alto de línea (ajusta según tu diseño) */
+  margin-bottom: auto; /* Evita la superposición con el botón */
+  white-space: normal; /* Permite saltos de línea */
+}
+
+.btn {
+  margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
 .noticia-img {
   width: 50%;
   height: auto;
@@ -131,4 +153,9 @@ body {
 }
 .footer-bot-text h5 {
   font-size: 0.7rem;
+}
+
+.cartilla-footer {
+  font-family: "robotto";
+  font-size: 13px;
 }/*# sourceMappingURL=styles-juan.css.map */
