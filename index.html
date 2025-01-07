@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/iconos/navbar/logo-das.svg" type="image/png">
     <title>DAS web</title>
     <!-- Bootstrap -->
@@ -25,7 +25,8 @@
 
 
 <!-- PASAR TODOS LOS "TEXT-VERDE-2" A UNA CLASE DE CSS de los dropdown items -->
-<!-- agregar una pagina de mapa del sitio para cuando la pantalla es chica -->
+<!-- Agregar una pagina de mapa del sitio para cuando la pantalla es chica -->
+<!-- Me quede en el carousel  -->
 
 
 <!-- Header -->
@@ -45,7 +46,7 @@
                         <a class="nav-link" href="https://www.facebook.com/dascongreso/?locale=es_LA" target="_blank" aria-label="Facebook">
                             <img src="./assets/iconos/navbar/logo-fb.svg" alt="Logo de Facebook">
                         </a>
-                        <a class="nav-link" href="#" target="_blank" aria-label="YouTube">
+                        <a class="nav-link" href="https://www.youtube.com/@Das.congreso" target="_blank" aria-label="YouTube">
                             <img src="./assets/iconos/navbar/logo-yt.svg" alt="Logo de YouTube">
                         </a>
                     </div>
@@ -269,20 +270,24 @@
 
 
 <!-- Carousel -->
-    <div class="container w-90 d-none d-xl-block">
-        <div id="carouselHome" class="carousel slide carouselContainer mt-3" data-bs-ride="carousel">
+    <div class="container w-90"><!-- agrega el 100% en pantallas chicas -->
+        <div id="carouselHome" class="carousel slide carouselContainer" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class=" bg-verde-2 active" aria-current="true" aria-label="cartillaMedica"></button>
                 <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" class="bg-verde-2" aria-label="token"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="7000">
-                    <img src="./assets/img/slider/cartilla.png" class="d-block w-50" alt="...">
+                <div class="carousel-item active" data-bs-interval="7000000">
+                    <img src="./assets/img/slider/cartilla.png" class="d-block w-50" alt="cartillaMedicaCarousel">
                     <div class="carousel-caption d-flex align-items-center text-end w-50">
-                        <div class="d-block">
+                        <div class="d-none">
                             <h5 class="text-start text-gris-4">Prestaciones y servicios</h5>
-                            <h1 class="carousel-titulo text-start text-verde-2">Encontrá todo lo que necesitás en nuestra cartilla médica</h1>
-                            <button type="button" class="btn text-blanco btn-verde-2 px-5 mt-3 d-flex align-items-center">Ver más  <i class="fa-solid fa-arrow-right ms-1"></i></button>
+                            <h2 class="carousel-titulo text-start text-verde-2">Encontrá todo lo que necesitás en nuestra cartilla médica</h2>
+                            <button type="button" class="btn text-blanco btn-verde-2 px-4 mt-4 d-flex align-items-center">Ver más<i class="fa-solid fa-arrow-right ms-1"></i></button>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <h5 class="text-verde-2 me-3">Cartilla medica</h5>
+                            <button type="button" class="btn text-blanco btn-verde-2 px-3 d-flex align-items-center">Ver más<i class="fa-solid fa-arrow-right ms-1"></i></button>
                         </div>
                     </div>
                 </div>
@@ -291,8 +296,8 @@
                     <div class="carousel-caption d-flex align-items-center text-end w-50">
                         <div class="d-block">
                             <h5 class="text-start text-gris-4">Nuevo factor de validación</h5>
-                            <h1 class="carousel-titulo text-start text-verde-2">Obtené el token de seguridad para prestaciones OMINT/DAS</h1>
-                            <button type="button" class="btn text-blanco btn-verde-2 px-5 mt-3 d-flex align-items-center">Ver video  <i class="fa-solid fa-arrow-right ms-1"></i></button>
+                            <h1 class="carousel-titulo text-start text-verde-2 ">Obtené el token de seguridad para prestaciones OMINT/DAS</h1>
+                            <button type="button" class="btn text-blanco btn-verde-2 px-4 mt-4 d-flex align-items-center">Ver video  <i class="fa-solid fa-arrow-right ms-1"></i></button>
                         </div>
                     </div>
                 </div>
@@ -312,7 +317,7 @@
 <!-- Telefonos de emergencia -->    
     <div class="container telefonos-container w-90">
         <div class="row d-flex justify-content-center">
-            <div class="col-xl-6 col-12">   
+            <div class="col-xl-4 col-12">   
                 <div class="telefonos-home d-flex justify-content-lg-end">
                     <img class="telefonos-icono d-none d-lg-block" src="./assets/iconos/telefonos/emergencias.svg"></img>
                     <div class="telefonos-texto w-90 ms-xl-5 my-xl-5">
@@ -325,12 +330,25 @@
                 </div>
             </div>
 
-            <div class="col-xl-6 col-12">
+            <div class="col-xl-4 col-12">
                 <div class="telefonos-home d-flex justify-content-lg-start">
                     <img class="telefonos-icono d-none d-lg-block" src="./assets/iconos/telefonos/cip.svg"></img>
                     <div class="telefonos-texto w-90 ms-xl-5 my-xl-5">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h3 class="telefonos-titulo text-verde-2 m-0 me-3 d-flex">ATENCIÓN PERSONALIZADA (turnos y gestiones)</h3>
+                            <h3 class="telefonos-titulo text-rosa-4 m-0 me-3 d-flex">URGENCIAS PSIQUIATRICAS</h3>
+                            <i class="fa-solid fa-phone d-lg-none text-verde-2 fs-1"></i>
+                        </div>
+                        <h5 class="telefonos-subtitulo d-none d-lg-block text-gris-4"> Teléfonos: 0810-222-0317</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-12">
+                <div class="telefonos-home d-flex justify-content-lg-start">
+                    <img class="telefonos-icono d-none d-lg-block" src="./assets/iconos/telefonos/cip.svg"></img>
+                    <div class="telefonos-texto w-90 ms-xl-5 my-xl-5">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3 class="telefonos-titulo text-verde-2 m-0 me-3 d-flex">TURNOS Y GESTIONES</h3>
                             <i class="fa-solid fa-phone d-lg-none text-verde-2 fs-1"></i>
                         </div>
                         <h5 class="telefonos-subtitulo d-none d-lg-block text-gris-4"> Teléfonos: 0810-222-0317</h5>
@@ -350,8 +368,8 @@
             <div class="col-12 col-xl-2">
                 <div class="card text-center bg-verde-4">
                     <div class="card-body py-4 px-1 text-center">
-                        <img src="/assets/iconos/botones-home/cartilla.svg" alt="Icono 1" style="width: 45px; height: 45px;" class="m-2">
-                        <p class="fs-4 m-2 text-blanco">Cartilla</p>
+                        <!-- <img src="/assets/iconos/botones-home/cartilla.svg" alt="Icono 1" style="width: 45px; height: 45px;" class="m-2"> -->
+                        <p class="fs-1 m-5 text-blanco">Cartilla</p>
                     </div>
                 </div>
             </div>
@@ -359,8 +377,8 @@
             <div class="col-12 col-xl-2">
                 <div class="card text-center bg-verde-3">
                     <div class="card-body py-4 px-1">
-                        <img src="/assets/iconos/botones-home/programas.svg" alt="Icono 2" style="width: 45px; height: 45px;" class="m-2">
-                        <p class="fs-4 m-2 text-blanco">Programas</p>
+                        <!-- <img src="/assets/iconos/botones-home/programas.svg" alt="Icono 2" style="width: 45px; height: 45px;" class="m-2"> -->
+                        <p class="fs-1 m-5 text-blanco">Programas</p>
                     </div>
                 </div>
             </div>
@@ -614,7 +632,7 @@
                 <div class="d-flex justify-content-start w-100 align-items-center d-block d-xl-none">
                     <ul class="list-unstyled fs-4">
                         <li class="fw-bold border-bottom border-verde-2 mb-4 pb-1"><a href="https://das.gob.ar/institucional/#normasISO" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-blanco">Certificación de Normas ISO</a></li>
-                        <li class="fw-bold border-bottom border-verde-2 mb-4 pb-1"><a href="" class="text-decoration-none text-blanco">Mapa del sitio</a></li>
+                        <li class="fw-bold border-bottom border-verde-2 mb-4 pb-1"><a href="./pages/site-map.html" class="text-decoration-none text-blanco">Mapa del sitio</a></li>
                         <li class="fw-bold border-bottom border-verde-2 mb-4 pb-1"><a href="https://www.google.com/maps/place/Das/@-34.6311591,-58.3684041,14z/data=!4m6!3m5!1s0x95bccadd23ab87b7:0x287aa1372b43b144!8m2!3d-34.6114661!4d-58.3923238!16s%2Fg%2F11b6ggxb0n?hl=es&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-blanco">¿Cómo llegar?</a></li>
                     </ul>
                 </div>

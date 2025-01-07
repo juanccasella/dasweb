@@ -46,10 +46,6 @@ body {
   height: 50px !important;
   border-radius: 8px;
 }
-.carouselContainer .carousel-titulo {
-  font-size: 45px;
-}
-
 /* Telefonos utiles */
 @media (max-width: 1199px) {
   .telefonos-home {
@@ -152,4 +148,8 @@ body {
 .accordion-button-disable .accordion-button.no-arrow::after {
   content: none !important; /* Elimina la flecha */
   display: none !important;
+}
+
+.titulo-tramites {
+  padding-left: 5% !important;
 }/*# sourceMappingURL=styles-juan.css.map */

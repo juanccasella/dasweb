@@ -57,7 +57,7 @@ body{
         }
     }
     .carousel-titulo{
-        font-size: 45px;
+        // font-size: 45px;
     }
 }
 
@@ -210,5 +210,9 @@ body{
     .accordion-button.no-arrow::after {
         content: none !important; /* Elimina la flecha */
         display: none !important;
-      }
+    }
+}
+
+.titulo-tramites{
+    padding-left: 5% !important;
 }
