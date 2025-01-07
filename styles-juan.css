@@ -146,4 +146,10 @@ body {
 .cartilla-footer {
   font-family: "robotto";
   font-size: 13px;
+}
+
+/* site map */
+.accordion-button-disable .accordion-button.no-arrow::after {
+  content: none !important; /* Elimina la flecha */
+  display: none !important;
 }/*# sourceMappingURL=styles-juan.css.map */
