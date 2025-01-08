@@ -46,7 +46,12 @@ body {
   height: 50px !important;
   border-radius: 8px;
 }
+
 /* Telefonos utiles */
+.telefonos-container {
+  margin-left: 5%;
+}
+
 @media (max-width: 1199px) {
   .telefonos-home {
     border: 2px solid #B8B8B8;

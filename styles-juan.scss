@@ -56,13 +56,14 @@ body{
             border-radius: 8px;
         }
     }
-    .carousel-titulo{
-        // font-size: 45px;
-    }
 }
 
 
 /* Telefonos utiles */
+.telefonos-container{
+    margin-left: 5%;
+}
+
 @media (max-width: 1199px){
     .telefonos-home{
         border: 2px solid #B8B8B8;
@@ -86,10 +87,8 @@ body{
 
 @media (max-width: 991px){
     .telefonos-container{
-        // width: 100% !important;
         .row{
             .col-10{
-                // width: 100% !important;
                 .telefonos-titulo{
                     font-size: 1rem;
                 }

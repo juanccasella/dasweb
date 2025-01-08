@@ -62,7 +62,7 @@
         <!-- Header Bottom -->
         <ul class="nav navbar-bot d-none d-lg-flex justify-content-center bg-verde-2">
             <li class="nav-item">
-                <a class="nav-link text-blanco active" aria-current="page" href="#">INICIO</a>    
+                <a class="nav-link text-blanco active" aria-current="page" href="../index.html">INICIO</a>    
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link text-blanco dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -268,33 +268,175 @@
     <!-- Guia de tramites titulo -->
     <div class="container-fluid d-flex justify-content-start align-items-center my-5 py-4 bg-gris-1 titulo-tramites">
         <div class="me-3 text-verde-2">
-            <h5 class="fs-2">Guía de tramites</h5>
+            <h5 class="fs-2">Formularios</h5>
         </div>
     </div>
 
     <!-- Guia de tramites body -->
     <div class="container-fluid w-90">
-        <div class="row  my-5">
+        <div class="row my-5">
             <!-- Barra lateral -->
-            <nav class="col-md-3">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-gris-2 fs-5">Chequeo anual ginecologico</li>
-                    <li class="list-group-item text-gris-2 fs-5">Chequeo anual de salud</li>
-                    <li class="list-group-item text-gris-2 fs-5">Programa discapacidad</li>
-                    <li class="list-group-item text-gris-2 fs-5">Programa diabetes</li>
-                    <li class="list-group-item text-gris-2 fs-5">Plan materno intantil</li>
-                    <li class="list-group-item text-gris-2 fs-5">Odontopediatría</li>
-                    <li class="list-group-item text-gris-2 fs-5">Ingreso escolar</li>
-                    <li class="list-group-item text-gris-2 fs-5">Adultos mayores</li>
-                    <li class="list-group-item text-gris-2 fs-5">Odontología</li>
-                    <li class="list-group-item text-gris-2 fs-5">Salud mental</li>
-                    <li class="list-group-item text-gris-2 fs-5">Cobertura medicación</li>
-                    <li class="list-group-item text-gris-2 fs-5">Vacunatorio</li>
-                    <li class="list-group-item text-gris-2 fs-5">Otras coberturas</li>
-                    <li class="list-group-item text-gris-2 fs-5">Solicitud de recetas</li>
-                    <li class="list-group-item text-gris-2 fs-5">Afiliaciones</li>
-                </ul>
-            </nav>
+            <div class="accordion w-25" id="accordionMain">
+                <!-- AFILIACIÓN -->
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAfiliacion">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfiliacion"
+                        aria-expanded="true" aria-controls="collapseAfiliacion">
+                        AFILIACIÓN
+                    </button>
+                </h2>
+                <div id="collapseAfiliacion" class="accordion-collapse collapse show" aria-labelledby="headingAfiliacion"
+                    data-bs-parent="#accordionMain">
+                    <div class="accordion-body">
+                        <div class="accordion" id="accordionAfiliacion">
+                            <!-- AF. DE TITULARES -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTitulares">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTitulares" aria-expanded="false" aria-controls="collapseTitulares">
+                                        AF. DE TITULARES
+                                    </button>
+                                </h2>
+                                <div id="collapseTitulares" class="accordion-collapse collapse" aria-labelledby="headingTitulares"
+                                    data-bs-parent="#accordionAfiliacion">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">ACTIVOS</li>
+                                            <li class="list-group-item">VOLUNTARIOS / JUBILADOS</li>
+                                            <li class="list-group-item">PARTICIPANTES PRINCIPALES</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AF. GRUPO FAMILIAR SIN CARGO -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSinCargo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSinCargo" aria-expanded="false" aria-controls="collapseSinCargo">
+                                        AF. GRUPO FAMILIAR SIN CARGO
+                                    </button>
+                                </h2>
+                                <div id="collapseSinCargo" class="accordion-collapse collapse" aria-labelledby="headingSinCargo"
+                                    data-bs-parent="#accordionAfiliacion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>HIJOS/AS HASTA 22 AÑOS</li>
+                                            <li>HIJOS/AS HASTA 25 AÑOS ESTUDIANTES</li>
+                                            <li>CÓNYUGE</li>
+                                            <li>CONVIVIENTE</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AF. GRUPO FAMILIAR CON CARGO -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingConCargo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseConCargo" aria-expanded="false" aria-controls="collapseConCargo">
+                                        AF. GRUPO FAMILIAR CON CARGO
+                                    </button>
+                                </h2>
+                                <div id="collapseConCargo" class="accordion-collapse collapse" aria-labelledby="headingConCargo"
+                                    data-bs-parent="#accordionAfiliacion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>HIJOS/AS DE 22 A 25 AÑOS NO ESTUDIANTES</li>
+                                            <li>HIJOS/AS DE 25 A 32 AÑOS</li>
+                                            <li>HIJOS/AS DE UNIÓN DE HECHO - MENORES DE 22 AÑOS</li>
+                                            <li>HIJOS/AS DE UNIÓN DE HECHO - MAYORES DE 22 AÑOS ESTUDIANTES</li>
+                                            <li>HERMANOS MENORES DE 19 AÑOS/HERMANAS MENORES DE 22 AÑOS</li>
+                                            <li>HERMANOS MAYORES DE 19 AÑOS/HERMANAS MAYORES DE 22 AÑOS</li>
+                                            <li>PADRE Y/O MADRE</li>
+                                            <li>PRENATAL</li>
+                                            <li>GUARDIAS, TENENCIAS O TUTELAS</li>
+                                            <li>NIETOS Y/O NIETAS</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- COBERTURAS EN MEDICACIÓN -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingMedicacion">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseMedicacion" aria-expanded="false" aria-controls="collapseMedicacion">
+                            COBERTURAS EN MEDICACIÓN
+                        </button>
+                    </h2>
+                    <div id="collapseMedicacion" class="accordion-collapse collapse" aria-labelledby="headingMedicacion"
+                        data-bs-parent="#accordionMain">
+                        <div class="accordion-body">
+                            <div class="accordion" id="accordionMedicacion">
+                                <!-- 100% -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading100">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse100" aria-expanded="false" aria-controls="collapse100">
+                                            100%
+                                        </button>
+                                    </h2>
+                                    <div id="collapse100" class="accordion-collapse collapse" aria-labelledby="heading100"
+                                        data-bs-parent="#accordionMedicacion">
+                                        <div class="accordion-body">
+                                            <ol>
+                                                <li>MEDICACIÓN PARA ENFERMEDADES CRÓNICAS PREVALENTES</li>
+                                                <li>VIH</li>
+                                                <li>HEPATITIS B</li>
+                                                <li>HEPATITIS C</li>
+                                                <li>ARTRITIS REUMATOIDE</li>
+                                                <li>ESCLEROSIS MÚLTIPLE</li>
+                                                <li>COLITIS ULCEROSA</li>
+                                                <li>ENFERMEDADES ONCOLÓGICAS</li>
+                                                <li>PERSONAS INMUNOSUPRIMIDAS POR TRANSPLANTES DE ÓRGANOS</li>
+                                                <li>PARA ACCEDER A LA COBERTURA</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 70% -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading70">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse70" aria-expanded="false" aria-controls="collapse70">
+                                            70%
+                                        </button>
+                                    </h2>
+                                    <div id="collapse70" class="accordion-collapse collapse" aria-labelledby="heading70"
+                                        data-bs-parent="#accordionMedicacion">
+                                        <div class="accordion-body">
+                                            <ol>
+                                                <li>MEDICACIÓN PARA ENFERMEDADES CRÓNICAS PREVALENTES</li>
+                                                <li>MEDICACIÓN PARA PATOLOGÍAS CRÓNICAS PREVALENTES</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- COBERTURAS -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCoberturas">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCoberturas" aria-expanded="false" aria-controls="collapseCoberturas">
+                            COBERTURAS
+                        </button>
+                    </h2>
+                    <div id="collapseCoberturas" class="accordion-collapse collapse" aria-labelledby="headingCoberturas"
+                        data-bs-parent="#accordionMain">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>CELIAQUÍA</li>
+                                <li>ANTICONCEPTIVOS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Contenido principal -->
             <main class="col-md-9">
