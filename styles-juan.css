@@ -157,4 +157,11 @@ body {
 
 .titulo-tramites {
   padding-left: 5% !important;
+}
+
+/* Prueba de menu desplegable */
+.dropdown-menu-center {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-top: 40px !important;
 }/*# sourceMappingURL=styles-juan.css.map */
