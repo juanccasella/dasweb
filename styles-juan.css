@@ -164,4 +164,12 @@ body {
   left: 50% !important;
   transform: translateX(-50%) !important;
   margin-top: 40px !important;
+}
+
+/* Img banner */
+.banner-container {
+  height: 300px !important;
+}
+.banner-container .img-banner {
+  height: 300px !important;
 }/*# sourceMappingURL=styles-juan.css.map */
