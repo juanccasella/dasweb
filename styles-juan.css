@@ -168,8 +168,17 @@ body {
 
 /* Img banner */
 .banner-container {
-  height: 300px !important;
+  height: 200px !important;
 }
 .banner-container .img-banner {
-  height: 300px !important;
+  height: 200px !important;
+}
+
+.btn-relleno {
+  transition: scale ease-in-out 500ms;
+}
+
+.btn-relleno:hover {
+  scale: 1.1;
+  background-color: #00AE97;
 }/*# sourceMappingURL=styles-juan.css.map */

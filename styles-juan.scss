@@ -232,8 +232,19 @@ body{
 
 
 .banner-container{
-    height: 300px !important;
+    height: 200px !important;
     .img-banner{
-        height: 300px !important;
+        height: 200px !important;
     }
 }
+
+.btn-relleno{
+    transition: scale ease-in-out 500ms;
+}
+
+
+.btn-relleno:hover {
+    scale: 1.1;
+    background-color: #00AE97;
+}
+
