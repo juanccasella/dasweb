@@ -181,4 +181,60 @@ body {
 .btn-relleno:hover {
   scale: 1.1;
   background-color: #00AE97;
+}
+
+/* cartilla */
+/* Escala de 1.02 */
+.btn-scale {
+  transition: transform 0.3s ease-in-out !important;
+}
+.btn-scale:hover {
+  transform: scale(1.02) !important;
+}
+
+/* Sombra */
+.btn-shadow {
+  transition: box-shadow 0.3s ease-in-out !important;
+}
+.btn-shadow:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Background verde */
+.btn-bg {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out !important;
+}
+.btn-bg:hover {
+  background-color: #00AE97 !important;
+  color: #ffffff !important;
+}
+
+/* Background + Sombra */
+.btn-bg-shadow {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+.btn-bg-shadow:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+  background-color: #00AE97 !important;
+  color: #ffffff !important;
+}
+
+/* Escala + Sombra */
+.btn-scale-shadow {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+.btn-scale-shadow:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Background + Sombra + Escala*/
+.btn-bg-shadow-scale {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+.btn-bg-shadow-scale:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+  background-color: #00AE97 !important;
+  color: #ffffff !important;
+  transform: scale(1.02) !important;
 }/*# sourceMappingURL=styles-juan.css.map */

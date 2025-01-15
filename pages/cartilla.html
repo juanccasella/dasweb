@@ -70,7 +70,7 @@
                 <a class="nav-link text-blanco active" aria-current="page" href="../index.html">INICIO</a>    
             </li>
             <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="./cartilla.html" aria-current="page">CARTILLA</a>
+                <a class="nav-link text-blanco pe-0" href="cartilla.html" aria-current="page">CARTILLA</a>
                 <a class="nav-link text-blanco dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                 <ul class="dropdown-menu dropdown-menu-center">
                     <li><a class="dropdown-item text-verde-2" href="#">GUARDIAS</a></li>
@@ -89,7 +89,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="./centrodas.html" aria-current="page">CENTRO DAS</a>
+                <a class="nav-link text-blanco pe-0" href="centrodas.html" aria-current="page">CENTRO DAS</a>
                 <a class="nav-link text-blanco dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                 <ul class="dropdown-menu dropdown-menu-center">
                     <li><a class="dropdown-item text-verde-2" href="#">ONDONTOLOGÍA</a></li>
@@ -108,7 +108,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="./programas.html" aria-current="page">PROGRAMAS</a>
+                <a class="nav-link text-blanco pe-0" href="programas.html" aria-current="page">PROGRAMAS</a>
                 <a class="nav-link text-blanco dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                 <ul class="dropdown-menu dropdown-menu-center">
                     <li><a class="dropdown-item text-verde-2" href="#">CHEQUEO ANUAL GINECOLOGICO</a></li>
@@ -129,7 +129,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="./institucional.html" aria-current="page">INSTITUCIONAL</a>
+                <a class="nav-link text-blanco pe-0" href="institucional.html" aria-current="page">INSTITUCIONAL</a>
                 <a class="nav-link text-blanco dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                 <ul class="dropdown-menu dropdown-menu-center">
                     <li><a class="dropdown-item text-verde-2" href="#">HISTORIA</a></li>
@@ -146,7 +146,10 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-blanco" href="./formularios.html">FORMULARIOS</a>
+                <a class="nav-link text-blanco" href="formularios.html">FORMULARIOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-blanco" href="pruebaDeBotones.html">PRUEBA DE BOTONES</a>
             </li>
         </ul>
     </div>
@@ -263,82 +266,356 @@
         </div>
     </nav>
 
+<!-- Cartilla medica  -->
+
+    <!-- Opcion 1 (relleno+descripcion) -->
     <div class="container-fluid">
-        <!-- Banner Section -->
         <div class="container d-flex align-items-center justify-content-between banner-container w-90">
-            <div class="mb-4 mb-lg-0">
+            <div class="mb-4">
                 <h1 class="display-4 fw-bold text-verde-2">Cartilla medica</h1>
-                <p class="fs-3 text-gris-4">Contamos con una gran cantidad de prestadores de excelencia.</p>
+                <p class="fs-4 text-gris-4">Contamos con una gran cantidad de prestadores de excelencia.</p>
             </div>
             <div class="text-center d-flex">
                 <img src="../assets/img/banners/cartilla/cartilla.jpeg" alt="Imagen banner" class="img-fluid img-banner rounded">
             </div>
         </div>
     </div>
-    
     <div class="container w-90 my-5">
-        <!-- Buttons Section -->
-        <div class="row g-4">
-            <!-- Button 1 -->
-            <div class="col-6 col-md-4 col-lg-3 text-center">
-                <button class="btn btn-light shadow p-5 rounded w-100 bg-verde-2">
-                    <img src="../assets/iconos/cartilla/guardias.svg" alt="">
-                    <h5 class="mt-2 text-blanco">Guardias</h5>
-                    <p class="small mb-0 text-blanco">Instituciones a las que podrás concurrir sin turno previo en casos de urgencias</p>
+        <div class="row g-4 gx-5 gy-5">
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33 7C33 6.46957 32.7893 5.96086 32.4142 5.58579C32.0391 5.21071 31.5304 5 31 5H19C18.4696 5 17.9609 5.21071 17.5858 5.58579C17.2107 5.96086 17 6.46957 17 7V17H7C6.46957 17 5.96086 17.2107 5.58579 17.5858C5.21071 17.9609 5 18.4696 5 19V31C5 31.5304 5.21071 32.0391 5.58579 32.4142C5.96086 32.7893 6.46957 33 7 33H17V43C17 43.5304 17.2107 44.0391 17.5858 44.4142C17.9609 44.7893 18.4696 45 19 45H31C31.5304 45 32.0391 44.7893 32.4142 44.4142C32.7893 44.0391 33 43.5304 33 43V33H43C43.5304 33 44.0391 32.7893 44.4142 32.4142C44.7893 32.0391 45 31.5304 45 31V19C45 18.4696 44.7893 17.9609 44.4142 17.5858C44.0391 17.2107 43.5304 17 43 17H33V7Z" fill="white" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                    <h4 class="mt-2">Guardias</h4>
+                    <p class="mb-0 ">Instituciones a las que podrás concurrir sin turno previo en casos de urgencias</p>
                 </button>
             </div>
-            <!-- Button 2 -->
-            <div class="col-6 col-md-4 col-lg-3 text-center">
-                <button class="btn btn-light shadow p-5 rounded w-100 bg-verde-2">
-                    <img src="../assets/iconos/cartilla/internaciones.svg" alt="">
-                    <h5 class="mt-2 text-blanco">Internaciones</h5>
-                    <p class="text-blanco small mb-0">Clínicas y sanatorios convenidos para internaciones programadas.</p>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.2207 6C36.7855 6 38.2534 6.29081 39.6244 6.87243C40.9954 7.45406 42.1863 8.25725 43.1972 9.28201C44.2081 10.3068 45.0113 11.5046 45.6068 12.8756C46.2023 14.2466 46.5 15.7145 46.5 17.2793C46.5 18.0825 46.4169 18.8788 46.2507 19.6681C46.0846 20.4575 45.8353 21.2191 45.5029 21.9531H35.8854L31.8971 17.7986L25.25 24.4457L15.944 15.1398L9.29692 21.9531H4.99707C4.66471 21.2191 4.41544 20.4575 4.24927 19.6681C4.08309 18.8788 4 18.0825 4 17.2793C4 15.7145 4.29081 14.2466 4.87243 12.8756C5.45406 11.5046 6.25725 10.3137 7.28201 9.30279C8.30678 8.29187 9.50464 7.48868 10.8756 6.89321C12.2466 6.29774 13.7145 6 15.2793 6C16.7888 6 18.229 6.28389 19.6 6.85166C20.9709 7.41944 22.1965 8.23648 23.2766 9.30279L25.25 11.2969L27.2234 9.30279C28.2897 8.23648 29.5083 7.41944 30.8793 6.85166C32.2502 6.28389 33.6974 6 35.2207 6ZM33.2265 24.6119H43.8204L43.5296 24.9443C43.4326 25.0551 43.3288 25.1728 43.218 25.2974L25.25 43.2446L7.28201 25.2974C7.17123 25.1866 7.06737 25.0758 6.97043 24.9651C6.87349 24.8543 6.77656 24.7366 6.67962 24.6119H11.9558L15.944 20.7898L25.25 30.0958L31.8971 23.4487L33.2265 24.6119Z" fill="white"/>
+                    </svg>                        
+                    <h4 class="mt-2">Internaciones</h4>
+                    <p class="mb-0">Clínicas y sanatorios convenidos para internaciones programadas.</p>
                 </button>
             </div>
-            <!-- Button 3 -->
-            <div class="col-6 col-md-4 col-lg-3 text-center">
-                <button class="btn btn-light shadow p-5 rounded w-100 bg-verde-2">
-                    <img src="../assets/iconos/cartilla/consultoriosExternos.svg" alt="">
-                    <h5 class="mt-2 text-blanco">Consultorios Externos</h5>
-                    <p class="text-blanco small mb-0">Especialidades y prestadores para atención ambulatoria con turno previo.</p>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.25 32V31.0434C22.0224 30.5254 24.5336 29.066 26.3567 26.9085C28.2254 24.697 29.2504 21.8952 29.25 19C29.25 19 29.25 19 29.25 19V9C29.25 7.87283 28.8022 6.79183 28.0052 5.9948C27.2082 5.19777 26.1272 4.75 25 4.75H23C22.4033 4.75 21.831 4.98705 21.409 5.40901C20.9871 5.83097 20.75 6.40326 20.75 7C20.75 7.59674 20.9871 8.16903 21.409 8.59099C21.831 9.01295 22.4033 9.25 23 9.25H24.75V19C24.75 21.0554 23.9335 23.0267 22.4801 24.4801C21.0267 25.9335 19.0554 26.75 17 26.75C14.9446 26.75 12.9733 25.9335 11.5199 24.4801C10.0665 23.0267 9.25 21.0554 9.25 19V9.25H11C11.5967 9.25 12.169 9.01295 12.591 8.59099C13.0129 8.16903 13.25 7.59674 13.25 7C13.25 6.40326 13.0129 5.83097 12.591 5.40901C12.169 4.98705 11.5967 4.75 11 4.75H9C7.87283 4.75 6.79183 5.19777 5.9948 5.9948C5.19777 6.79183 4.75 7.87283 4.75 9L4.75 19C4.75 19 4.75 19 4.75 19C4.74957 21.8952 5.77461 24.697 7.6433 26.9085C9.46644 29.066 11.9776 30.5254 14.75 31.0434V32C14.75 35.5141 16.146 38.8843 18.6308 41.3692C21.1157 43.854 24.4859 45.25 28 45.25C31.5141 45.25 34.8843 43.854 37.3692 41.3692C39.854 38.8843 41.25 35.5141 41.25 32V28.8341C42.5675 28.326 43.676 27.3858 44.3923 26.1649C45.1387 24.8928 45.4113 23.3978 45.162 21.9442C44.9127 20.4905 44.1575 19.1718 43.0299 18.2211C41.9023 17.2704 40.4749 16.749 39 16.749C37.5251 16.749 36.0977 17.2704 34.9701 18.2211C33.8425 19.1718 33.0873 20.4905 32.838 21.9442C32.5887 23.3978 32.8613 24.8928 33.6077 26.1649C34.324 27.3858 35.4325 28.326 36.75 28.8341V32C36.75 34.3206 35.8281 36.5462 34.1872 38.1872C32.5462 39.8281 30.3206 40.75 28 40.75C25.6794 40.75 23.4538 39.8281 21.8128 38.1872C20.1719 36.5462 19.25 34.3206 19.25 32ZM40.2374 24.2374C39.9092 24.5656 39.4641 24.75 39 24.75C38.5359 24.75 38.0907 24.5656 37.7626 24.2374C37.4344 23.9092 37.25 23.4641 37.25 23C37.25 22.5359 37.4344 22.0908 37.7626 21.7626C38.0907 21.4344 38.5359 21.25 39 21.25C39.4641 21.25 39.9092 21.4344 40.2374 21.7626C40.5656 22.0908 40.75 22.5359 40.75 23C40.75 23.4641 40.5656 23.9092 40.2374 24.2374Z" fill="white" stroke="white" stroke-width="0.5"/>
+                    </svg>                        
+                    <h4 class="mt-2">Consultorios Externos</h4>
+                    <p class="mb-0">Especialidades y prestadores para atención ambulatoria con turno previo.</p>
                 </button>
             </div>
-            <!-- Button 4 -->
-            <div class="col-6 col-md-4 col-lg-3 text-center">
-                <button class="btn btn-light shadow p-5 rounded w-100 bg-verde-2">
-                    <img src="../assets/iconos/cartilla/estudiosYLaboratorios.svg" alt="">
-                    <h5 class="mt-2 text-blanco">Estudios y laboratorios</h5>
-                    <p class="text-blanco small mb-0">Instituciones cercanas a tu domicilio donde podrás realizar prácticas y estudios.</p>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.5549 16.8337L34.1665 5.44534C34.0254 5.30416 33.858 5.19216 33.6736 5.11575C33.4893 5.03933 33.2917 5 33.0922 5C32.8926 5 32.695 5.03933 32.5107 5.11575C32.3263 5.19216 32.1589 5.30416 32.0179 5.44534L7.48913 29.9741C5.89537 31.5678 5 33.7294 5 35.9834C5 38.2373 5.89537 40.3989 7.48913 41.9926C9.08289 43.5864 11.2445 44.4818 13.4984 44.4818C15.7523 44.4818 17.9139 43.5864 19.5077 41.9926L40.7452 20.7552L44.9608 19.3506C45.2065 19.2689 45.4272 19.1256 45.602 18.9346C45.7768 18.7435 45.8998 18.5109 45.9593 18.2588C46.0189 18.0068 46.013 17.7437 45.9422 17.4946C45.8714 17.2455 45.7381 17.0187 45.5549 16.8356V16.8337ZM39.445 17.9859C39.2212 18.0602 39.0178 18.1856 38.8509 18.3522L31.3402 25.8629C29.7326 26.4133 27.2119 26.6221 23.9245 24.9138C21.9125 23.8623 20.0942 23.3954 18.5036 23.2568L33.0922 8.66636L41.6695 17.2437L39.445 17.9859Z" fill="white"/>
+                    </svg>                        
+                    <h4 class="mt-2">Estudios y laboratorios</h4>
+                    <p class="mb-0">Instituciones cercanas a tu domicilio donde podrás realizar prácticas y estudios.</p>
                 </button>
             </div>
-            <!-- Button 5 -->
-            <div class="col-6 col-md-4 col-lg-3 text-center">
-                <button class="btn btn-light shadow p-5 rounded w-100 bg-verde-2">
-                    <img src="../assets/iconos/cartilla/odontologia.svg" alt="">
-                    <h5 class="mt-2 text-blanco">Odontología</h5>
-                    <p class="text-blanco small mb-0">Prestadores odontológicos donde podrás solicitar turno para consultas y estudios.</p>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0154 7.05973C15.654 3.13678 6.31478 4.22552 5.149 15.5278C3.97998 26.8646 9.97447 38.8615 13.186 43.455C13.9167 44.4988 15.0987 45 16.3229 45C18.3265 45 20.119 43.6624 20.7977 41.6508L21.9342 38.2947C22.1615 37.6239 22.5777 37.044 23.126 36.6341C23.6743 36.2242 24.328 36.0042 24.998 36.0042C25.668 36.0042 26.3217 36.2242 26.87 36.6341C27.4183 37.044 27.8345 37.6239 28.0618 38.2947L29.1984 41.6508C29.8803 43.6624 31.6728 45 33.6796 45C34.9006 45 36.0826 44.4988 36.81 43.455C40.0248 38.8615 46.0226 26.8646 44.8503 15.5278C43.6845 4.22552 34.3453 3.13678 27.9807 7.05973C25.9836 8.29364 24.019 8.29364 22.0154 7.05973ZM29.7115 12.9321C29.9625 12.8311 30.2299 12.7842 30.4981 12.794C30.7663 12.8037 31.0301 12.87 31.274 12.989C31.518 13.108 31.7374 13.2773 31.9195 13.4872C32.1016 13.697 32.2428 13.9432 32.3349 14.2115C32.427 14.4798 32.4682 14.7649 32.4561 15.0502C32.444 15.3356 32.3789 15.6155 32.2645 15.8739C32.15 16.1323 31.9886 16.364 31.7895 16.5555C31.5904 16.7471 31.3576 16.8947 31.1045 16.9898C28.7827 17.8884 26.8181 18.4069 24.8243 18.4C22.8175 18.3965 20.96 17.8643 18.8396 16.9691C18.5918 16.8642 18.3659 16.7084 18.1747 16.5107C17.9834 16.3129 17.8307 16.0769 17.7252 15.8163C17.6196 15.5557 17.5634 15.2755 17.5596 14.9918C17.5558 14.708 17.6045 14.4262 17.703 14.1625C17.8015 13.8988 17.9479 13.6583 18.1337 13.4548C18.3195 13.2513 18.5412 13.0887 18.786 12.9764C19.0309 12.8641 19.2941 12.8042 19.5607 12.8001C19.8273 12.7961 20.092 12.8479 20.3398 12.9528C22.2135 13.7477 23.5384 14.0761 24.834 14.0796C26.1427 14.083 27.591 13.7547 29.7115 12.9321Z" fill="white"/>
+                    </svg>                        
+                    <h4 class="mt-2">Odontología</h4>
+                    <p class="mb-0">Prestadores odontológicos donde podrás solicitar turno para consultas y estudios.</p>
                 </button>
             </div>
-            <!-- Button 6 -->
-            <div class="col-6 col-md-4 col-lg-3 text-center">
-                <button class="btn btn-light shadow p-5 rounded w-100 bg-verde-2">
-                    <img src="../assets/iconos/cartilla/farmacia.svg" alt="">
-                    <h5 class="mt-2 text-blanco">Farmacias</h5>
-                    <p class="text-blanco small mb-0">Red de farmacias donde podrás adquirir la medicación recetada por tu médico/a.</p>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1111 33.8889V45H33.8889V33.8889H45V16.1111H33.8889V5H16.1111V16.1111H5V33.8889H16.1111ZM27.7778 16.67H24.8556C24.7521 16.6637 24.6486 16.6816 24.5533 16.7222C23.6256 17.1744 23.0433 17.9733 22.6867 18.92C22.62 19.0948 22.5622 19.2707 22.5133 19.4478H20.2267C20.3178 19.0178 20.4411 18.5733 20.6078 18.1344C21.0989 16.8333 21.9956 15.4978 23.5789 14.7244C23.978 14.5354 24.4151 14.4404 24.8567 14.4467H27.7789C28.0736 14.4467 28.3562 14.5637 28.5646 14.7721C28.7729 14.9805 28.89 15.2631 28.89 15.5578C28.89 15.8525 28.7729 16.1351 28.5646 16.3435C28.3562 16.5518 28.0736 16.6689 27.7789 16.6689M18.3344 20.5578C17.7211 20.5578 17.2089 21.0644 17.3756 21.6556C18.0167 23.9433 20.6267 25.7233 23.89 26.0567V27.7878C23.1178 27.8067 22.3156 27.8689 21.6344 28.0667C21.1033 28.2222 20.54 28.4867 20.1089 28.9711C19.6578 29.4778 19.4456 30.1178 19.4456 30.8322C19.4456 31.5467 19.6567 32.1878 20.1078 32.6956C20.5389 33.1811 21.1022 33.4478 21.6344 33.6033C21.99 33.7067 22.3789 33.7733 22.7789 33.8156V31.5789C22.6025 31.5549 22.428 31.5186 22.2567 31.47C21.9567 31.3811 21.8244 31.2833 21.77 31.2211C21.7344 31.1811 21.6678 31.0911 21.6678 30.8322C21.6678 30.5767 21.7344 30.4878 21.7678 30.4489C21.8233 30.3867 21.9544 30.2878 22.2567 30.2C22.6822 30.0767 23.2311 30.03 23.89 30.0122V36.1133H20.5567V38.3356H29.4456V36.1133H26.1122V29.9611C27.3367 29.8656 28.3289 29.5967 29.0756 29.1156C30.1256 28.4378 30.5567 27.43 30.5567 26.36C30.5655 25.7885 30.4237 25.2248 30.1456 24.7256C31.3944 23.9367 32.2867 22.8678 32.6267 21.6556C32.7933 21.0644 32.2822 20.5578 31.6678 20.5578H18.3344ZM26.1122 27.73C27.0111 27.6433 27.5567 27.45 27.8711 27.2478C28.21 27.0289 28.3344 26.7722 28.3344 26.36C28.3344 26.0478 28.2633 25.8356 28.08 25.66C27.4394 25.8578 26.7805 25.9907 26.1133 26.0567L26.1122 27.73Z" fill="white"/>
+                    </svg>                        
+                    <h4 class="mt-2">Farmacias</h4>
+                    <p class="mb-0">Red de farmacias donde podrás adquirir la medicación recetada por tu médico/a.</p>
                 </button>
             </div>
-            <!-- Button 7 -->
-            <div class="col-6 col-md-4 col-lg-3 text-center">
-                <button class="btn btn-light shadow p-5 rounded w-100 bg-verde-2">
-                    <img src="../assets/iconos/cartilla/opticas.svg" alt="">
-                    <h5 class="mt-2 text-blanco">Ópticas</h5>
-                    <p class="text-blanco small mb-0">Ópticas de la red donde podrás obtener insumos oftalmológicos recetados.</p>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0071 37.0836C36.8257 37.0836 45 27.5221 45 24.5414C45 21.5464 36.8107 12 25.0071 12C13.2771 12 5 21.5464 5 24.5414C5 27.5221 13.3364 37.0836 25.0071 37.0836ZM25.0071 32.76C20.4036 32.76 16.7743 29.0271 16.745 24.5414C16.73 19.9386 20.4036 16.3243 25.0071 16.3243C29.5814 16.3243 33.255 19.9386 33.255 24.5421C33.255 29.0279 29.5814 32.7607 25.0071 32.7607M25.0071 27.5079C26.645 27.5079 28.0029 26.165 28.0029 24.5421C28.0029 22.9043 26.6457 21.5621 25.0071 21.5621C23.355 21.5621 21.9971 22.905 21.9971 24.5421C21.9971 26.1657 23.3543 27.5079 25.0071 27.5079Z" fill="white"/>
+                    </svg>                        
+                    <h4 class="mt-2">Ópticas</h4>
+                    <p class="mb-0">Ópticas de la red donde podrás obtener insumos oftalmológicos recetados.</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.0016 5C26.887 4.9994 30.6398 6.41261 33.5597 8.97588C36.4795 11.5391 38.3669 15.0773 38.8696 18.93L43.3696 26.008C43.6656 26.474 43.6056 27.168 42.9196 27.464L39.0016 29.14V35C39.0016 36.0609 38.5802 37.0783 37.83 37.8284C37.0799 38.5786 36.0625 39 35.0016 39H31.0036L31.0016 45H13.0016V37.612C13.0016 35.252 12.1296 33.018 10.5116 31.002C8.62702 28.6489 7.44557 25.8113 7.1034 22.816C6.76123 19.8207 7.27225 16.7897 8.5776 14.0722C9.88294 11.3547 11.9295 9.06132 14.4814 7.45623C17.0334 5.85114 19.9869 4.9997 23.0016 5ZM21.9416 16.526C21.2816 15.8883 20.3976 15.5354 19.4799 15.5431C18.5622 15.5509 17.6843 15.9188 17.0352 16.5676C16.3862 17.2164 16.0179 18.0942 16.0098 19.0119C16.0016 19.9296 16.3542 20.8138 16.9916 21.474L23.0016 27.486L29.0116 21.474C29.3458 21.1511 29.6124 20.7648 29.7957 20.3378C29.9791 19.9107 30.0755 19.4514 30.0795 18.9867C30.0834 18.522 29.9948 18.0611 29.8187 17.631C29.6426 17.2009 29.3827 16.8102 29.054 16.4816C28.7253 16.1531 28.3345 15.8932 27.9043 15.7174C27.4741 15.5415 27.0132 15.453 26.5485 15.4571C26.0838 15.4613 25.6245 15.5579 25.1975 15.7414C24.7706 15.9249 24.3844 16.1916 24.0616 16.526L23.0016 17.586L21.9416 16.526Z" fill="white"/>
+                    </svg>                        
+                    <h4 class="mt-2">Salud mental</h4>
+                    <p class="mb-0">Información y orientación sobre consultas relacionadas a salud mental.</p>
                 </button>
             </div>
         </div>
     </div>
     
     
+    <!-- Opcion 2 (linea+descripcion)-->
+    <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-between banner-container w-90">
+            <div class="mb-4">
+                <h1 class="display-4 fw-bold text-verde-2">Cartilla medica</h1>
+                <p class="fs-4 text-gris-4">Contamos con una gran cantidad de prestadores de excelencia.</p>
+            </div>
+            <div class="text-center d-flex">
+                <img src="../assets/img/banners/cartilla/cartilla.jpeg" alt="Imagen banner" class="img-fluid img-banner rounded">
+            </div>
+        </div>
+    </div>
+    <div class="container w-90 my-5">
+        <div class="row g-4 gx-5 gy-5">
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.1667 6.08333C33.1667 5.5308 32.9472 5.00089 32.5565 4.61019C32.1658 4.21949 31.6359 4 31.0833 4H18.5833C18.0308 4 17.5009 4.21949 17.1102 4.61019C16.7195 5.00089 16.5 5.5308 16.5 6.08333V16.5H6.08333C5.5308 16.5 5.00089 16.7195 4.61019 17.1102C4.21949 17.5009 4 18.0308 4 18.5833V31.0833C4 31.6359 4.21949 32.1658 4.61019 32.5565C5.00089 32.9472 5.5308 33.1667 6.08333 33.1667H16.5V43.5833C16.5 44.1359 16.7195 44.6658 17.1102 45.0565C17.5009 45.4472 18.0308 45.6667 18.5833 45.6667H31.0833C31.6359 45.6667 32.1658 45.4472 32.5565 45.0565C32.9472 44.6658 33.1667 44.1359 33.1667 43.5833V33.1667H43.5833C44.1359 33.1667 44.6658 32.9472 45.0565 32.5565C45.4472 32.1658 45.6667 31.6359 45.6667 31.0833V18.5833C45.6667 18.0308 45.4472 17.5009 45.0565 17.1102C44.6658 16.7195 44.1359 16.5 43.5833 16.5H33.1667V6.08333Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h4 class="mt-2">Guardias</h4>
+                    <p class="mb-0">Instituciones a las que podrás concurrir sin turno previo en casos de urgencias</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.2207 6C36.7855 6 38.2534 6.29081 39.6244 6.87243C40.9954 7.45406 42.1863 8.25725 43.1972 9.28201C44.2081 10.3068 45.0113 11.5046 45.6068 12.8756C46.2023 14.2466 46.5 15.7145 46.5 17.2793C46.5 18.0825 46.4169 18.8788 46.2507 19.6681C46.0846 20.4575 45.8353 21.2191 45.5029 21.9531H35.8854L31.8971 17.7986L25.25 24.4457L15.944 15.1398L9.29692 21.9531H4.99707C4.66471 21.2191 4.41544 20.4575 4.24927 19.6681C4.08309 18.8788 4 18.0825 4 17.2793C4 15.7145 4.29081 14.2466 4.87243 12.8756C5.45406 11.5046 6.25725 10.3137 7.28201 9.30279C8.30678 8.29187 9.50464 7.48868 10.8756 6.89321C12.2466 6.29774 13.7145 6 15.2793 6C16.7888 6 18.229 6.28389 19.6 6.85166C20.9709 7.41944 22.1965 8.23648 23.2766 9.30279L25.25 11.2969L27.2234 9.30279C28.2897 8.23648 29.5083 7.41944 30.8793 6.85166C32.2502 6.28389 33.6974 6 35.2207 6ZM33.2265 24.6119H43.8204L43.5296 24.9443C43.4326 25.0551 43.3288 25.1728 43.218 25.2974L25.25 43.2446L7.28201 25.2974C7.17123 25.1866 7.06737 25.0758 6.97043 24.9651C6.87349 24.8543 6.77656 24.7366 6.67962 24.6119H11.9558L15.944 20.7898L25.25 30.0958L31.8971 23.4487L33.2265 24.6119Z" fill="currentColor"/>
+                    </svg>                        
+                    <h4 class="mt-2">Internaciones</h4>
+                    <p class="mb-0">Clínicas y sanatorios convenidos para internaciones programadas.</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.25 32V31.0434C22.0224 30.5254 24.5336 29.066 26.3567 26.9085C28.2254 24.697 29.2504 21.8952 29.25 19C29.25 19 29.25 19 29.25 19V9C29.25 7.87283 28.8022 6.79183 28.0052 5.9948C27.2082 5.19777 26.1272 4.75 25 4.75H23C22.4033 4.75 21.831 4.98705 21.409 5.40901C20.9871 5.83097 20.75 6.40326 20.75 7C20.75 7.59674 20.9871 8.16903 21.409 8.59099C21.831 9.01295 22.4033 9.25 23 9.25H24.75V19C24.75 21.0554 23.9335 23.0267 22.4801 24.4801C21.0267 25.9335 19.0554 26.75 17 26.75C14.9446 26.75 12.9733 25.9335 11.5199 24.4801C10.0665 23.0267 9.25 21.0554 9.25 19V9.25H11C11.5967 9.25 12.169 9.01295 12.591 8.59099C13.0129 8.16903 13.25 7.59674 13.25 7C13.25 6.40326 13.0129 5.83097 12.591 5.40901C12.169 4.98705 11.5967 4.75 11 4.75H9C7.87283 4.75 6.79183 5.19777 5.9948 5.9948C5.19777 6.79183 4.75 7.87283 4.75 9L4.75 19C4.75 19 4.75 19 4.75 19C4.74957 21.8952 5.77461 24.697 7.6433 26.9085C9.46644 29.066 11.9776 30.5254 14.75 31.0434V32C14.75 35.5141 16.146 38.8843 18.6308 41.3692C21.1157 43.854 24.4859 45.25 28 45.25C31.5141 45.25 34.8843 43.854 37.3692 41.3692C39.854 38.8843 41.25 35.5141 41.25 32V28.8341C42.5675 28.326 43.676 27.3858 44.3923 26.1649C45.1387 24.8928 45.4113 23.3978 45.162 21.9442C44.9127 20.4905 44.1575 19.1718 43.0299 18.2211C41.9023 17.2704 40.4749 16.749 39 16.749C37.5251 16.749 36.0977 17.2704 34.9701 18.2211C33.8425 19.1718 33.0873 20.4905 32.838 21.9442C32.5887 23.3978 32.8613 24.8928 33.6077 26.1649C34.324 27.3858 35.4325 28.326 36.75 28.8341V32C36.75 34.3206 35.8281 36.5462 34.1872 38.1872C32.5462 39.8281 30.3206 40.75 28 40.75C25.6794 40.75 23.4538 39.8281 21.8128 38.1872C20.1719 36.5462 19.25 34.3206 19.25 32ZM40.2374 24.2374C39.9092 24.5656 39.4641 24.75 39 24.75C38.5359 24.75 38.0907 24.5656 37.7626 24.2374C37.4344 23.9092 37.25 23.4641 37.25 23C37.25 22.5359 37.4344 22.0908 37.7626 21.7626C38.0907 21.4344 38.5359 21.25 39 21.25C39.4641 21.25 39.9092 21.4344 40.2374 21.7626C40.5656 22.0908 40.75 22.5359 40.75 23C40.75 23.4641 40.5656 23.9092 40.2374 24.2374Z" fill="currentColor" stroke="currentColor" stroke-width="0.5"/>
+                    </svg>                        
+                    <h4 class="mt-2">Consultorios Externos</h4>
+                    <p class="mb-0">Especialidades y prestadores para atención ambulatoria con turno previo.</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.5549 16.8337L34.1665 5.44534C34.0254 5.30416 33.858 5.19216 33.6736 5.11575C33.4893 5.03933 33.2917 5 33.0922 5C32.8926 5 32.695 5.03933 32.5107 5.11575C32.3263 5.19216 32.1589 5.30416 32.0179 5.44534L7.48913 29.9741C5.89537 31.5678 5 33.7294 5 35.9834C5 38.2373 5.89537 40.3989 7.48913 41.9926C9.08289 43.5864 11.2445 44.4818 13.4984 44.4818C15.7523 44.4818 17.9139 43.5864 19.5077 41.9926L40.7452 20.7552L44.9608 19.3506C45.2065 19.2689 45.4272 19.1256 45.602 18.9346C45.7768 18.7435 45.8998 18.5109 45.9593 18.2588C46.0189 18.0068 46.013 17.7437 45.9422 17.4946C45.8714 17.2455 45.7381 17.0187 45.5549 16.8356V16.8337ZM39.445 17.9859C39.2212 18.0602 39.0178 18.1856 38.8509 18.3522L31.3402 25.8629C29.7326 26.4133 27.2119 26.6221 23.9245 24.9138C21.9125 23.8623 20.0942 23.3954 18.5036 23.2568L33.0922 8.66636L41.6695 17.2437L39.445 17.9859Z" fill="currentColor"/>
+                    </svg>                        
+                    <h4 class="mt-2">Estudios y laboratorios</h4>
+                    <p class="mb-0">Instituciones cercanas a tu domicilio donde podrás realizar prácticas y estudios.</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0154 7.05973C15.654 3.13678 6.31478 4.22552 5.149 15.5278C3.97998 26.8646 9.97447 38.8615 13.186 43.455C13.9167 44.4988 15.0987 45 16.3229 45C18.3265 45 20.119 43.6624 20.7977 41.6508L21.9342 38.2947C22.1615 37.6239 22.5777 37.044 23.126 36.6341C23.6743 36.2242 24.328 36.0042 24.998 36.0042C25.668 36.0042 26.3217 36.2242 26.87 36.6341C27.4183 37.044 27.8345 37.6239 28.0618 38.2947L29.1984 41.6508C29.8803 43.6624 31.6728 45 33.6796 45C34.9006 45 36.0826 44.4988 36.81 43.455C40.0248 38.8615 46.0226 26.8646 44.8503 15.5278C43.6845 4.22552 34.3453 3.13678 27.9807 7.05973C25.9836 8.29364 24.019 8.29364 22.0154 7.05973ZM29.7115 12.9321C29.9625 12.8311 30.2299 12.7842 30.4981 12.794C30.7663 12.8037 31.03 12.87 31.274 12.989C31.518 13.108 31.7374 13.2773 31.9195 13.4872C32.1016 13.697 32.2428 13.9432 32.3349 14.2115C32.427 14.4798 32.4682 14.7649 32.4561 15.0502C32.444 15.3356 32.3789 15.6155 32.2645 15.8739C32.15 16.1323 31.9886 16.364 31.7895 16.5555C31.5904 16.7471 31.3576 16.8947 31.1045 16.9898C28.7827 17.8884 26.8181 18.4069 24.8243 18.4C22.8175 18.3965 20.96 17.8643 18.8396 16.9691C18.5918 16.8642 18.3659 16.7084 18.1747 16.5107C17.9834 16.3129 17.8307 16.0769 17.7252 15.8163C17.6196 15.5557 17.5634 15.2755 17.5596 14.9918C17.5558 14.708 17.6045 14.4262 17.703 14.1625C17.8015 13.8988 17.9479 13.6583 18.1337 13.4548C18.3195 13.2513 18.5412 13.0887 18.786 12.9764C19.0309 12.8641 19.2941 12.8042 19.5607 12.8001C19.8273 12.7961 20.092 12.8479 20.3398 12.9528C22.2135 13.7477 23.5384 14.0761 24.834 14.0796C26.1427 14.083 27.591 13.7547 29.7115 12.9321Z" fill="currentColor"/>
+                    </svg>                        
+                    <h4 class="mt-2">Odontología</h4>
+                    <p class="mb-0">Prestadores odontológicos donde podrás solicitar turno para consultas y estudios.</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1111 33.8889V45H33.8889V33.8889H45V16.1111H33.8889V5H16.1111V16.1111H5V33.8889H16.1111ZM27.7778 16.67H24.8556C24.7521 16.6637 24.6486 16.6816 24.5533 16.7222C23.6256 17.1744 23.0433 17.9733 22.6867 18.92C22.62 19.0948 22.5622 19.2707 22.5133 19.4478H20.2267C20.3178 19.0178 20.4411 18.5733 20.6078 18.1344C21.0989 16.8333 21.9956 15.4978 23.5789 14.7244C23.978 14.5354 24.4151 14.4404 24.8567 14.4467H27.7789C28.0736 14.4467 28.3562 14.5637 28.5646 14.7721C28.7729 14.9805 28.89 15.2631 28.89 15.5578C28.89 15.8525 28.7729 16.1351 28.5646 16.3435C28.3562 16.5518 28.0736 16.6689 27.7789 16.6689M18.3344 20.5578C17.7211 20.5578 17.2089 21.0644 17.3756 21.6556C18.0167 23.9433 20.6267 25.7233 23.89 26.0567V27.7878C23.1178 27.8067 22.3156 27.8689 21.6344 28.0667C21.1033 28.2222 20.54 28.4867 20.1089 28.9711C19.6578 29.4778 19.4456 30.1178 19.4456 30.8322C19.4456 31.5467 19.6567 32.1878 20.1078 32.6956C20.5389 33.1811 21.1022 33.4478 21.6344 33.6033C21.99 33.7067 22.3789 33.7733 22.7789 33.8156V31.5789C22.6025 31.5549 22.428 31.5186 22.2567 31.47C21.9567 31.3811 21.8244 31.2833 21.77 31.2211C21.7344 31.1811 21.6678 31.0911 21.6678 30.8322C21.6678 30.5767 21.7344 30.4878 21.7678 30.4489C21.8233 30.3867 21.9544 30.2878 22.2567 30.2C22.6822 30.0767 23.2311 30.03 23.89 30.0122V36.1133H20.5567V38.3356H29.4456V36.1133H26.1122V29.9611C27.3367 29.8656 28.3289 29.5967 29.0756 29.1156C30.1256 28.4378 30.5567 27.43 30.5567 26.36C30.5655 25.7885 30.4237 25.2248 30.1456 24.7256C31.3944 23.9367 32.2867 22.8678 32.6267 21.6556C32.7933 21.0644 32.2822 20.5578 31.6678 20.5578H18.3344ZM26.1122 27.73C27.0111 27.6433 27.5567 27.45 27.8711 27.2478C28.21 27.0289 28.3344 26.7722 28.3344 26.36C28.3344 26.0478 28.2633 25.8356 28.08 25.66C27.4394 25.8578 26.7805 25.9907 26.1133 26.0567L26.1122 27.73Z" fill="currentColor"/>
+                    </svg>                        
+                    <h4 class="mt-2">Farmacias</h4>
+                    <p class="mb-0">Red de farmacias donde podrás adquirir la medicación recetada por tu médico/a.</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0089 41.4312C39.7821 41.4312 50 29.4795 50 25.7536C50 22.0098 39.7634 10.0768 25.0089 10.0768C10.3464 10.0768 0 22.0098 0 25.7536C0 29.4795 10.4205 41.4312 25.0089 41.4312ZM25.0089 36.0268C19.2545 36.0268 14.7179 31.3607 14.6813 25.7536C14.6625 20 19.2545 15.4821 25.0089 15.4821C30.7268 15.4821 35.3187 20 35.3187 25.7545C35.3187 31.3616 30.7268 36.0277 25.0089 36.0277M25.0089 29.4616C27.0562 29.4616 28.7536 27.783 28.7536 25.7545C28.7536 23.7071 27.0571 22.0295 25.0089 22.0295C22.9438 22.0295 21.2464 23.708 21.2464 25.7545C21.2464 27.7839 22.9429 29.4616 25.0089 29.4616Z" fill="currentColor"/>
+                    </svg>                        
+                    <h4 class="mt-2">Ópticas</h4>
+                    <p class="mb-0">Ópticas de la red donde podrás obtener insumos oftalmológicos recetados.</p>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center px-5">
+                <button class="btn shadow px-3 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow text-verde-2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.9169 4.16663C26.9641 4.166 30.8733 5.6381 33.9149 8.30816C36.9564 10.9782 38.9224 14.6638 39.446 18.677L44.1335 26.05C44.4419 26.5354 44.3794 27.2583 43.6648 27.5666L39.5835 29.3125V35.4166C39.5835 36.5217 39.1446 37.5815 38.3632 38.3629C37.5818 39.1443 36.522 39.5833 35.4169 39.5833H31.2523L31.2502 45.8333H12.5002V38.1375C12.5002 35.6791 11.5919 33.352 9.90647 31.252C7.94335 28.8009 6.71267 25.845 6.35624 22.725C5.99981 19.6049 6.53213 16.4476 7.89186 13.6169C9.2516 10.7861 11.3834 8.39716 14.0417 6.7252C16.7 5.05323 19.7765 4.16631 22.9169 4.16663ZM21.8127 16.1729C21.1252 15.5086 20.2044 15.141 19.2484 15.1491C18.2925 15.1572 17.378 15.5404 16.7019 16.2163C16.0258 16.8921 15.6422 17.8064 15.6337 18.7624C15.6252 19.7183 15.9925 20.6393 16.6565 21.327L22.9169 27.5895L29.1773 21.327C29.5254 20.9907 29.8031 20.5883 29.9941 20.1435C30.1851 19.6986 30.2856 19.2202 30.2897 18.7361C30.2938 18.252 30.2014 17.7719 30.018 17.3239C29.8346 16.8759 29.5638 16.4689 29.2214 16.1266C28.879 15.7844 28.4719 15.5138 28.0238 15.3305C27.5757 15.1473 27.0956 15.0552 26.6115 15.0595C26.1275 15.0638 25.6491 15.1644 25.2043 15.3556C24.7595 15.5468 24.3573 15.8246 24.021 16.1729L22.9169 17.277L21.8127 16.1729Z" fill="currentColor"/>
+                    </svg>                     
+                    <h4 class="mt-2">Salud mental</h4>
+                    <p class="mb-0">Información y orientación sobre consultas relacionadas a salud mental.</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Opcion 3 (relleno+sinDescripcion)-->
+    <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-between banner-container w-90">
+            <div class="mb-4">
+                <h1 class="display-4 fw-bold text-verde-2">Cartilla medica</h1>
+                <p class="fs-4 text-gris-4">Contamos con una gran cantidad de prestadores de excelencia.</p>
+            </div>
+            <div class="text-center d-flex">
+                <img src="../assets/img/banners/cartilla/cartilla.jpeg" alt="Imagen banner" class="img-fluid img-banner rounded">
+            </div>
+        </div>
+    </div>
+    <div class="container w-90 my-5">
+        <div class="row g-5 gx-5 px-5">
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33 7C33 6.46957 32.7893 5.96086 32.4142 5.58579C32.0391 5.21071 31.5304 5 31 5H19C18.4696 5 17.9609 5.21071 17.5858 5.58579C17.2107 5.96086 17 6.46957 17 7V17H7C6.46957 17 5.96086 17.2107 5.58579 17.5858C5.21071 17.9609 5 18.4696 5 19V31C5 31.5304 5.21071 32.0391 5.58579 32.4142C5.96086 32.7893 6.46957 33 7 33H17V43C17 43.5304 17.2107 44.0391 17.5858 44.4142C17.9609 44.7893 18.4696 45 19 45H31C31.5304 45 32.0391 44.7893 32.4142 44.4142C32.7893 44.0391 33 43.5304 33 43V33H43C43.5304 33 44.0391 32.7893 44.4142 32.4142C44.7893 32.0391 45 31.5304 45 31V19C45 18.4696 44.7893 17.9609 44.4142 17.5858C44.0391 17.2107 43.5304 17 43 17H33V7Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                    <h3 class="mt-3">Guardias</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.1907 24.622H10.3802L25.2604 39.5022L37.4804 27.2822H41.2421L25.2604 43.2638L7.28362 25.3078C6.7987 24.8229 6.36919 24.3034 5.99511 23.7492C5.62103 23.195 5.29544 22.5992 5.01834 21.9619H10.0685L15.9499 16.1012L25.2604 25.391L31.9108 18.7614L35.132 21.9619H42.5098C42.9531 21.2553 43.2926 20.5071 43.5281 19.7174C43.7637 18.9276 43.8814 18.1171 43.8814 17.2858C43.8814 16.0805 43.6597 14.9582 43.2164 13.9191C42.773 12.88 42.1565 11.9794 41.3667 11.2174C40.577 10.4554 39.6626 9.85266 38.6235 9.4093C37.5844 8.96595 36.4552 8.74427 35.2359 8.74427C34.0721 8.74427 33.0399 8.92438 32.1394 9.28461C31.2388 9.64484 30.4075 10.1298 29.6455 10.7394C28.8835 11.349 28.1561 12.021 27.4633 12.7553C26.7706 13.4896 26.0363 14.2585 25.2604 15.0621C24.5122 14.3139 23.7848 13.5589 23.0782 12.7968C22.3716 12.0348 21.6373 11.349 20.8753 10.7394C20.1133 10.1298 19.2751 9.63098 18.3606 9.24304C17.4462 8.85511 16.4209 8.66114 15.2848 8.66114C14.0933 8.66114 12.978 8.88282 11.9389 9.32617C10.8998 9.76953 9.98533 10.3861 9.1956 11.1758C8.40587 11.9655 7.78932 12.88 7.34597 13.9191C6.90261 14.9582 6.674 16.0805 6.66015 17.2858C6.66015 17.937 6.73635 18.609 6.88875 19.3017H4.16626C4.09698 18.9692 4.05542 18.6367 4.04156 18.3042C4.02771 17.9717 4.01385 17.6391 4 17.3066C4 15.741 4.29095 14.2724 4.87286 12.9007C5.45477 11.5291 6.25835 10.3307 7.28362 9.30539C8.30888 8.28013 9.50733 7.47654 10.879 6.89463C12.2506 6.31273 13.7192 6.01484 15.2848 6.00099C16.4348 6.00099 17.4601 6.13261 18.3606 6.39586C19.2612 6.6591 20.0925 7.01933 20.8545 7.47654C21.6165 7.93375 22.3509 8.49488 23.0575 9.15991C23.7641 9.82495 24.4984 10.5385 25.2604 11.3005C26.0224 10.5246 26.7498 9.8111 27.4425 9.15991C28.1353 8.50873 28.8696 7.95454 29.6455 7.49732C30.4214 7.04011 31.2596 6.67295 32.1601 6.39586C33.0607 6.11876 34.086 5.98713 35.2359 6.00099C36.7877 6.00099 38.2494 6.29194 39.621 6.87385C40.9927 7.45576 42.1842 8.25934 43.1956 9.28461C44.207 10.3099 45.0106 11.5014 45.6064 12.8592C46.2021 14.217 46.5 15.6787 46.5 17.2443C46.5 18.5882 46.2645 19.8906 45.7934 21.1514C45.3223 22.4122 44.6504 23.569 43.7775 24.622H34.0098L31.9108 22.5022L25.2604 29.1734L15.9499 19.8421L11.1907 24.622Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Internaciones</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.1 32V31.7298C22.7886 31.075 25.2096 29.5829 27.0059 27.4571C29.0043 25.0923 30.1004 22.0961 30.1 19C30.1 18.9999 30.1 18.9999 30.1 18.9998V9C30.1 7.6474 29.5627 6.35019 28.6062 5.39376C27.6498 4.43732 26.3526 3.9 25 3.9H23C22.1778 3.9 21.3893 4.22661 20.808 4.80797C20.2266 5.38933 19.9 6.17783 19.9 7C19.9 7.82217 20.2266 8.61067 20.808 9.19203C21.3893 9.77339 22.1778 10.1 23 10.1H23.9V19C23.9 20.83 23.173 22.585 21.879 23.879C20.585 25.173 18.83 25.9 17 25.9C15.17 25.9 13.415 25.173 12.121 23.879C10.827 22.585 10.1 20.83 10.1 19V10.1H11C11.8222 10.1 12.6107 9.77339 13.192 9.19203C13.7734 8.61067 14.1 7.82217 14.1 7C14.1 6.17783 13.7734 5.38933 13.192 4.80797C12.6107 4.22661 11.8222 3.9 11 3.9H9C7.6474 3.9 6.35019 4.43732 5.39376 5.39376C4.43732 6.35019 3.9 7.6474 3.9 9V18.9998C3.9 18.9999 3.9 18.9999 3.9 19C3.89957 22.0961 4.99573 25.0923 6.99406 27.4571C8.79042 29.5829 11.2114 31.075 13.9 31.7298V32C13.9 35.7396 15.3855 39.3259 18.0298 41.9702C20.6741 44.6145 24.2604 46.1 28 46.1C31.7395 46.1 35.3259 44.6145 37.9702 41.9702C40.6145 39.3259 42.1 35.7396 42.1 32V29.3907C43.3572 28.7808 44.4124 27.8104 45.1255 26.5951C45.9733 25.15 46.283 23.4518 45.9998 21.8005C45.7166 20.1492 44.8587 18.6512 43.5778 17.5713C42.2969 16.4913 40.6754 15.899 39 15.899C37.3246 15.899 35.7031 16.4913 34.4222 17.5713C33.1413 18.6512 32.2834 20.1492 32.0002 21.8005C31.717 23.4518 32.0267 25.15 32.8745 26.5951C33.5876 27.8104 34.6428 28.7808 35.9 29.3907V32C35.9 34.0952 35.0677 36.1046 33.5861 37.5861C32.1046 39.0677 30.0952 39.9 28 39.9C25.9048 39.9 23.8954 39.0677 22.4139 37.5861C20.9323 36.1046 20.1 34.0952 20.1 32ZM39.6364 23.6364C39.4676 23.8052 39.2387 23.9 39 23.9C38.7613 23.9 38.5324 23.8052 38.3636 23.6364C38.1948 23.4676 38.1 23.2387 38.1 23C38.1 22.7613 38.1948 22.5324 38.3636 22.3636C38.5324 22.1948 38.7613 22.1 39 22.1C39.2387 22.1 39.4676 22.1948 39.6364 22.3636C39.8052 22.5324 39.9 22.7613 39.9 23C39.9 23.2387 39.8052 23.4676 39.6364 23.6364Z" stroke="currentColor" stroke-width="2.2"/>
+                    </svg>                        
+                    <h3 class="mt-3">Consultorios Externos</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.5549 16.8337L34.1665 5.44534C34.0254 5.30416 33.858 5.19216 33.6736 5.11575C33.4893 5.03933 33.2917 5 33.0922 5C32.8926 5 32.695 5.03933 32.5107 5.11575C32.3263 5.19216 32.1589 5.30416 32.0179 5.44534L7.48913 29.9741C5.89537 31.5678 5 33.7294 5 35.9833C5 38.2373 5.89537 40.3989 7.48913 41.9926C9.08289 43.5864 11.2445 44.4818 13.4984 44.4818C15.7523 44.4818 17.9139 43.5864 19.5077 41.9926L40.7452 20.7552L44.9608 19.3506C45.2065 19.2689 45.4272 19.1256 45.602 18.9346C45.7768 18.7435 45.8998 18.5109 45.9593 18.2588C46.0189 18.0068 46.013 17.7437 45.9422 17.4946C45.8714 17.2455 45.7381 17.0187 45.5549 16.8356V16.8337ZM17.3591 39.844C16.3288 40.8369 14.95 41.3858 13.5193 41.3726C12.0885 41.3594 10.7201 40.7852 9.70832 39.7734C8.69657 38.7617 8.12233 37.3933 8.10913 35.9625C8.09594 34.5317 8.64483 33.1529 9.63774 32.1227L15.1042 26.6562C16.7118 26.1058 19.2325 25.897 22.5199 27.6053C24.5319 28.6568 26.3502 29.1237 27.9408 29.2623L17.3591 39.844ZM39.445 17.9859C39.2212 18.0602 39.0178 18.1856 38.8509 18.3522L31.3402 25.8629C29.7326 26.4133 27.2119 26.6221 23.9245 24.9138C21.9125 23.8623 20.0942 23.3954 18.5036 23.2568L33.0922 8.66636L41.6695 17.2437L39.445 17.9859Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Estudios y laboratorios</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.14936 15.5276C6.31662 4.22575 15.6583 3.13659 22.017 7.05985C24.0165 8.29474 25.9799 8.29474 27.983 7.05985C34.3417 3.13659 43.6834 4.22575 44.8506 15.5276C46.0215 26.864 40.0231 38.8601 36.8095 43.4545C36.0782 44.5014 34.9001 45 33.6752 45C32.6964 45 31.7414 44.6784 30.9406 44.0793C30.1398 43.4801 29.5322 42.6324 29.2007 41.652L28.0659 38.3002C27.8378 37.6294 27.4212 37.0496 26.8726 36.6399C26.324 36.2302 25.6701 36.0104 25 36.0104C24.3299 36.0104 23.676 36.2302 23.1274 36.6399C22.5788 37.0496 22.1622 37.6294 21.9341 38.3002L20.7993 41.652C20.4678 42.6324 19.8602 43.4801 19.0594 44.0793C18.2586 44.6784 17.3036 45 16.3248 45C15.0999 45 13.9182 44.5014 13.1905 43.4545C9.97692 38.8601 3.97849 26.864 5.14936 15.5276Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M29.6507 16.0952C25.8319 17.5755 23.7784 17.5449 20.3486 16.0952" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                    <h3 class="mt-3">Odontología</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8556 16.67H27.7778C28.0725 16.67 28.3551 16.553 28.5635 16.3446C28.7719 16.1362 28.8889 15.8536 28.8889 15.5589C28.8889 15.2642 28.7719 14.9816 28.5635 14.7733C28.3551 14.5649 28.0725 14.4478 27.7778 14.4478H24.8556C24.4678 14.4478 24.0167 14.5111 23.5778 14.7256C21.9956 15.4978 21.1 16.8334 20.6078 18.1345C20.4412 18.5734 20.3178 19.0178 20.2267 19.4478H22.5134C22.563 19.27 22.6204 19.0941 22.6856 18.92C23.0434 17.9734 23.6245 17.1756 24.5523 16.7223C24.6483 16.6813 24.7514 16.6634 24.8556 16.67ZM18.3345 20.5589C17.7212 20.5589 17.2089 21.0656 17.3756 21.6567C18.0167 23.9445 20.6267 25.7245 23.89 26.0578V27.7889C23.1178 27.8078 22.3156 27.87 21.6345 28.0678C21.1034 28.2234 20.54 28.4878 20.1089 28.9723C19.6578 29.4789 19.4456 30.1189 19.4456 30.8334C19.4456 31.5478 19.6567 32.1889 20.1078 32.6967C20.5389 33.1823 21.1023 33.4489 21.6345 33.6045C21.99 33.7078 22.3789 33.7745 22.7789 33.8167V31.58C22.6025 31.5561 22.428 31.5197 22.2567 31.4711C21.9567 31.3823 21.8245 31.2845 21.77 31.2223C21.7345 31.1823 21.6678 31.0923 21.6678 30.8334C21.6678 30.5778 21.7345 30.4889 21.7678 30.45C21.8234 30.3878 21.9545 30.2889 22.2567 30.2011C22.6823 30.0778 23.2312 30.0311 23.89 30.0134V36.1145H20.5567V38.3367H29.4456V36.1145H26.1123V29.9623C27.3367 29.8667 28.3289 29.5978 29.0756 29.1167C30.1256 28.4389 30.5567 27.4311 30.5567 26.3611C30.5655 25.7897 30.4237 25.226 30.1456 24.7267C31.3945 23.9378 32.2867 22.8689 32.6267 21.6567C32.7934 21.0656 32.2823 20.5589 31.6678 20.5589H18.3345ZM27.8712 27.2478C27.5567 27.4511 27.0112 27.6445 26.1123 27.7311V26.0578C26.7798 25.9923 27.439 25.8598 28.08 25.6623C28.2634 25.8367 28.3345 26.0489 28.3345 26.3623C28.3345 26.7734 28.21 27.03 27.8712 27.2478Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.8889 33.8889H45V16.1111H33.8889V5H16.1111V16.1111H5V33.8889H16.1111V45H33.8889V33.8889ZM31.6667 42.7778V31.6667H42.7778V18.3333H31.6667V7.22222H18.3333V18.3333H7.22222V31.6667H18.3333V42.7778H31.6667Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Farmacias</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0071 37.0857C36.8329 37.0857 45 27.5286 45 24.5429C45 21.5421 36.8186 12 25.0071 12C13.3429 11.9993 5 21.5414 5 24.5421C5 27.5279 13.3279 37.0857 25.0071 37.0857ZM25.0071 34.7721C15.3771 34.7721 7.56143 26.605 7.56143 24.5414C7.56143 22.8 15.3771 14.3114 25.0071 14.3114C34.6086 14.3114 42.4386 22.8 42.4386 24.5414C42.4386 26.6057 34.6086 34.7721 25.0071 34.7721ZM25.0071 32.7379C29.5593 32.7379 33.2179 29.0057 33.2179 24.5414C33.2179 19.9607 29.5593 16.3457 25.0071 16.3457C20.4264 16.3457 16.7529 19.96 16.7821 24.5414C16.7964 29.0057 20.4264 32.7379 25.0071 32.7379ZM25.0071 27.2643C23.4857 27.2643 22.2557 26.0343 22.2557 24.5414C22.2557 23.0343 23.485 21.82 25.0071 21.82C26.5143 21.82 27.7443 23.0343 27.7443 24.5414C27.7443 26.0343 26.515 27.2643 25.0071 27.2643Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Ópticas</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.0016 5C26.887 4.9994 30.6398 6.41261 33.5597 8.97588C36.4795 11.5391 38.3669 15.0773 38.8696 18.93L43.3696 26.008C43.6656 26.474 43.6056 27.168 42.9196 27.464L39.0016 29.14V35C39.0016 36.0609 38.5802 37.0783 37.83 37.8284C37.0799 38.5786 36.0625 39 35.0016 39H31.0036L31.0016 45H13.0016V37.612C13.0016 35.252 12.1296 33.018 10.5116 31.002C8.62702 28.6489 7.44557 25.8113 7.1034 22.816C6.76123 19.8207 7.27225 16.7897 8.5776 14.0722C9.88294 11.3547 11.9295 9.06132 14.4814 7.45623C17.0334 5.85114 19.9869 4.9997 23.0016 5ZM23.0016 9C20.7408 8.99991 18.5259 9.63849 16.6121 10.8422C14.6984 12.0459 13.1636 13.7657 12.1846 15.8036C11.2056 17.8415 10.8221 20.1145 11.0785 22.3607C11.3349 24.607 12.2206 26.7351 13.6336 28.5C15.8216 31.228 17.0016 34.334 17.0016 37.612V41H27.0016L27.0056 35H35.0016V26.504L38.1016 25.176L35.0156 20.326L34.9016 19.442C34.5234 16.5536 33.1075 13.9015 30.9179 11.9802C28.7283 10.0589 25.9146 8.99962 23.0016 9ZM21.9416 16.526L23.0016 17.586L24.0616 16.526C24.7216 15.8883 25.6056 15.5354 26.5233 15.5431C27.441 15.5509 28.3189 15.9188 28.968 16.5676C29.6171 17.2164 29.9853 18.0942 29.9935 19.0119C30.0016 19.9296 29.649 20.8138 29.0116 21.474L23.0016 27.486L16.9916 21.474C16.6574 21.1511 16.3908 20.7648 16.2075 20.3378C16.0241 19.9107 15.9277 19.4514 15.9237 18.9867C15.9198 18.522 16.0084 18.0611 16.1845 17.631C16.3606 17.2009 16.6206 16.8102 16.9492 16.4816C17.2779 16.1531 17.6688 15.8932 18.0989 15.7174C18.5291 15.5415 18.99 15.453 19.4547 15.4571C19.9195 15.4613 20.3787 15.5579 20.8057 15.7414C21.2327 15.9249 21.6188 16.1916 21.9416 16.526Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Salud mental</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Opcion 4 (linea+sinDescripcion)-->
+    <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-between banner-container w-90">
+            <div class="mb-4">
+                <h1 class="display-4 fw-bold text-verde-2">Cartilla medica</h1>
+                <p class="fs-4 text-gris-4">Contamos con una gran cantidad de prestadores de excelencia.</p>
+            </div>
+            <div class="text-center d-flex">
+                <img src="../assets/img/banners/cartilla/cartilla.jpeg" alt="Imagen banner" class="img-fluid img-banner rounded">
+            </div>
+        </div>
+    </div>
+    <div class="container w-90 my-5">
+        <div class="row g-5 gx-5 px-5">
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.1667 6.08333C33.1667 5.5308 32.9472 5.00089 32.5565 4.61019C32.1658 4.21949 31.6359 4 31.0833 4H18.5833C18.0308 4 17.5009 4.21949 17.1102 4.61019C16.7195 5.00089 16.5 5.5308 16.5 6.08333V16.5H6.08333C5.5308 16.5 5.00089 16.7195 4.61019 17.1102C4.21949 17.5009 4 18.0308 4 18.5833V31.0833C4 31.6359 4.21949 32.1658 4.61019 32.5565C5.00089 32.9472 5.5308 33.1667 6.08333 33.1667H16.5V43.5833C16.5 44.1359 16.7195 44.6658 17.1102 45.0565C17.5009 45.4472 18.0308 45.6667 18.5833 45.6667H31.0833C31.6359 45.6667 32.1658 45.4472 32.5565 45.0565C32.9472 44.6658 33.1667 44.1359 33.1667 43.5833V33.1667H43.5833C44.1359 33.1667 44.6658 32.9472 45.0565 32.5565C45.4472 32.1658 45.6667 31.6359 45.6667 31.0833V18.5833C45.6667 18.0308 45.4472 17.5009 45.0565 17.1102C44.6658 16.7195 44.1359 16.5 43.5833 16.5H33.1667V6.08333Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3 class="mt-3">Guardias</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.2207 6C36.7855 6 38.2534 6.29081 39.6244 6.87243C40.9954 7.45406 42.1863 8.25725 43.1972 9.28201C44.2081 10.3068 45.0113 11.5046 45.6068 12.8756C46.2023 14.2466 46.5 15.7145 46.5 17.2793C46.5 18.0825 46.4169 18.8788 46.2507 19.6681C46.0846 20.4575 45.8353 21.2191 45.5029 21.9531H35.8854L31.8971 17.7986L25.25 24.4457L15.944 15.1398L9.29692 21.9531H3.99707C4.66471 21.2191 4.41544 20.4575 4.24927 19.6681C4.08309 18.8788 4 18.0825 4 17.2793C4 15.7145 4.29081 14.2466 4.87243 12.8756C5.45406 11.5046 6.25725 10.3137 7.28201 9.30279C8.30678 8.29187 9.50464 7.48868 10.8756 6.89321C12.2466 6.29774 13.7145 6 15.2793 6C16.7888 6 18.229 6.28389 19.6 6.85166C20.9709 7.41944 22.1965 8.23648 23.2766 9.30279L25.25 11.2969L27.2234 9.30279C28.2897 8.23648 29.5083 7.41944 30.8793 6.85166C32.2502 6.28389 33.6974 6 35.2207 6ZM33.2265 24.6119H33.8204L43.5296 24.9443C43.4326 25.0551 43.3288 25.1728 43.218 25.2974L25.25 43.2446L7.28201 25.2974C7.17123 25.1866 7.06737 25.0758 6.97043 24.9651C6.87349 24.8543 6.77656 24.7366 6.67962 24.6119H11.9558L15.944 20.7898L25.25 30.0958L31.8971 23.4487L33.2265 24.6119Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Internaciones</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.25 32V31.0434C22.0224 30.5254 24.5336 29.066 26.3567 26.9085C28.2254 24.697 29.2504 21.8952 29.25 19C29.25 19 29.25 19 29.25 19V9C29.25 7.87283 28.8022 6.79183 28.0052 5.9948C27.2082 5.19777 26.1272 4.75 25 4.75H23C22.4033 4.75 21.831 4.98705 21.409 5.40901C20.9871 5.83097 20.75 6.40326 20.75 7C20.75 7.59674 20.9871 8.16903 21.409 8.59099C21.831 9.01295 22.4033 9.25 23 9.25H24.75V19C24.75 21.0554 23.9335 23.0267 22.4801 24.4801C21.0267 25.9335 19.0554 26.75 17 26.75C14.9446 26.75 12.9733 25.9335 11.5199 24.4801C10.0665 23.0267 9.25 21.0554 9.25 19V9.25H11C11.5967 9.25 12.169 9.01295 12.591 8.59099C13.0129 8.16903 13.25 7.59674 13.25 7C13.25 6.40326 13.0129 5.83097 12.591 5.40901C12.169 4.98705 11.5967 4.75 11 4.75H9C7.87283 4.75 6.79183 5.19777 5.9948 5.9948C5.19777 6.79183 4.75 7.87283 4.75 9L4.75 19C4.75 19 4.75 19 4.75 19C4.74957 21.8952 5.77461 24.697 7.6433 26.9085C9.46644 29.066 11.9776 30.5254 14.75 31.0434V32C14.75 35.5141 16.146 38.8843 18.6308 41.3692C21.1157 43.854 24.4859 45.25 28 45.25C31.5141 45.25 34.8843 43.854 37.3692 41.3692C39.854 38.8843 41.25 35.5141 41.25 32V28.8341C42.5675 28.326 43.676 27.3858 44.3923 26.1649C45.1387 24.8928 45.4113 23.3978 45.162 21.9442C44.9127 20.4905 44.1575 19.1718 43.0299 18.2211C41.9023 17.2704 40.4749 16.749 39 16.749C37.5251 16.749 36.0977 17.2704 34.9701 18.2211C33.8425 19.1718 33.0873 20.4905 32.838 21.9442C32.5887 23.3978 32.8613 24.8928 33.6077 26.1649C34.324 27.3858 35.4325 28.326 36.75 28.8341V32C36.75 34.3206 35.8281 36.5462 34.1872 38.1872C32.5462 39.8281 30.3206 40.75 28 40.75C25.6794 40.75 23.4538 39.8281 21.8128 38.1872C20.1719 36.5462 19.25 34.3206 19.25 32ZM40.2374 24.2374C39.9092 24.5656 39.4641 24.75 39 24.75C38.5359 24.75 38.0907 24.5656 37.7626 24.2374C37.4344 23.9092 37.25 23.4641 37.25 23C37.25 22.5359 37.4344 22.0908 37.7626 21.7626C38.0907 21.4344 38.5359 21.25 39 21.25C39.4641 21.25 39.9092 21.4344 40.2374 21.7626C40.5656 22.0908 40.75 22.5359 40.75 23C40.75 23.4641 40.5656 23.9092 40.2374 24.2374Z" fill="currentColor" stroke="currentColor" stroke-width="0.5"/>
+                    </svg>                        
+                    <h3 class="mt-3">Consultorios Externos</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.5549 16.8337L34.1665 5.44534C34.0254 5.30416 33.858 5.19216 33.6736 5.11575C33.4893 5.03933 33.2917 5 33.0922 5C32.8926 5 32.695 5.03933 32.5107 5.11575C32.3263 5.19216 32.1589 5.30416 32.0179 5.44534L7.48913 29.9741C5.89537 31.5678 5 33.7294 5 35.9834C5 38.2373 5.89537 40.3989 7.48913 41.9926C9.08289 43.5864 11.2445 44.4818 13.4984 44.4818C15.7523 44.4818 17.9139 43.5864 19.5077 41.9926L40.7452 20.7552L44.9608 19.3506C45.2065 19.2689 45.4272 19.1256 45.602 18.9346C45.7768 18.7435 45.8998 18.5109 45.9593 18.2588C46.0189 18.0068 46.013 17.7437 45.9422 17.4946C45.8714 17.2455 45.7381 17.0187 45.5549 16.8356V16.8337ZM39.445 17.9859C39.2212 18.0602 39.0178 18.1856 38.8509 18.3522L31.3402 25.8629C29.7326 26.4133 27.2119 26.6221 23.9245 24.9138C21.9125 23.8623 20.0942 23.3954 18.5036 23.2568L33.0922 8.66636L41.6695 17.2437L39.445 17.9859Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Estudios y laboratorios</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0154 7.05973C15.654 3.13678 6.31478 4.22552 5.149 15.5278C3.97998 26.8646 9.97447 38.8615 13.186 43.455C13.9167 44.4988 15.0987 45 16.3229 45C18.3265 45 20.119 43.6624 20.7977 41.6508L21.9342 38.2947C22.1615 37.6239 22.5777 37.044 23.126 36.6341C23.6743 36.2242 24.328 36.0042 24.998 36.0042C25.668 36.0042 26.3217 36.2242 26.87 36.6341C27.4183 37.044 27.8345 37.6239 28.0618 38.2947L29.1984 41.6508C29.8803 43.6624 31.6728 45 33.6796 45C34.9006 45 36.0826 44.4988 36.81 43.455C40.0248 38.8615 46.0226 26.8646 44.8503 15.5278C43.6845 4.22552 34.3453 3.13678 27.9807 7.05973C25.9836 8.29364 24.019 8.29364 22.0154 7.05973ZM29.7115 12.9321C29.9625 12.8311 30.2299 12.7842 30.4981 12.794C30.7663 12.8037 31.03 12.87 31.274 12.989C31.518 13.108 31.7374 13.2773 31.9195 13.4872C32.1016 13.697 32.2428 13.9432 32.3349 14.2115C32.427 14.4798 32.4682 14.7649 32.4561 15.0502C32.444 15.3356 32.3789 15.6155 32.2645 15.8739C32.15 16.1323 31.9886 16.364 31.7895 16.5555C31.5904 16.7471 31.3576 16.8947 31.1045 16.9898C28.7827 17.8884 26.8181 18.4069 24.8243 18.4C22.8175 18.3965 20.96 17.8643 18.8396 16.9691C18.5918 16.8642 18.3659 16.7084 18.1747 16.5107C17.9834 16.3129 17.8307 16.0769 17.7252 15.8163C17.6196 15.5557 17.5634 15.2755 17.5596 14.9918C17.5558 14.708 17.6045 14.4262 17.703 14.1625C17.8015 13.8988 17.9479 13.6583 18.1337 13.4548C18.3195 13.2513 18.5412 13.0887 18.786 12.9764C19.0309 12.8641 19.2941 12.8042 19.5607 12.8001C19.8273 12.7961 20.092 12.8479 20.3398 12.9528C22.2135 13.7477 23.5384 14.0761 24.834 14.0796C26.1427 14.083 27.591 13.7547 29.7115 12.9321Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Odontología</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1111 33.8889V45H33.8889V33.8889H45V16.1111H33.8889V5H16.1111V16.1111H5V33.8889H16.1111ZM27.7778 16.67H24.8556C24.7521 16.6637 24.6486 16.6816 24.5533 16.7222C23.6256 17.1744 23.0433 17.9733 22.6867 18.92C22.62 19.0948 22.5622 19.2707 22.5133 19.4478H20.2267C20.3178 19.0178 20.4411 18.5733 20.6078 18.1344C21.0989 16.8333 21.9956 15.4978 23.5789 14.7244C23.978 14.5354 24.4151 14.4404 24.8567 14.4467H27.7789C28.0736 14.4467 28.3562 14.5637 28.5646 14.7721C28.7729 14.9805 28.89 15.2631 28.89 15.5578C28.89 15.8525 28.7729 16.1351 28.5646 16.3435C28.3562 16.5518 28.0736 16.6689 27.7789 16.6689M18.3344 20.5578C17.7211 20.5578 17.2089 21.0644 17.3756 21.6556C18.0167 23.9433 20.6267 25.7233 23.89 26.0567V27.7878C23.1178 27.8067 22.3156 27.8689 21.6344 28.0667C21.1033 28.2222 20.54 28.4867 20.1089 28.9711C19.6578 29.4778 19.4456 30.1178 19.4456 30.8322C19.4456 31.5467 19.6567 32.1878 20.1078 32.6956C20.5389 33.1811 21.1022 33.4478 21.6344 33.6033C21.99 33.7067 22.3789 33.7733 22.7789 33.8156V31.5789C22.6025 31.5549 22.428 31.5186 22.2567 31.47C21.9567 31.3811 21.8244 31.2833 21.77 31.2211C21.7344 31.1811 21.6678 31.0911 21.6678 30.8322C21.6678 30.5767 21.7344 30.4878 21.7678 30.4489C21.8233 30.3867 21.9544 30.2878 22.2567 30.2C22.6822 30.0767 23.2311 30.03 23.89 30.0122V36.1133H20.5567V38.3356H29.4456V36.1133H26.1122V29.9611C27.3367 29.8656 28.3289 29.5967 29.0756 29.1156C30.1256 28.4378 30.5567 27.43 30.5567 26.36C30.5655 25.7885 30.4237 25.2248 30.1456 24.7256C31.3944 23.9367 32.2867 22.8678 32.6267 21.6556C32.7933 21.0644 32.2822 20.5578 31.6678 20.5578H18.3344ZM26.1122 27.73C27.0111 27.6433 27.5567 27.45 27.8711 27.2478C28.21 27.0289 28.3344 26.7722 28.3344 26.36C28.3344 26.0478 28.2633 25.8356 28.08 25.66C27.4394 25.8578 26.7805 25.9907 26.1133 26.0567L26.1122 27.73Z" fill="currentColor"/>
+                        </svg>                                               
+                    <h3 class="mt-3">Farmacias</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0089 41.4312C39.7821 41.4312 50 29.4795 50 25.7536C50 22.0098 39.7634 10.0768 25.0089 10.0768C10.3464 10.0768 0 22.0098 0 25.7536C0 29.4795 10.4205 41.4312 25.0089 41.4312ZM25.0089 36.0268C19.2545 36.0268 14.7179 31.3607 14.6813 25.7536C14.6625 20 19.2545 15.4821 25.0089 15.4821C30.7268 15.4821 35.3187 20 35.3187 25.7545C35.3187 31.3616 30.7268 36.0277 25.0089 36.0277M25.0089 29.4616C27.0562 29.4616 28.7536 27.783 28.7536 25.7545C28.7536 23.7071 27.0571 22.0295 25.0089 22.0295C22.9438 22.0295 21.2464 23.708 21.2464 25.7545C21.2464 27.7839 22.9429 29.4616 25.0089 29.4616Z" fill="currentColor"/>
+                    </svg>                        
+                    <h3 class="mt-3">Ópticas</h3>
+                </button>
+            </div>
+            <div class="col-3 d-flex align-items-stretch text-center">
+                <button class="btn shadow p-5 py-5 rounded w-100 border border-verde-2 border-5 btn-bg-shadow-scale text-verde-2">
+                    <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.9169 4.16663C26.9641 4.166 30.8733 5.6381 33.9149 8.30816C36.9564 10.9782 38.9224 14.6638 39.446 18.677L44.1335 26.05C44.4419 26.5354 44.3794 27.2583 43.6648 27.5666L39.5835 29.3125V35.4166C39.5835 36.5217 39.1446 37.5815 38.3632 38.3629C37.5818 39.1443 36.522 39.5833 35.4169 39.5833H31.2523L31.2502 45.8333H12.5002V38.1375C12.5002 35.6791 11.5919 33.352 9.90647 31.252C7.94335 28.8009 6.71267 25.845 6.35624 22.725C5.99981 19.6049 6.53213 16.4476 7.89186 13.6169C9.2516 10.7861 11.3834 8.39716 14.0417 6.7252C16.7 5.05323 19.7765 4.16631 22.9169 4.16663ZM21.8127 16.1729C21.1252 15.5086 20.2044 15.141 19.2484 15.1491C18.2925 15.1572 17.378 15.5404 16.7019 16.2163C16.0258 16.8921 15.6422 17.8064 15.6337 18.7624C15.6252 19.7183 15.9925 20.6393 16.6565 21.327L22.9169 27.5895L29.1773 21.327C29.5254 20.9907 29.8031 20.5883 29.9941 20.1435C30.1851 19.6986 30.2856 19.2202 30.2897 18.7361C30.2938 18.252 30.2014 17.7719 30.018 17.3239C29.8346 16.8759 29.5638 16.4689 29.2214 16.1266C28.879 15.7844 28.4719 15.5138 28.0238 15.3305C27.5757 15.1473 27.0956 15.0552 26.6115 15.0595C26.1275 15.0638 25.6491 15.1644 25.2043 15.3556C24.7595 15.5468 24.3573 15.8246 24.021 16.1729L22.9169 17.277L21.8127 16.1729Z" fill="currentColor"/>
+                    </svg>                     
+                    <h3 class="mt-3">Salud mental</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- Footer container -->
