@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Roboto", serif !important;
 }
@@ -13,8 +12,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: white !important;
-  background: rgb(1, 161, 154);
-  background: linear-gradient(162deg, rgb(1, 161, 154) 8%, rgb(0, 125, 138) 67%, rgb(0, 88, 85) 97%);
 }
 
 .navbar-bot {
@@ -90,14 +87,13 @@ body {
     border-radius: 0px !important;
   }
 }
-/* GUÍA DE TRAMITES */
-.dropdown-item-tramites {
-  color: #00AE97;
-  font-size: 1.25rem;
+/* BOTONES */
+.container-botones-home .card {
+  transition: transform 0.3s ease-in-out;
 }
-
-.dropdown-item-tramites:hover {
-  color: #52c3dd !important;
+.container-botones-home .card:hover {
+  transform: translateY(-5px) scaleY(1.05);
+  cursor: pointer;
 }
 
 /* NOTICIAS */
@@ -237,4 +233,28 @@ body {
   background-color: #00AE97 !important;
   color: #ffffff !important;
   transform: scale(1.02) !important;
+}
+
+.container-institucional {
+  display: flex;
+  justify-content: center;
+}
+.container-institucional div {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container-institucional div .icon-button {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 40px;
+  color: white;
+  transition: 0.3s;
 }/*# sourceMappingURL=styles-juan.css.map */
