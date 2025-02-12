@@ -20,8 +20,6 @@ body{
     font-weight: 400;
     font-size: 16px;
     color: white !important;
-    // background: rgb(1,161,154);
-    // background: linear-gradient(162deg, rgba(1,161,154,1) 8%, rgba(0,125,138,1) 67%, rgba(0,88,85,1) 97%);
 }
 
 .navbar-bot{
@@ -34,6 +32,10 @@ body{
 }
 }
 
+.dropdown-item:active{
+    background-color: #00AE97;
+    color: white !important;
+}
 
 /* Estilos del carousel */
 
@@ -223,17 +225,12 @@ body{
 
 /* Prueba de menu desplegable */
 
-// .nav-item-burger{
-//     position: relative !important;
-//     .dropdown-menu-center {
-//         position: absolute !important;
-//         left: 0 !important;
-//         top: 100% !important;
-//         margin-top: 0 !important;
-//         width: max-content;
-//         min-width: 200px;
-//     }
-// }
+
+.dropdown-menu-center {
+    position: absolute !important;
+}
+
+
 
 
 

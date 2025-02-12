@@ -23,6 +23,11 @@ body {
     gap: 1%;
   }
 }
+.dropdown-item:active {
+  background-color: #00AE97;
+  color: white !important;
+}
+
 /* Estilos del carousel */
 .carouselContainer .carousel-caption {
   height: 100%;
@@ -156,6 +161,10 @@ body {
 }
 
 /* Prueba de menu desplegable */
+.dropdown-menu-center {
+  position: absolute !important;
+}
+
 /* Img banner */
 .banner-container {
   height: 200px !important;
