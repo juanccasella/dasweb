@@ -17,6 +17,9 @@ body {
 .navbar-bot {
   gap: 2%;
 }
+.navbar-bot .dropdown-item:hover {
+  color: #00AE97 !important;
+}
 
 @media (max-width: 1024px) {
   .navbar-bot {
