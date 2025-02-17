@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", serif !important;
+  background-color: #B8B8B8;
 }
 
 .w-90 {
@@ -14,11 +15,14 @@ body {
   color: white !important;
 }
 
-.navbar-bot {
+.navbar-bot,
+.navbar-burger {
   gap: 2%;
 }
-.navbar-bot .dropdown-item:hover {
-  color: #00AE97 !important;
+.navbar-bot .dropdown-item:hover,
+.navbar-burger .dropdown-item:hover {
+  background-color: #00AE97;
+  color: white !important;
 }
 
 @media (max-width: 1024px) {
@@ -26,11 +30,6 @@ body {
     gap: 1%;
   }
 }
-.dropdown-item:active {
-  background-color: #00AE97;
-  color: white !important;
-}
-
 /* Estilos del carousel */
 .carouselContainer .carousel-caption {
   height: 100%;
@@ -155,17 +154,8 @@ body {
 
 /* site map */
 .accordion-button-disable .accordion-button.no-arrow::after {
-  content: none !important; /* Elimina la flecha */
+  content: none !important;
   display: none !important;
-}
-
-.titulo-tramites {
-  padding-left: 5% !important;
-}
-
-/* Prueba de menu desplegable */
-.dropdown-menu-center {
-  position: absolute !important;
 }
 
 /* Img banner */

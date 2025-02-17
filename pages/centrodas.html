@@ -22,254 +22,246 @@
 </head>
 <body>
 
-
-
-<!-- PASAR TODOS LOS "TEXT-VERDE-2" A UNA CLASE DE CSS de los dropdown items -->
-<!-- agregar una pagina de mapa del sitio para cuando la pantalla es chica -->
-
-
 <!-- Header -->
-    <div class="sticky-top">
-        <!-- Header top -->
-        <nav class="navbar d-none d-lg-flex bg-blanco">
-            <div class="container w-90">
-                <div class="row align-items-end w-100 m-0">
-                    <!-- Redes Sociales -->
-                    <div class="col-md-4 d-flex gap-1 p-0">
-                        <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5491136440119&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp">
-                            <img src="../assets/iconos/navbar/logo-wpp.svg" alt="Logo de WhatsApp">
-                        </a>
-                        <a class="nav-link" href="https://www.instagram.com/dascongreso/?hl=es" target="_blank" aria-label="Instagram">
-                            <img src="../assets/iconos/navbar/logo-ig.svg" alt="Logo de Instagram">
-                        </a>
-                        <a class="nav-link" href="https://www.facebook.com/dascongreso/?locale=es_LA" target="_blank" aria-label="Facebook">
-                            <img src="../assets/iconos/navbar/logo-fb.svg" alt="Logo de Facebook">
-                        </a>
-                        <a class="nav-link" href="#" target="_blank" aria-label="YouTube">
-                            <img src="../assets/iconos/navbar/logo-yt.svg" alt="Logo de YouTube">
-                        </a>
-                    </div>
-                    <!-- Logo DAS -->
-                    <div class="col-md-4 d-flex justify-content-center p-0">
-                        <a class="navbar-brand" href="../index.html">
-                            <img src="../assets/iconos/navbar/logo-das.svg" alt="Logo DAS">
-                        </a>
-                    </div>
-                    <!-- Botón Autogestión -->
-                    <div class="col-md-4 d-flex justify-content-end p-0">
-                        <button class="btn btn-autogestion " type="button">Autogestión</button>
-                    </div>
+<div class="sticky-top">
+    <!-- Header top -->
+    <nav class="navbar d-none d-lg-flex bg-blanco">
+        <div class="container w-90">
+            <div class="row align-items-end w-100 m-0">
+                <!-- Redes Sociales -->
+                <div class="col-md-4 d-flex gap-1 p-0">
+                    <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5491136440119&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp">
+                        <img src="../assets/iconos/navbar/logo-wpp.svg" alt="Logo de WhatsApp">
+                    </a>
+                    <a class="nav-link" href="https://www.instagram.com/dascongreso/?hl=es" target="_blank" aria-label="Instagram">
+                        <img src="../assets/iconos/navbar/logo-ig.svg" alt="Logo de Instagram">
+                    </a>
+                    <a class="nav-link" href="https://www.facebook.com/dascongreso/?locale=es_LA" target="_blank" aria-label="Facebook">
+                        <img src="../assets/iconos/navbar/logo-fb.svg" alt="Logo de Facebook">
+                    </a>
+                    <a class="nav-link" href="https://www.youtube.com/@Das.congreso" target="_blank" aria-label="YouTube">
+                        <img src="../assets/iconos/navbar/logo-yt.svg" alt="Logo de YouTube">
+                    </a>
                 </div>
-            </div>
-        </nav>
-    
-        
-        <!-- Header Bottom -->
-        <ul class="nav navbar-bot d-none d-lg-flex justify-content-center bg-verde-2">
-            <li class="nav-item">
-                <a class="nav-link text-blanco active" aria-current="page" href="../index.html">INICIO</a>    
-            </li>
-            <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="cartilla.html" aria-current="page">CARTILLA</a>
-                <a class="nav-link text-blanco dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                <ul class="dropdown-menu dropdown-menu-center">
-                    <li><a class="dropdown-item text-verde-2" href="#">GUARDIAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">INTERNACIONES</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">CONSULTORIOS EXTERNOS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">ESTUDIOS Y LABORATORIOS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">ONDONTOLOGÍA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">FARMACIAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">ÓPTICAS</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="centrodas.html" aria-current="page">CENTRO DAS</a>
-                <a class="nav-link text-blanco dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                <ul class="dropdown-menu dropdown-menu-center">
-                    <li><a class="dropdown-item text-verde-2" href="#">ONDONTOLOGÍA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">SALUD MENTAL</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">COBERTURA MEDICACIÓN</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">VACUNATORIO</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">OTRAS COBERTURAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">SOLICITUD DE RECETAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">AFILIACIONES</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="programas.html" aria-current="page">PROGRAMAS</a>
-                <a class="nav-link text-blanco dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                <ul class="dropdown-menu dropdown-menu-center">
-                    <li><a class="dropdown-item text-verde-2" href="#">CHEQUEO ANUAL GINECOLOGICO</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">CHEQUEO ANUAL DE SALUD</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">PROGRAMA DISCAPACIDAD</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">PROGRAMA DIABETES</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">PLAN MATERNO INFANTIL</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">ODONTOPEDIATRÍA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">INGRESO ESCOLAR</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">ADULTOS MAYORES</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown d-flex">
-                <a class="nav-link text-blanco pe-0" href="institucional.html" aria-current="page">INSTITUCIONAL</a>
-                <a class="nav-link text-blanco dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                <ul class="dropdown-menu dropdown-menu-center">
-                    <li><a class="dropdown-item text-verde-2" href="#">HISTORIA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">COMISIÓN ADMINISTRADORA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">LICITACIONES Y COMPRAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">GESTIÓN DE CALIDAD</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">NOTICIAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-verde-2" href="#">CONTACTO</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-blanco" href="formularios.html">FORMULARIOS</a>
-            </li>
-        </ul>
-    </div>
-
-
-<!-- Menu hamburgesa Small -->
-    <nav class="navbar d-lg-none">
-        <div class="container-fluid">
-            <a href="../index.html">
-                <img class="logosm" src="../assets/iconos/navbar/logo-das.svg" alt="">					  
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                    </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        CARTILLA
+                <!-- Logo DAS -->
+                <div class="col-md-4 d-flex justify-content-center p-0">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/iconos/navbar/logo-das.svg" alt="Logo DAS">
                     </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">GUARDIAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">INTERNACIONES</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">CONSULTORIOS EXTERNOS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">ESTUDIOS Y LABORATORIOS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">ONDONTOLOGÍA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">FARMACIAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">ÓPTICAS</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        SEDE ALSINA
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">ONDONTOLOGÍA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">SALUD MENTAL</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">COBERTURA MEDICACIÓN</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">VACUNATORIO</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">OTRAS COBERTURAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">SOLICITUD DE RECETAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">AFILIACIONES</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PROGRAMAS
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">CHEQUEO ANUAL GINECOLOGICO</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">CHEQUEO ANUAL DE SALUD</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">PROGRAMA DISCAPACIDAD</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">PROGRAMA DIABETES</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">PLAN MATERNO INFANTIL</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">ODONTOPEDIATRÍA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">INGRESO ESCOLAR</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">ADULTOS MAYORES</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        INSTITUCIONAL
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">HISTORIA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">COMISIÓN ADMINISTRADORA</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">LICITACIONES Y COMPRAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">GESTIÓN DE CALIDAD</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">NOTICIAS</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">CONTACTO</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">AUTOGESTIÓN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">GUÍA DE TRÁMITES</a>
-                </li>
-                <li class="nav-item d-flex">
-                    <a class="nav-link" href="#"><img src="../assets/iconos/navbar/logo-wpp.svg" alt="wpp"></a>
-                    <a class="nav-link" href="#"><img src="../assets/iconos/navbar/logo-ig.svg" alt="instagram"></a>
-                    <a class="nav-link" href="#"><img src="../assets/iconos/navbar/logo-fb.svg" alt="facebook"></a>
-                    <a class="nav-link" href="#"><img src="../assets/iconos/navbar/logo-yt.svg" alt="youtube"></a>
-                </li>
-                </ul>
+                </div>
+                <!-- Botón Autogestión -->
+                <div class="col-md-4 d-flex justify-content-end p-0">
+                    <a href="https://portal.das.gob.ar/?_gl=1*111ak1i*_ga*NDY4NjA2NTMuMTcyMjk2MzYyOQ..*_ga_Z0KDWFJYX4*MTczOTcyOTE0NC4zNi4wLjE3Mzk3MjkxNDQuMC4wLjA." target="_blank" class="btn btn-autogestion bg-naranja-3">AUTOGESTION</a>
+                </div>
             </div>
         </div>
     </nav>
+    <!-- Header Bottom -->
+    <ul class="nav navbar-bot d-none d-lg-flex justify-content-center align-items-center bg-verde-2">
+        <li class="nav-item">
+            <a href="../index.html" class="btn btn-verde-2 text-decoration-none text-blanco">INICIO</a> 
+        </li>
+        <li class="nav-item">
+            <div class="btn border-0">
+                <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    CARTILLA
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-gris-2 my-2" href="./cartilla/cartilla-guardias-modal.html">GUARDIAS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">INTERNACIONES</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">CONSULTORIOS EXTERNOS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">ESTUDIOS Y LABORATORIOS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">ODONTOLOGIA</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">FARMACIAS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">OPTICAS</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-verde-2" href="cartilla.html">VER TODOS</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="btn border-0">
+                <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    CENTRO DAS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">ONDONTOLOGÍA</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">SALUD MENTAL</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">COBERTURA MEDICACIÓN</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">VACUNATORIO</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">OTRAS COBERTURAS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">SOLICITUD DE RECETAS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">AFILIACIONES</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-verde-2" href="centrodas.html">VER TODOS</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="btn border-0">
+                <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    PROGRAMAS
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">CHEQUEO ANUAL GINECOLOGICO</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">CHEQUEO ANUAL DE SALUD</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">PROGRAMA DISCAPACIDAD</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">PROGRAMA DIABETES</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">PLAN MATERNO INFANTIL</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">ODONTOPEDIATRÍA</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">INGRESO ESCOLAR</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">ADULTOS MAYORES</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-verde-2" href="programas.html">VER TODOS</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="btn border-0">
+                <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    INSTITUCIONAL
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">HISTORIA</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">COMISIÓN ADMINISTRADORA</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">LICITACIONES Y COMPRAS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">GESTIÓN DE CALIDAD</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">NOTICIAS</a></li>
+                    <li><a class="dropdown-item text-gris-2 my-2" href="#">CONTACTO</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-verde-2" href="institucional.html">VER TODOS</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="formularios.html" class="btn btn-verde-2 text-decoration-none text-blanco">FORMULARIOS</a>   
+        </li>
+    </ul>
+</div>
 
-<!-- Cartilla medica  -->
+
+<!-- Menu hamburgesa Small -->
+<nav class="navbar d-lg-none">
+    <div class="container-fluid">
+        <a href="../index.html">
+            <img class="logosm" src="../assets/iconos/navbar/logo-das.svg" alt="logo-das">					  
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-burger me-auto mb-2">
+                <li class="nav-item">
+                    <a class="nav-link mt-2 p-0 text-verde-2" href="../index.html">INICIO</a>
+                </li>
+                <li><hr></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        CARTILLA
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2" href="./cartilla/cartilla-guardias-modal.html">GUARDIAS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">INTERNACIONES</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">CONSULTORIOS EXTERNOS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">ESTUDIOS Y LABORATORIOS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">ODONTOLOGÍA</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">FARMACIAS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">ÓPTICAS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="cartilla.html">VER TODOS</a></li>
+                    </ul>
+                </li>
+                <li><hr></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        CENTRO DAS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2" href="#">ONDONTOLOGÍA</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">SALUD MENTAL</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">COBERTURA MEDICACIÓN</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">VACUNATORIO</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">OTRAS COBERTURAS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">SOLICITUD DE RECETAS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">AFILIACIONES</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="centrodas.html">VER TODOS</a></li>
+                    </ul>
+                </li>
+                <li><hr></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PROGRAMAS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2" href="#">CHEQUEO ANUAL GINECOLOGICO</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">CHEQUEO ANUAL DE SALUD</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">PROGRAMA DISCAPACIDAD</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">PROGRAMA DIABETES</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">PLAN MATERNO INFANTIL</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">ODONTOPEDIATRÍA</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">INGRESO ESCOLAR</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">ADULTOS MAYORES</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="programas.html">VER TODOS</a></li>
+                    </ul>
+                </li>
+                <li><hr></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        INSTITUCIONAL
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2" href="#">HISTORIA</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">COMISIÓN ADMINISTRADORA</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">LICITACIONES Y COMPRAS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">GESTIÓN DE CALIDAD</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">NOTICIAS</a></li>
+                        <li><a class="dropdown-item text-gris-2" href="#">CONTACTO</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="institucional.html">VER TODOS</a></li>
+                    </ul>
+                </li>
+                <li><hr></li>
+                <li class="nav-item">
+                    <a class="nav-link mt-2 p-0 text-verde-2" href="https://portal.das.gob.ar/?_gl=1*111ak1i*_ga*NDY4NjA2NTMuMTcyMjk2MzYyOQ..*_ga_Z0KDWFJYX4*MTczOTcyOTE0NC4zNi4wLjE3Mzk3MjkxNDQuMC4wLjA." target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        AUTOGESTION
+                    </a>  
+                </li>
+                <li><hr></li>
+                <li class="nav-item">
+                    <a class="nav-link mt-2 p-0 text-verde-2" href="formularios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        FORMULARIOS
+                    </a>
+                </li>
+                <li><hr></li>
+                <li class="nav-item d-flex">
+                    <button type="button" class="btn my-1">
+                        <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5491136440119&text&type=phone_number&app_absent=0" target="_blank"><img src="../assets/iconos/navbar/logo-wpp.svg" alt="wpp"></a>
+                    </button>  
+                    <button type="button" class="btn my-1">
+                        <a class="nav-link" href="https://www.instagram.com/dascongreso/?hl=es" target="_blank"><img src="../assets/iconos/navbar/logo-ig.svg" alt="instagram"></a>
+                    </button> 
+                    <button type="button" class="btn my-1">
+                        <a class="nav-link" href="https://www.facebook.com/dascongreso/?locale=es_LA" target="_blank"><img src="../assets/iconos/navbar/logo-fb.svg" alt="facebook"></a>
+                    </button> 
+                    <button type="button" class="btn my-1">
+                        <a class="nav-link" href="https://www.youtube.com/@Das.congreso" target="_blank"><img src="../assets/iconos/navbar/logo-yt.svg" alt="youtube"></a>
+                    </button> 
+                </li>
+                <li><hr></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Centro DAS  -->
 
     <div class="container-fluid d-print-none">
-        <div class="container d-flex align-items-center justify-content-between banner-container w-90">
+        <div class="container d-flex align-items-center justify-content-between banner-container w-90 mt-4">
             <div class="mb-4">
                 <h1 class="display-4 fw-bold text-verde-2">Centro DAS</h1>
-                <p class="fs-4 text-gris-4">Contamos con una gran cantidad de prestadores de excelencia.</p>
+                <p class="fs-4 text-gris-4">Conocé todos los servicios brindados en nuestra sede Alsina.</p>
             </div>
             <div class="text-center d-flex">
                 <img src="../assets/img/banners/cartilla/cartilla.jpeg" alt="Imagen banner" class="img-fluid img-banner rounded">
@@ -279,72 +271,75 @@
     <div class="container w-90 my-5">
         <div class="row g-4 gx-5 gy-5">
             <div class="col-3 d-flex align-items-stretch text-center px-5">
-                <a href="./cartilla-guardias-modal.html" class="btn shadow px-3 py-5 rounded w-100 bg-azulV-2 btn-scale-shadow text-blanco">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M33 7C33 6.46957 32.7893 5.96086 32.4142 5.58579C32.0391 5.21071 31.5304 5 31 5H19C18.4696 5 17.9609 5.21071 17.5858 5.58579C17.2107 5.96086 17 6.46957 17 7V17H7C6.46957 17 5.96086 17.2107 5.58579 17.5858C5.21071 17.9609 5 18.4696 5 19V31C5 31.5304 5.21071 32.0391 5.58579 32.4142C5.96086 32.7893 6.46957 33 7 33H17V43C17 43.5304 17.2107 44.0391 17.5858 44.4142C17.9609 44.7893 18.4696 45 19 45H31C31.5304 45 32.0391 44.7893 32.4142 44.4142C32.7893 44.0391 33 43.5304 33 43V33H43C43.5304 33 44.0391 32.7893 44.4142 32.4142C44.7893 32.0391 45 31.5304 45 31V19C45 18.4696 44.7893 17.9609 44.4142 17.5858C44.0391 17.2107 43.5304 17 43 17H33V7Z" fill="white" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                        
+                <a href="./centro-das/odontologia.html" class="btn shadow px-3 py-5 rounded w-100 bg-azul-2 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5154 7.05973C16.154 3.13678 6.81478 4.22552 5.649 15.5278C4.47998 26.8646 10.4745 38.8615 13.686 43.455C14.4167 44.4988 15.5987 45 16.8229 45C18.8265 45 20.619 43.6624 21.2977 41.6508L22.4342 38.2947C22.6615 37.6239 23.0777 37.044 23.626 36.6341C24.1743 36.2242 24.828 36.0042 25.498 36.0042C26.168 36.0042 26.8217 36.2242 27.37 36.6341C27.9183 37.044 28.3345 37.6239 28.5618 38.2947L29.6984 41.6508C30.3803 43.6624 32.1728 45 34.1796 45C35.4006 45 36.5826 44.4988 37.31 43.455C40.5248 38.8615 46.5226 26.8646 45.3503 15.5278C44.1845 4.22552 34.8453 3.13678 28.4807 7.05973C26.4836 8.29364 24.519 8.29364 22.5154 7.05973ZM30.2115 12.9321C30.4625 12.8311 30.7299 12.7842 30.9981 12.794C31.2663 12.8037 31.5301 12.87 31.774 12.989C32.018 13.108 32.2374 13.2773 32.4195 13.4872C32.6016 13.697 32.7428 13.9432 32.8349 14.2115C32.927 14.4798 32.9682 14.7649 32.9561 15.0502C32.944 15.3356 32.8789 15.6155 32.7645 15.8739C32.65 16.1323 32.4886 16.364 32.2895 16.5555C32.0904 16.7471 31.8576 16.8947 31.6045 16.9898C29.2827 17.8884 27.3181 18.4069 25.3243 18.4C23.3175 18.3965 21.46 17.8643 19.3396 16.9691C19.0918 16.8642 18.8659 16.7084 18.6747 16.5107C18.4834 16.3129 18.3307 16.0769 18.2252 15.8163C18.1196 15.5557 18.0634 15.2755 18.0596 14.9918C18.0558 14.708 18.1045 14.4262 18.203 14.1625C18.3015 13.8988 18.4479 13.6583 18.6337 13.4548C18.8195 13.2513 19.0412 13.0887 19.286 12.9764C19.5309 12.8641 19.7941 12.8042 20.0607 12.8001C20.3273 12.7961 20.592 12.8479 20.8398 12.9528C22.7135 13.7477 24.0384 14.0761 25.334 14.0796C26.6427 14.083 28.091 13.7547 30.2115 12.9321Z" fill="white"/>
+                    </svg>                       
                     <h4 class="mt-2">Odontología</h4>
                     <p class="mb-0 ">Instituciones a las que podrás concurrir sin turno previo en casos de urgencias</p>
                 </a>
             </div>
             <div class="col-3 d-flex align-items-stretch text-center px-5">
-                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M35.2207 6C36.7855 6 38.2534 6.29081 39.6244 6.87243C40.9954 7.45406 42.1863 8.25725 43.1972 9.28201C44.2081 10.3068 45.0113 11.5046 45.6068 12.8756C46.2023 14.2466 46.5 15.7145 46.5 17.2793C46.5 18.0825 46.4169 18.8788 46.2507 19.6681C46.0846 20.4575 45.8353 21.2191 45.5029 21.9531H35.8854L31.8971 17.7986L25.25 24.4457L15.944 15.1398L9.29692 21.9531H4.99707C4.66471 21.2191 4.41544 20.4575 4.24927 19.6681C4.08309 18.8788 4 18.0825 4 17.2793C4 15.7145 4.29081 14.2466 4.87243 12.8756C5.45406 11.5046 6.25725 10.3137 7.28201 9.30279C8.30678 8.29187 9.50464 7.48868 10.8756 6.89321C12.2466 6.29774 13.7145 6 15.2793 6C16.7888 6 18.229 6.28389 19.6 6.85166C20.9709 7.41944 22.1965 8.23648 23.2766 9.30279L25.25 11.2969L27.2234 9.30279C28.2897 8.23648 29.5083 7.41944 30.8793 6.85166C32.2502 6.28389 33.6974 6 35.2207 6ZM33.2265 24.6119H43.8204L43.5296 24.9443C43.4326 25.0551 43.3288 25.1728 43.218 25.2974L25.25 43.2446L7.28201 25.2974C7.17123 25.1866 7.06737 25.0758 6.97043 24.9651C6.87349 24.8543 6.77656 24.7366 6.67962 24.6119H11.9558L15.944 20.7898L25.25 30.0958L31.8971 23.4487L33.2265 24.6119Z" fill="white"/>
+                <a href="./centro-das/salud-mental.html" class="btn shadow px-3 py-5 rounded w-100 bg-rosa-4 btn-scale-shadow text-blanco">
+                    <svg width="50" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.5016 5C27.387 4.9994 31.1398 6.41261 34.0597 8.97588C36.9795 11.5391 38.8669 15.0773 39.3696 18.93L43.8696 26.008C44.1656 26.474 44.1056 27.168 43.4196 27.464L39.5016 29.14V35C39.5016 36.0609 39.0802 37.0783 38.33 37.8284C37.5799 38.5786 36.5625 39 35.5016 39H31.5036L31.5016 45H13.5016V37.612C13.5016 35.252 12.6296 33.018 11.0116 31.002C9.12702 28.6489 7.94557 25.8113 7.6034 22.816C7.26123 19.8207 7.77225 16.7897 9.0776 14.0722C10.3829 11.3547 12.4295 9.06132 14.9814 7.45623C17.5334 5.85114 20.4869 4.9997 23.5016 5ZM22.4416 16.526C21.7816 15.8883 20.8976 15.5354 19.9799 15.5431C19.0622 15.5509 18.1843 15.9188 17.5352 16.5676C16.8862 17.2164 16.5179 18.0942 16.5098 19.0119C16.5016 19.9296 16.8542 20.8138 17.4916 21.474L23.5016 27.486L29.5116 21.474C29.8458 21.1511 30.1124 20.7648 30.2957 20.3378C30.4791 19.9107 30.5755 19.4514 30.5795 18.9867C30.5834 18.522 30.4948 18.0611 30.3187 17.631C30.1426 17.2009 29.8827 16.8102 29.554 16.4816C29.2253 16.1531 28.8345 15.8932 28.4043 15.7174C27.9741 15.5415 27.5132 15.453 27.0485 15.4571C26.5838 15.4613 26.1245 15.5579 25.6975 15.7414C25.2706 15.9249 24.8844 16.1916 24.5616 16.526L23.5016 17.586L22.4416 16.526Z" fill="white"/>
                     </svg>                        
                     <h4 class="mt-2">Salud mental</h4>
                     <p class="mb-0">Clínicas y sanatorios convenidos para internaciones programadas.</p>
-                </button>
-
+                </a>
             </div>
             <div class="col-3 d-flex align-items-stretch text-center px-5">
-                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.25 32V31.0434C22.0224 30.5254 24.5336 29.066 26.3567 26.9085C28.2254 24.697 29.2504 21.8952 29.25 19C29.25 19 29.25 19 29.25 19V9C29.25 7.87283 28.8022 6.79183 28.0052 5.9948C27.2082 5.19777 26.1272 4.75 25 4.75H23C22.4033 4.75 21.831 4.98705 21.409 5.40901C20.9871 5.83097 20.75 6.40326 20.75 7C20.75 7.59674 20.9871 8.16903 21.409 8.59099C21.831 9.01295 22.4033 9.25 23 9.25H24.75V19C24.75 21.0554 23.9335 23.0267 22.4801 24.4801C21.0267 25.9335 19.0554 26.75 17 26.75C14.9446 26.75 12.9733 25.9335 11.5199 24.4801C10.0665 23.0267 9.25 21.0554 9.25 19V9.25H11C11.5967 9.25 12.169 9.01295 12.591 8.59099C13.0129 8.16903 13.25 7.59674 13.25 7C13.25 6.40326 13.0129 5.83097 12.591 5.40901C12.169 4.98705 11.5967 4.75 11 4.75H9C7.87283 4.75 6.79183 5.19777 5.9948 5.9948C5.19777 6.79183 4.75 7.87283 4.75 9L4.75 19C4.75 19 4.75 19 4.75 19C4.74957 21.8952 5.77461 24.697 7.6433 26.9085C9.46644 29.066 11.9776 30.5254 14.75 31.0434V32C14.75 35.5141 16.146 38.8843 18.6308 41.3692C21.1157 43.854 24.4859 45.25 28 45.25C31.5141 45.25 34.8843 43.854 37.3692 41.3692C39.854 38.8843 41.25 35.5141 41.25 32V28.8341C42.5675 28.326 43.676 27.3858 44.3923 26.1649C45.1387 24.8928 45.4113 23.3978 45.162 21.9442C44.9127 20.4905 44.1575 19.1718 43.0299 18.2211C41.9023 17.2704 40.4749 16.749 39 16.749C37.5251 16.749 36.0977 17.2704 34.9701 18.2211C33.8425 19.1718 33.0873 20.4905 32.838 21.9442C32.5887 23.3978 32.8613 24.8928 33.6077 26.1649C34.324 27.3858 35.4325 28.326 36.75 28.8341V32C36.75 34.3206 35.8281 36.5462 34.1872 38.1872C32.5462 39.8281 30.3206 40.75 28 40.75C25.6794 40.75 23.4538 39.8281 21.8128 38.1872C20.1719 36.5462 19.25 34.3206 19.25 32ZM40.2374 24.2374C39.9092 24.5656 39.4641 24.75 39 24.75C38.5359 24.75 38.0907 24.5656 37.7626 24.2374C37.4344 23.9092 37.25 23.4641 37.25 23C37.25 22.5359 37.4344 22.0908 37.7626 21.7626C38.0907 21.4344 38.5359 21.25 39 21.25C39.4641 21.25 39.9092 21.4344 40.2374 21.7626C40.5656 22.0908 40.75 22.5359 40.75 23C40.75 23.4641 40.5656 23.9092 40.2374 24.2374Z" fill="white" stroke="white" stroke-width="0.5"/>
-                    </svg>                        
+                <a href="./centro-das/cobertura-medicacion.html" class="btn shadow px-3 py-5 rounded w-100 bg-violeta-4 btn-scale-shadow text-blanco">
+                    <svg width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.5804 26.4599C26.6157 28.271 16.7004 38.8799 13.4604 38.8799C9.68043 38.8799 7.40627 38.4978 5.5168 36.6084C3.62733 34.7189 2.54184 32.1719 2.4875 29.5003C2.43315 26.8288 3.41415 24.2397 5.22521 22.275L22.7752 4.72496C24.74 2.9139 27.329 1.9329 30.0006 1.98725C32.6721 2.0416 35.2191 3.12709 37.1086 5.01655C38.9981 6.90602 39.3804 9.71992 38.8404 12.4199C37.7604 17.8199 30.3915 24.4952 28.5804 26.4599ZM13.998 13.4977L28.5804 26.4599Z" fill="#D9D9D9"/>
+                        <path d="M28.5804 26.4599C26.6157 28.271 16.7004 38.8799 13.4604 38.8799C9.68043 38.8799 7.40627 38.4978 5.5168 36.6084C3.62733 34.7189 2.54184 32.1719 2.4875 29.5003C2.43315 26.8288 3.41415 24.2397 5.22521 22.275L22.7752 4.72496C24.74 2.9139 27.329 1.9329 30.0006 1.98725C32.6721 2.0416 35.2191 3.12709 37.1086 5.01655C38.9981 6.90602 39.3804 9.71992 38.8404 12.4199C37.7604 17.8199 30.3915 24.4952 28.5804 26.4599ZM28.5804 26.4599L13.998 13.4977" stroke="#604476" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M48.0205 32.1975C48.0277 36.127 46.6936 39.9413 44.2389 43.0097C41.7842 46.0781 38.3558 48.2169 34.5205 49.0725C30.6853 48.2169 27.2569 46.0781 24.8022 43.0097C22.3474 39.9413 21.0134 36.127 21.0205 32.1975V27.135C21.0205 26.2399 21.3761 25.3815 22.0091 24.7485C22.642 24.1156 23.5004 23.76 24.3955 23.76H44.6455C45.5406 23.76 46.3991 24.1156 47.032 24.7485C47.665 25.3815 48.0205 26.2399 48.0205 27.135V32.1975ZM34.5205 30.51V40.635ZM29.458 35.5725H39.583Z" fill="#D9D9D9"/>
+                        <path d="M34.5205 30.51V40.635M29.458 35.5725H39.583M48.0205 32.1975C48.0277 36.127 46.6936 39.9413 44.2389 43.0097C41.7842 46.0781 38.3558 48.2169 34.5205 49.0725C30.6853 48.2169 27.2569 46.0781 24.8022 43.0097C22.3474 39.9413 21.0134 36.127 21.0205 32.1975V27.135C21.0205 26.2399 21.3761 25.3815 22.0091 24.7485C22.642 24.1156 23.5004 23.76 24.3955 23.76H44.6455C45.5406 23.76 46.3991 24.1156 47.032 24.7485C47.665 25.3815 48.0205 26.2399 48.0205 27.135V32.1975Z" stroke="#604476" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                       
                     <h4 class="mt-2">Cobertura medicación</h4>
                     <p class="mb-0">Especialidades y prestadores para atención ambulatoria con turno previo.</p>
-                </button>
+                </a>
             </div>
             <div class="col-3 d-flex align-items-stretch text-center px-5">
-                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                <a href="./centro-das/vacunatorio.html" class="btn shadow px-3 py-5 rounded w-100 bg-verde-4 btn-scale-shadow text-blanco">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M45.5549 16.8337L34.1665 5.44534C34.0254 5.30416 33.858 5.19216 33.6736 5.11575C33.4893 5.03933 33.2917 5 33.0922 5C32.8926 5 32.695 5.03933 32.5107 5.11575C32.3263 5.19216 32.1589 5.30416 32.0179 5.44534L7.48913 29.9741C5.89537 31.5678 5 33.7294 5 35.9834C5 38.2373 5.89537 40.3989 7.48913 41.9926C9.08289 43.5864 11.2445 44.4818 13.4984 44.4818C15.7523 44.4818 17.9139 43.5864 19.5077 41.9926L40.7452 20.7552L44.9608 19.3506C45.2065 19.2689 45.4272 19.1256 45.602 18.9346C45.7768 18.7435 45.8998 18.5109 45.9593 18.2588C46.0189 18.0068 46.013 17.7437 45.9422 17.4946C45.8714 17.2455 45.7381 17.0187 45.5549 16.8356V16.8337ZM39.445 17.9859C39.2212 18.0602 39.0178 18.1856 38.8509 18.3522L31.3402 25.8629C29.7326 26.4133 27.2119 26.6221 23.9245 24.9138C21.9125 23.8623 20.0942 23.3954 18.5036 23.2568L33.0922 8.66636L41.6695 17.2437L39.445 17.9859Z" fill="white"/>
-                    </svg>                        
+                        <path d="M39.1667 9L47.5 17.3333ZM43.3333 13.1667L33.9583 22.5417ZM27.7083 16.2917L40.2083 28.7917ZM38.125 26.7083L24.5833 40.25H16.25V31.9167L29.7917 18.375M19.375 28.7917L22.5 31.9167ZM10 46.5L16.25 40.25Z" fill="#D9D9D9"/>
+                        <path d="M39.1667 9L47.5 17.3333M43.3333 13.1667L33.9583 22.5417M27.7083 16.2917L40.2083 28.7917M38.125 26.7083L24.5833 40.25H16.25M16.25 40.25V31.9167L29.7917 18.375M16.25 40.25L10 46.5M19.375 28.7917L22.5 31.9167M25.625 22.5417L29.25 26.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23.9808 23L29 27.9444M20.5 26.5L24.8462 31" stroke="#215E6A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
                     <h4 class="mt-2">Vacunatorio</h4>
                     <p class="mb-0">Instituciones cercanas a tu domicilio donde podrás realizar prácticas y estudios.</p>
-                </button>
+                </a>
             </div>
             <div class="col-3 d-flex align-items-stretch text-center px-5">
-                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0154 7.05973C15.654 3.13678 6.31478 4.22552 5.149 15.5278C3.97998 26.8646 9.97447 38.8615 13.186 43.455C13.9167 44.4988 15.0987 45 16.3229 45C18.3265 45 20.119 43.6624 20.7977 41.6508L21.9342 38.2947C22.1615 37.6239 22.5777 37.044 23.126 36.6341C23.6743 36.2242 24.328 36.0042 24.998 36.0042C25.668 36.0042 26.3217 36.2242 26.87 36.6341C27.4183 37.044 27.8345 37.6239 28.0618 38.2947L29.1984 41.6508C29.8803 43.6624 31.6728 45 33.6796 45C34.9006 45 36.0826 44.4988 36.81 43.455C40.0248 38.8615 46.0226 26.8646 44.8503 15.5278C43.6845 4.22552 34.3453 3.13678 27.9807 7.05973C25.9836 8.29364 24.019 8.29364 22.0154 7.05973ZM29.7115 12.9321C29.9625 12.8311 30.2299 12.7842 30.4981 12.794C30.7663 12.8037 31.0301 12.87 31.274 12.989C31.518 13.108 31.7374 13.2773 31.9195 13.4872C32.1016 13.697 32.2428 13.9432 32.3349 14.2115C32.427 14.4798 32.4682 14.7649 32.4561 15.0502C32.444 15.3356 32.3789 15.6155 32.2645 15.8739C32.15 16.1323 31.9886 16.364 31.7895 16.5555C31.5904 16.7471 31.3576 16.8947 31.1045 16.9898C28.7827 17.8884 26.8181 18.4069 24.8243 18.4C22.8175 18.3965 20.96 17.8643 18.8396 16.9691C18.5918 16.8642 18.3659 16.7084 18.1747 16.5107C17.9834 16.3129 17.8307 16.0769 17.7252 15.8163C17.6196 15.5557 17.5634 15.2755 17.5596 14.9918C17.5558 14.708 17.6045 14.4262 17.703 14.1625C17.8015 13.8988 17.9479 13.6583 18.1337 13.4548C18.3195 13.2513 18.5412 13.0887 18.786 12.9764C19.0309 12.8641 19.2941 12.8042 19.5607 12.8001C19.8273 12.7961 20.092 12.8479 20.3398 12.9528C22.2135 13.7477 23.5384 14.0761 24.834 14.0796C26.1427 14.083 27.591 13.7547 29.7115 12.9321Z" fill="white"/>
-                    </svg>                        
+                <a href="./centro-das/otras-coberturas.html" class="btn shadow px-3 py-5 rounded w-100 bg-azul-4 btn-scale-shadow text-blanco">
+                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.9625 4.57296L41.5458 10.0417C42.3402 10.3395 43.0248 10.8727 43.508 11.57C43.9912 12.2672 44.2501 13.0954 44.25 13.9438V25.1167C44.2501 28.5989 43.2805 32.0122 41.4499 34.9743C39.6192 37.9364 36.9999 40.3303 33.8854 41.8876L26.8979 45.3792C26.4639 45.5963 25.9853 45.7093 25.5 45.7093C25.0147 45.7093 24.5361 45.5963 24.1021 45.3792L17.1146 41.8855C14.0001 40.3282 11.3808 37.9344 9.55014 34.9722C7.71952 32.0101 6.74993 28.5968 6.75 25.1146V13.9459C6.74947 13.0972 7.00814 12.2685 7.49139 11.5708C7.97465 10.8731 8.65944 10.3396 9.45417 10.0417L24.0375 4.57296C24.9805 4.21949 26.0195 4.21949 26.9625 4.57296ZM25.5 16.6667C24.9897 16.6668 24.4972 16.8541 24.1159 17.1932C23.7346 17.5323 23.491 17.9995 23.4312 18.5063L23.4167 18.75V22.9167H19.25C18.719 22.9173 18.2083 23.1206 17.8221 23.4851C17.436 23.8497 17.2037 24.3479 17.1726 24.878C17.1414 25.408 17.3139 25.93 17.6547 26.3372C17.9955 26.7444 18.479 27.0061 19.0063 27.0688L19.25 27.0834H23.4167V31.25C23.4173 31.781 23.6206 32.2918 23.9851 32.6779C24.3496 33.064 24.8478 33.2964 25.3779 33.3275C25.908 33.3586 26.43 33.1861 26.8371 32.8453C27.2443 32.5045 27.506 32.0211 27.5687 31.4938L27.5833 31.25V27.0834H31.75C32.281 27.0828 32.7917 26.8795 33.1779 26.5149C33.564 26.1504 33.7963 25.6522 33.8274 25.1221C33.8586 24.5921 33.6861 24.0701 33.3453 23.6629C33.0045 23.2557 32.521 22.994 31.9937 22.9313L31.75 22.9167H27.5833V18.75C27.5833 18.1975 27.3638 17.6676 26.9731 17.2769C26.5824 16.8862 26.0525 16.6667 25.5 16.6667Z" fill="white"/>
+                    </svg>                       
                     <h4 class="mt-2">Otras coberturas</h4>
                     <p class="mb-0">Prestadores odontológicos donde podrás solicitar turno para consultas y estudios.</p>
-                </button>
+                </a>
             </div>
             <div class="col-3 d-flex align-items-stretch text-center px-5">
-                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
+                <a href="./centro-das/solicitud-de-recetas.html" class="btn shadow px-3 py-5 rounded w-100 bg-azul-3 btn-scale-shadow text-blanco">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1111 33.8889V45H33.8889V33.8889H45V16.1111H33.8889V5H16.1111V16.1111H5V33.8889H16.1111ZM27.7778 16.67H24.8556C24.7521 16.6637 24.6486 16.6816 24.5533 16.7222C23.6256 17.1744 23.0433 17.9733 22.6867 18.92C22.62 19.0948 22.5622 19.2707 22.5133 19.4478H20.2267C20.3178 19.0178 20.4411 18.5733 20.6078 18.1344C21.0989 16.8333 21.9956 15.4978 23.5789 14.7244C23.978 14.5354 24.4151 14.4404 24.8567 14.4467H27.7789C28.0736 14.4467 28.3562 14.5637 28.5646 14.7721C28.7729 14.9805 28.89 15.2631 28.89 15.5578C28.89 15.8525 28.7729 16.1351 28.5646 16.3435C28.3562 16.5518 28.0736 16.6689 27.7789 16.6689M18.3344 20.5578C17.7211 20.5578 17.2089 21.0644 17.3756 21.6556C18.0167 23.9433 20.6267 25.7233 23.89 26.0567V27.7878C23.1178 27.8067 22.3156 27.8689 21.6344 28.0667C21.1033 28.2222 20.54 28.4867 20.1089 28.9711C19.6578 29.4778 19.4456 30.1178 19.4456 30.8322C19.4456 31.5467 19.6567 32.1878 20.1078 32.6956C20.5389 33.1811 21.1022 33.4478 21.6344 33.6033C21.99 33.7067 22.3789 33.7733 22.7789 33.8156V31.5789C22.6025 31.5549 22.428 31.5186 22.2567 31.47C21.9567 31.3811 21.8244 31.2833 21.77 31.2211C21.7344 31.1811 21.6678 31.0911 21.6678 30.8322C21.6678 30.5767 21.7344 30.4878 21.7678 30.4489C21.8233 30.3867 21.9544 30.2878 22.2567 30.2C22.6822 30.0767 23.2311 30.03 23.89 30.0122V36.1133H20.5567V38.3356H29.4456V36.1133H26.1122V29.9611C27.3367 29.8656 28.3289 29.5967 29.0756 29.1156C30.1256 28.4378 30.5567 27.43 30.5567 26.36C30.5655 25.7885 30.4237 25.2248 30.1456 24.7256C31.3944 23.9367 32.2867 22.8678 32.6267 21.6556C32.7933 21.0644 32.2822 20.5578 31.6678 20.5578H18.3344ZM26.1122 27.73C27.0111 27.6433 27.5567 27.45 27.8711 27.2478C28.21 27.0289 28.3344 26.7722 28.3344 26.36C28.3344 26.0478 28.2633 25.8356 28.08 25.66C27.4394 25.8578 26.7805 25.9907 26.1133 26.0567L26.1122 27.73Z" fill="white"/>
-                    </svg>                        
+                        <path d="M38.2813 45.9895L40.6771 43.5937L31.4063 34.3228L29.0104 36.7187C27.7257 38.0034 27.0833 39.5485 27.0833 41.3541C27.0833 43.1596 27.7257 44.7048 29.0104 45.9895C30.2951 47.2742 31.8403 47.9166 33.6458 47.9166C35.4514 47.9166 36.9965 47.2742 38.2813 45.9895ZM43.5938 40.677L45.9896 38.2812C47.2743 36.9964 47.9167 35.4513 47.9167 33.6457C47.9167 31.8402 47.2743 30.2951 45.9896 29.0103C44.7049 27.7256 43.1597 27.0833 41.3542 27.0833C39.5486 27.0833 38.0035 27.7256 36.7188 29.0103L34.3229 31.4062L43.5938 40.677ZM14.5833 18.7499H35.4167V14.5833H14.5833V18.7499ZM25 8.85409C25.4514 8.85409 25.825 8.70617 26.1208 8.41034C26.4167 8.1145 26.5639 7.74159 26.5625 7.29159C26.5611 6.84159 26.4132 6.46867 26.1188 6.17284C25.8243 5.877 25.4514 5.72909 25 5.72909C24.5486 5.72909 24.1757 5.877 23.8813 6.17284C23.5868 6.46867 23.4389 6.84159 23.4375 7.29159C23.4361 7.74159 23.584 8.1152 23.8813 8.41242C24.1785 8.70964 24.5514 8.85686 25 8.85409ZM23.1771 43.7499H6.25V6.24992H19.1667C19.6181 4.99992 20.3736 3.99297 21.4333 3.22909C22.4931 2.4652 23.6819 2.08325 25 2.08325C26.3181 2.08325 27.5076 2.4652 28.5688 3.22909C29.6299 3.99297 30.3847 4.99992 30.8333 6.24992H43.75V23.177C42.2917 22.8298 40.8424 22.8034 39.4021 23.0978C37.9618 23.3923 36.6333 23.9402 35.4167 24.7416V22.9166H14.5833V27.0833H32.7604L28.5938 31.2499H14.5833V35.4166H24.7396C23.941 36.6319 23.3938 37.9603 23.0979 39.402C22.8021 40.8437 22.8292 42.293 23.1792 43.7499" fill="white"/>
+                    </svg>                       
                     <h4 class="mt-2">Solicitud de recetas</h4>
                     <p class="mb-0">Red de farmacias donde podrás adquirir la medicación recetada por tu médico/a.</p>
-                </button>
+                </a>
             </div>
             <div class="col-3 d-flex align-items-stretch text-center px-5">
-                <button class="btn shadow px-3 py-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25.0071 37.0836C36.8257 37.0836 45 27.5221 45 24.5414C45 21.5464 36.8107 12 25.0071 12C13.2771 12 5 21.5464 5 24.5414C5 27.5221 13.3364 37.0836 25.0071 37.0836ZM25.0071 32.76C20.4036 32.76 16.7743 29.0271 16.745 24.5414C16.73 19.9386 20.4036 16.3243 25.0071 16.3243C29.5814 16.3243 33.255 19.9386 33.255 24.5421C33.255 29.0279 29.5814 32.7607 25.0071 32.7607M25.0071 27.5079C26.645 27.5079 28.0029 26.165 28.0029 24.5421C28.0029 22.9043 26.6457 21.5621 25.0071 21.5621C23.355 21.5621 21.9971 22.905 21.9971 24.5421C21.9971 26.1657 23.3543 27.5079 25.0071 27.5079Z" fill="white"/>
-                    </svg>                        
+                <a href="./centro-das/afiliacion.html" class="btn shadow px-3 py-5 rounded w-100 bg-verde-1 btn-scale-shadow text-blanco">
+                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.4167 12.5H29.6667L36.5209 5.62504C36.7145 5.42977 36.9449 5.27478 37.1988 5.16901C37.4527 5.06324 37.725 5.00879 38 5.00879C38.275 5.00879 38.5474 5.06324 38.8012 5.16901C39.0551 5.27478 39.2855 5.42977 39.4792 5.62504L44.8542 11.0209C45.2422 11.4112 45.46 11.9392 45.46 12.4896C45.46 13.04 45.2422 13.568 44.8542 13.9584L40.0834 18.75H23.4167V22.9167C23.4167 23.4692 23.1972 23.9991 22.8065 24.3898C22.4158 24.7805 21.8859 25 21.3334 25C20.7808 25 20.2509 24.7805 19.8602 24.3898C19.4695 23.9991 19.25 23.4692 19.25 22.9167V16.6667C19.25 15.5616 19.689 14.5018 20.4704 13.7204C21.2518 12.939 22.3116 12.5 23.4167 12.5ZM10.9167 22.9167V31.25L6.14586 36.0209C5.75783 36.4112 5.54004 36.9392 5.54004 37.4896C5.54004 38.04 5.75783 38.568 6.14586 38.9584L11.5209 44.3542C11.7145 44.5495 11.9449 44.7045 12.1988 44.8102C12.4527 44.916 12.725 44.9704 13 44.9704C13.275 44.9704 13.5474 44.916 13.8012 44.8102C14.0551 44.7045 14.2855 44.5495 14.4792 44.3542L23.4167 35.4167H31.75C32.3026 35.4167 32.8325 35.1972 33.2232 34.8065C33.6139 34.4158 33.8334 33.8859 33.8334 33.3334V31.25H35.9167C36.4692 31.25 36.9991 31.0305 37.3898 30.6398C37.7805 30.2491 38 29.7192 38 29.1667V27.0834H40.0834C40.6359 27.0834 41.1658 26.8639 41.5565 26.4732C41.9472 26.0825 42.1667 25.5526 42.1667 25V22.9167H27.5834V25C27.5834 26.1051 27.1444 27.1649 26.363 27.9463C25.5816 28.7277 24.5218 29.1667 23.4167 29.1667H19.25C18.145 29.1667 17.0851 28.7277 16.3037 27.9463C15.5223 27.1649 15.0834 26.1051 15.0834 25V18.75L10.9167 22.9167Z" fill="white"/>
+                    </svg>                       
                     <h4 class="mt-2">Afiliaciones</h4>
                     <p class="mb-0">Ópticas de la red donde podrás obtener insumos oftalmológicos recetados.</p>
-                </button>
+                </a>
             </div>
         </div>
     </div>
-    
     
 
     <!-- Footer container -->

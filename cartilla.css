@@ -1,7 +1,7 @@
-.card-container {
+.card-container-cartilla {
   border: none;
 }
-.card-container .card-header {
+.card-container-cartilla .card-header {
   border-radius: 10px;
   background-color: #009B81;
   padding-top: 20px;
@@ -10,7 +10,7 @@
   align-items: center;
   width: 100%;
 }
-.card-container .card-header .header-text {
+.card-container-cartilla .card-header .header-text {
   margin: 0;
   color: white;
   font-weight: 500;
@@ -18,74 +18,74 @@
   max-width: 500px;
   width: 350px;
 }
-.card-container .card-header .btn-serch {
+.card-container-cartilla .card-header .btn-serch {
   color: #666363;
   font-weight: 450;
 }
-.card-container .card-header .btn-serch:hover {
+.card-container-cartilla .card-header .btn-serch:hover {
   color: white;
   background-color: #007D8A;
   border-color: #007D8A;
 }
-.card-container .card-header .breadcrumb {
+.card-container-cartilla .card-header .breadcrumb {
   margin: 0;
 }
-.card-container .card-header .breadcrumb .breadcrumb-item {
+.card-container-cartilla .card-header .breadcrumb .breadcrumb-item {
   color: white;
 }
-.card-container .card-header .breadcrumb .breadcrumb-item::before {
+.card-container-cartilla .card-header .breadcrumb .breadcrumb-item::before {
   color: white;
 }
-.card-container .card-header .btn-modal {
+.card-container-cartilla .card-header .btn-modal {
   color: white;
   background-color: #009B81;
 }
-.card-container .card-header .btn-modal:hover {
+.card-container-cartilla .card-header .btn-modal:hover {
   color: white;
   background-color: #007D8A;
 }
-.card-container .card-body-container {
+.card-container-cartilla .card-body-container {
   margin-top: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   /* Opcion 3 */
 }
-.card-container .card-body-container .card-body {
+.card-container-cartilla .card-body-container .card-body {
   color: #009B81;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
-.card-container .card-body-container .card-body .body-start {
+.card-container-cartilla .card-body-container .card-body .body-start {
   width: 85%;
 }
-.card-container .card-body-container .card-body .body-start .card-title {
+.card-container-cartilla .card-body-container .card-body .body-start .card-title {
   border-bottom: 1px solid;
   padding-bottom: 10px;
   font-weight: 800;
 }
-.card-container .card-body-container .card-body .body-start .card-subtitle {
+.card-container-cartilla .card-body-container .card-body .body-start .card-subtitle {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: #009B81;
 }
-.card-container .card-body-container .card-body .body-start .card-subtitle .card-text {
+.card-container-cartilla .card-body-container .card-body .body-start .card-subtitle .card-text {
   margin: 1% 0;
   font-weight: 400;
 }
-.card-container .card-body-container .card-body .body-start .card-subtitle .card-text i {
+.card-container-cartilla .card-body-container .card-body .body-start .card-subtitle .card-text i {
   font-size: 15px;
   margin-right: 8px;
 }
-.card-container .card-body-container .card-body .body-end {
+.card-container-cartilla .card-body-container .card-body .body-end {
   width: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.card-container .card-body-container .card-body .body-end .body-links {
+.card-container-cartilla .card-body-container .card-body .body-end .body-links {
   display: flex;
   justify-content: space-around;
   height: 100%;
@@ -94,7 +94,7 @@
   align-items: center;
   padding: 0;
 }
-.card-container .card-body-container .card-body .body-end .body-links .card-link {
+.card-container-cartilla .card-body-container .card-body .body-end .body-links .card-link {
   width: 100%;
   margin: 0;
   background-color: #009B81;
@@ -104,23 +104,23 @@
   padding: 10px 0;
   text-decoration: none;
 }
-.card-container .card-body-container .card-body .body-end .body-links .card-link i {
+.card-container-cartilla .card-body-container .card-body .body-end .body-links .card-link i {
   color: white;
   font-size: 15px;
 }
-.card-container .card-footer {
+.card-container-cartilla .card-footer {
   background-color: white !important;
   padding: 20px;
 }
-.card-container .card-footer .pagination {
+.card-container-cartilla .card-footer .pagination {
   justify-content: center;
   margin: 0;
 }
-.card-container .card-footer .pagination .page-item.active .page-link {
+.card-container-cartilla .card-footer .pagination .page-item.active .page-link {
   background-color: #009B81;
   border-color: #009B81;
   color: white;
 }
-.card-container .card-footer .pagination a {
+.card-container-cartilla .card-footer .pagination a {
   color: #009B81;
 }/*# sourceMappingURL=cartilla.css.map */
