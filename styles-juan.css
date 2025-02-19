@@ -262,4 +262,8 @@ body::-webkit-scrollbar-track {
   font-size: 40px;
   color: white;
   transition: 0.3s;
+}
+
+.botones-afiliacion small:hover {
+  color: white;
 }/*# sourceMappingURL=styles-juan.css.map */
