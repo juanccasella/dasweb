@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../assets/iconos/navbar/logo-das.svg" type="image/png">
+    <title>DAS web</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles.css"/>
+    <link rel="stylesheet" href="../../styles-juan.css"/>
+    <link rel="stylesheet" href="../../cartilla.css"/>
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Fuentes de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Roboto Condensed -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <!-- Header -->
+    <div class="sticky-top">
+        <!-- Header top -->
+        <nav class="navbar d-none d-lg-flex bg-blanco">
+            <div class="container w-90">
+                <div class="row align-items-end w-100 m-0">
+                    <!-- Redes Sociales -->
+                    <div class="col-md-4 d-flex gap-1 p-0">
+                        <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5491136440119&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp">
+                            <img src="../../assets/iconos/navbar/logo-wpp.svg" alt="Logo de WhatsApp">
+                        </a>
+                        <a class="nav-link" href="https://www.instagram.com/dascongreso/?hl=es" target="_blank" aria-label="Instagram">
+                            <img src="../../assets/iconos/navbar/logo-ig.svg" alt="Logo de Instagram">
+                        </a>
+                        <a class="nav-link" href="https://www.facebook.com/dascongreso/?locale=es_LA" target="_blank" aria-label="Facebook">
+                            <img src="../../assets/iconos/navbar/logo-fb.svg" alt="Logo de Facebook">
+                        </a>
+                        <a class="nav-link" href="https://www.youtube.com/@Das.congreso" target="_blank" aria-label="YouTube">
+                            <img src="../../assets/iconos/navbar/logo-yt.svg" alt="Logo de YouTube">
+                        </a>
+                    </div>
+                    <!-- Logo DAS -->
+                    <div class="col-md-4 d-flex justify-content-center p-0">
+                        <a class="navbar-brand" href="../../index.html">
+                            <img src="../../assets/iconos/navbar/logo-das.svg" alt="Logo DAS">
+                        </a>
+                    </div>
+                    <!-- Botón Autogestión -->
+                    <div class="col-md-4 d-flex justify-content-end p-0">
+                        <a href="https://portal.das.gob.ar/?_gl=1*111ak1i*_ga*NDY4NjA2NTMuMTcyMjk2MzYyOQ..*_ga_Z0KDWFJYX4*MTczOTcyOTE0NC4zNi4wLjE3Mzk3MjkxNDQuMC4wLjA." target="_blank" class="btn btn-autogestion bg-naranja-3">AUTOGESTION</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Header Bottom -->
+        <ul class="nav navbar-bot d-none d-lg-flex justify-content-center align-items-center bg-verde-2">
+            <li class="nav-item">
+                <a href="../../index.html" class="btn btn-verde-2 text-decoration-none text-blanco">INICIO</a> 
+            </li>
+            <li class="nav-item">
+                <div class="btn border-0">
+                    <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        CARTILLA
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../cartilla/cartilla-guardias-modal.html">GUARDIAS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../cartilla/cartilla-guardias-modal.html">INTERNACIONES</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../cartilla/cartilla-guardias-modal.html">CONSULTORIOS EXTERNOS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../cartilla/cartilla-guardias-modal.html">ESTUDIOS Y LABORATORIOS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../cartilla/cartilla-guardias-modal.html">ODONTOLOGIA</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../cartilla/cartilla-guardias-modal.html">FARMACIAS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../cartilla/cartilla-guardias-modal.html">OPTICAS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="../cartilla.html">VER TODOS</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn border-0">
+                    <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        CENTRO DAS
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/odontologia.html">ONDONTOLOGÍA</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/salud-mental.html">SALUD MENTAL</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/cobertura-medicacion.html">COBERTURA MEDICACIÓN</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/vacunatorio.html">VACUNATORIO</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/otras-coberturas.html">OTRAS COBERTURAS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/solicitud-de-recetas.html">SOLICITUD DE RECETAS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/afiliacion.html">AFILIACIONES</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="../centrodas.html">VER TODOS</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn border-0">
+                    <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        PROGRAMAS
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2 my-2" href="ginecologia.html">CHEQUEO ANUAL GINECOLOGICO</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="salud.html">CHEQUEO ANUAL DE SALUD</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="discapacidad.html">PROGRAMA DISCAPACIDAD</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="diabetes.html">PROGRAMA DIABETES</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="materno-infantil.html">PLAN MATERNO INFANTIL</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="odontopediatria.html">ODONTOPEDIATRÍA</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="ingreso-escolar.html">INGRESO ESCOLAR</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="adultos-en-moviento.html">ADULTOS EN MOVIMIENTO</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="../programas.html">VER TODOS</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn border-0">
+                    <button type="button" class="btn btn-verde-2 text-blanco dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        INSTITUCIONAL
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../institucional/historia.html">HISTORIA</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../institucional/comision-administradora.html">COMISIÓN ADMINISTRADORA</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../institucional/licitaciones-y-compras.html">LICITACIONES Y COMPRAS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../institucional/gestion-de-calidad.html">GESTIÓN DE CALIDAD</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../institucional/noticias.html">NOTICIAS</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../institucional/contacto.html">CONTACTO</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-verde-2" href="../institucional.html">VER TODOS</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="../formularios.html" class="btn btn-verde-2 text-decoration-none text-blanco">FORMULARIOS</a>   
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Menu hamburgesa Small -->
+    <nav class="navbar d-lg-none">
+        <div class="container-fluid">
+            <a href="../../index.html">
+                <img class="logosm" src="../../assets/iconos/navbar/logo-das.svg" alt="logo-das">					  
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-burger me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 p-0 text-verde-2" href="../../index.html">INICIO</a>
+                    </li>
+                    <li><hr></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CARTILLA
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-gris-2" href="../cartilla/cartilla-guardias-modal.html">GUARDIAS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../cartilla/cartilla-guardias-modal.html">INTERNACIONES</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../cartilla/cartilla-guardias-modal.html">CONSULTORIOS EXTERNOS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../cartilla/cartilla-guardias-modal.html">ESTUDIOS Y LABORATORIOS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../cartilla/cartilla-guardias-modal.html">ODONTOLOGÍA</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../cartilla/cartilla-guardias-modal.html">FARMACIAS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../cartilla/cartilla-guardias-modal.html">ÓPTICAS</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-verde-2" href="../cartilla.html">VER TODOS</a></li>
+                        </ul>
+                    </li>
+                    <li><hr></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CENTRO DAS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/odontologia.html">ONDONTOLOGÍA</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/salud-mental.html">SALUD MENTAL</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/cobertura-medicacion.html">COBERTURA MEDICACIÓN</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/vacunatorio.html">VACUNATORIO</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/otras-coberturas.html">OTRAS COBERTURAS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/solicitud-de-recetas.html">SOLICITUD DE RECETAS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/afiliacion.html">AFILIACIONES</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-verde-2" href="../centrodas.html">VER TODOS</a></li>
+                        </ul>
+                    </li>
+                    <li><hr></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PROGRAMAS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-gris-2" href="ginecologia.html">CHEQUEO ANUAL GINECOLOGICO</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="salud.html">CHEQUEO ANUAL DE SALUD</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="discapacidad.html">PROGRAMA DISCAPACIDAD</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="diabetes.html">PROGRAMA DIABETES</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="materno-infantil.html">PLAN MATERNO INFANTIL</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="odontopediatria.html">ODONTOPEDIATRÍA</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="ingreso-escolar.html">INGRESO ESCOLAR</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="adultos-en-moviento.html">ADULTOS EN MOVIMIENTO</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-verde-2" href="../programas.html">VER TODOS</a></li>
+                        </ul>
+                    </li>
+                    <li><hr></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mt-2 p-0 text-verde-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            INSTITUCIONAL
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-gris-2" href="../institucional/historia.html">HISTORIA</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../institucional/comision-administradora.html">COMISIÓN ADMINISTRADORA</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../institucional/licitaciones-y-compras.html">LICITACIONES Y COMPRAS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../institucional/gestion-de-calidad.html">GESTIÓN DE CALIDAD</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../institucional/noticias.html">NOTICIAS</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../institucional/contacto.html">CONTACTO</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-verde-2" href="../institucional.html">VER TODOS</a></li>
+                        </ul>
+                    </li>
+                    <li><hr></li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 p-0 text-verde-2" href="https://portal.das.gob.ar/?_gl=1*111ak1i*_ga*NDY4NjA2NTMuMTcyMjk2MzYyOQ..*_ga_Z0KDWFJYX4*MTczOTcyOTE0NC4zNi4wLjE3Mzk3MjkxNDQuMC4wLjA." target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            AUTOGESTION
+                        </a>  
+                    </li>
+                    <li><hr></li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 p-0 text-verde-2" href="../formularios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            FORMULARIOS
+                        </a>
+                    </li>
+                    <li><hr></li>
+                    <li class="nav-item d-flex">
+                        <button type="button" class="btn my-1">
+                            <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5491136440119&text&type=phone_number&app_absent=0" target="_blank"><img src="../../assets/iconos/navbar/logo-wpp.svg" alt="wpp"></a>
+                        </button>  
+                        <button type="button" class="btn my-1">
+                            <a class="nav-link" href="https://www.instagram.com/dascongreso/?hl=es" target="_blank"><img src="../../assets/iconos/navbar/logo-ig.svg" alt="instagram"></a>
+                        </button> 
+                        <button type="button" class="btn my-1">
+                            <a class="nav-link" href="https://www.facebook.com/dascongreso/?locale=es_LA" target="_blank"><img src="../../assets/iconos/navbar/logo-fb.svg" alt="facebook"></a>
+                        </button> 
+                        <button type="button" class="btn my-1">
+                            <a class="nav-link" href="https://www.youtube.com/@Das.congreso" target="_blank"><img src="../../assets/iconos/navbar/logo-yt.svg" alt="youtube"></a>
+                        </button> 
+                    </li>
+                    <li><hr></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Salud  -->
+    <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-between banner-container w-90 mt-4">
+            <div class="mb-4">
+                <h1 class="display-4 fw-bold text-verde-2">Centro DAS</h1>
+                <p class="fs-4 text-gris-4">Chequeo anual de salud</p>
+            </div>
+            <div class="text-center d-flex">
+                <img src="../../assets/img/banners/cartilla/cartilla.jpeg" alt="Imagen banner" class="img-fluid img-banner rounded">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid w-90">
+        <div class="row my-5">
+            <!-- Barra lateral -->
+            <nav class="col-md-3">
+                <ul class="list-group fs-4">
+                    <li class="list-group-item">
+                        <a href="ginecologia.html" class="text-decoration-none text-verde-2">Chequeo anual ginecologico</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="salud.html" class="text-decoration-none text-verde-2">Chequeo anual de salud</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="discapacidad.html" class="text-decoration-none text-verde-2">Programa discapacidad</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="diabetes.html" class="text-decoration-none text-verde-2">Programa diabetes</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="materno-infantil.html" class="text-decoration-none text-verde-2">Plan materno infantil</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="odontopediatria.html" class="text-decoration-none text-verde-2">Odontopediatría</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="ingreso-escolar.html" class="text-decoration-none text-verde-2">Ingreso escolar</a>
+                    </li>                    
+                    <li class="list-group-item">
+                        <a href="adultos-en-moviento.html" class="text-decoration-none text-verde-2">Adultos en movimiento</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="col-md-9">
+                <div class="card card-container">
+                    <div class="card-header d-flex text-center justify-content-center bg-azulV-4"> 
+                        <h2 class="text-decoration-none text-blanco fs-3 my-2">EVALUACIÓN PREVENTIVA DE SALUD</h2>                   
+                    </div>
+                    <div class="card-body m-4">
+                        <p class="text-gris-2">
+                            El programa está destinado a <b>promover la salud y la detección temprana</b> de las enfermedades más habituales. 
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item fw-bold text-gris-2">Estudios que se realizan:
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Análisis de sangre y orina.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Eco Doppler.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Ecocardiograma.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Ergometría.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Radiografía de tórax.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Devolución médica.</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item fw-bold text-gris-2">Solicitar turno: 
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-gris-2 fw-lighter">• A través del <a href="https://portal.das.gob.ar/?_gl=1*1wir6j8*_ga*NDY4NjA2NTMuMTcyMjk2MzYyOQ..*_ga_Z0KDWFJYX4*MTc0MDEwMTg5OC40NS4xLjE3NDAxMDE5MzMuMC4wLjA." target="_blank" class="text-azulbg-azulV-4">portal de autogestión</a>.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Llamando al Centro de Información Personalizada (<b>CIP</b>) al <b>0810-222-0317</b>, de lunes a viernes de 8 a 20 hs en días hábiles.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Vía correo electrónico a <b>contacto@das.gob.ar</b></li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Mediante asistente virtual (<b>EVA</b>).</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item fw-bold text-gris-2">Lugar donde se realizan los estudios:
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-gris-2 fw-lighter">• <b>Fundación Favaloro</b> (Luis Sáenz Peña 265).</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• <b>Sanatorio Finochietto</b> (Av. Córdoba 2678).</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item fw-bold text-gris-2">IMPORTANTE:
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Sacar turno previo en el <a href="https://portal.das.gob.ar/?_gl=1*1wir6j8*_ga*NDY4NjA2NTMuMTcyMjk2MzYyOQ..*_ga_Z0KDWFJYX4*MTc0MDEwMTg5OC40NS4xLjE3NDAxMDE5MzMuMC4wLjA." target="_blank" class="text-azulbg-azulV-4">portal de autogestión</a>.</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Concurrir con 8 hs de ayuno (se puede tomar agua libremente).</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Llevar la primera orina de la mañana (en frasco esterilizado).</li>
+                                    <li class="list-group-item text-gris-2 fw-lighter">• Vestir ropa deportiva o cómoda para realizar la prueba de esfuerzo.</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item fw-bold text-gris-2">La devolución de los resultados es en forma presencial y, el turno del mismo, es otorgado según el establecimiento donde se realizó el chequeo.</li>
+                            <li class="list-group-item fw-bold text-gris-2">El programa es de carácter anual.</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    
+
+
+    <!-- Footer container -->
+    <footer class="pt-4">
+        <!-- Footer top -->
+        <div class="container w-90 mb-5">
+            <!-- Título -->
+            <div>
+                <hr class="m-0 border-verde-2" style="opacity: 1;">
+                <h5 class="text-start position-relative my-2 my-lg-3 text-verde-2">Sitios de interés</h5>
+            </div>
+            <!-- Imágenes -->
+            <div class="d-none d-lg-flex justify-content-around align-items-center">
+                <a href="">
+                    <img src="../../assets/iconos/casas/congreso.svg" alt="logo congreso" class="img-fluid logo-casas">
+                </a>
+                <a href="">
+                    <img src="../../assets/iconos/casas/senado.svg" alt="logo senado" class="img-fluid logo-casas">
+                </a>
+                <a href="">
+                    <img src="../../assets/iconos/casas/diputados.svg" alt="logo diputados" class="img-fluid logo-casas">
+                </a>
+                <a href="">
+                    <img src="../../assets/iconos/casas/imprenta.svg" alt="logo imprenta" class="img-fluid logo-casas">
+                </a>
+                <a href="">
+                    <img src="../../assets/iconos/casas/biblioteca2.svg" alt="logo bilbioteca" class="img-fluid logo-casas">
+                </a>
+            </div>
+            <div class="d-block d-lg-none">
+                <a class="nav-link text-gris-2" href="index.html">Congreso de la nación</a>
+                <a class="nav-link text-gris-2" href="index.html">Senado</a>
+                <a class="nav-link text-gris-2" href="index.html">Diputados</a>
+                <a class="nav-link text-gris-2" href="index.html">Imprenta</a>
+                <a class="nav-link text-gris-2" href="index.html">Biblioteca</a>
+            </div>
+        </div>
+
+
+
+        <!-- Footer body -->
+        <div class="container-fluid footer-body bg-gris-2 gap-4 p-4">
+            <div class="container d-flex justify-content-between ">
+                <div class="align-self-center d-none d-xxl-block">
+                    <a href="#" class="logo-iram"><img src="../../assets/iconos/iram/iram.svg"  alt="IRAM"></a>
+                </div>
+
+                <!-- Mapa de sitio -->
+                <div class="d-none d-xl-flex justify-content-between gap-2 gap-xxl-4 mx-4 w-100">
+                    <div>
+                        <ul class="list-unstyled text-blanco fw-light">
+                            <li class="fw-bold mb-1">Cartilla</li>
+                            <li class="cartilla-footer">Guardias</li>
+                            <li class="cartilla-footer">Internaciones</li>
+                            <li class="cartilla-footer">Consultorios externos</li>
+                            <li class="cartilla-footer">Estudios y laboratorios</li>
+                            <li class="cartilla-footer">Odontología</li>
+                            <li class="cartilla-footer">Farmacias</li>
+                            <li class="cartilla-footer">Ópticas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled text-blanco fw-light">
+                            <li class="fw-bold mb-1">Sede Alsina</li>
+                            <li class="cartilla-footer">Odontología</li>
+                            <li class="cartilla-footer">Salud mental</li>
+                            <li class="cartilla-footer">Cobertura medicación</li>
+                            <li class="cartilla-footer">Vacunatorio</li>
+                            <li class="cartilla-footer">Otras coberturas</li>
+                            <li class="cartilla-footer">Solicitud de recetas</li>
+                            <li class="cartilla-footer">Afiliaciones</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled text-blanco fw-light">
+                            <li class="fw-bold mb-1">Programas</li>
+                            <li class="cartilla-footer">Chequeo anual ginecologico</li>
+                            <li class="cartilla-footer">Chequeo anual de salud</li>
+                            <li class="cartilla-footer">Programa discapacidad</li>
+                            <li class="cartilla-footer">Programa diabetes</li>
+                            <li class="cartilla-footer">Plan materno infantil</li>
+                            <li class="cartilla-footer">Odontopediatría</li>
+                            <li class="cartilla-footer">Ingreso escolar</li>
+                            <li class="cartilla-footer">Adultos mayores</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled text-blanco fw-light">
+                            <li class="fw-bold mb-1">Insitucional</li>
+                            <li class="cartilla-footer">Historia</li>
+                            <li class="cartilla-footer">Comisión administradora</li>
+                            <li class="cartilla-footer">Licitaciones y compras</li>
+                            <li class="cartilla-footer">Gestión de calidad</li>
+                            <li class="cartilla-footer">Noticias</li>
+                            <li class="cartilla-footer">Contacto</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled text-blanco">
+                            <li class="fw-bold mb-1">Trámites</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled text-blanco d-block d-xxl-none ms-3 fs-5">
+                            <li><a href="https://das.gob.ar/institucional/#normasISO" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-blanco">Certificación de Normas ISO</a></li>
+                            <li><a href="https://www.google.com/maps/place/Das/@-34.6311591,-58.3684041,14z/data=!4m6!3m5!1s0x95bccadd23ab87b7:0x287aa1372b43b144!8m2!3d-34.6114661!4d-58.3923238!16s%2Fg%2F11b6ggxb0n?hl=es&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-blanco">¿Cómo llegar?</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="d-none d-xxl-flex align-self-end"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.711280000593!2d-58.39489872353059!3d-34.61146165790853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadd23ab87b7%3A0x287aa1372b43b144!2sDas!5e0!3m2!1ses!2sar!4v1734441124634!5m2!1ses!2sar" 
+                        style="border:0; width: 350px; height: 250px;" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded">
+                    </iframe>
+                </div> 
+
+                <div class="d-flex justify-content-start w-100 align-items-center d-block d-xl-none">
+                    <ul class="list-unstyled fs-4">
+                        <li class="fw-bold border-bottom border-verde-2 mb-4 pb-1"><a href="https://das.gob.ar/institucional/#normasISO" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-blanco">Certificación de Normas ISO</a></li>
+                        <li class="fw-bold border-bottom border-verde-2 mb-4 pb-1"><a href="" class="text-decoration-none text-blanco">Mapa del sitio</a></li>
+                        <li class="fw-bold border-bottom border-verde-2 mb-4 pb-1"><a href="https://www.google.com/maps/place/Das/@-34.6311591,-58.3684041,14z/data=!4m6!3m5!1s0x95bccadd23ab87b7:0x287aa1372b43b144!8m2!3d-34.6114661!4d-58.3923238!16s%2Fg%2F11b6ggxb0n?hl=es&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-blanco">¿Cómo llegar?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer bot -->
+
+        <div class="container-fluid d-flex justify-content-center align-items-center bg-verde-3 py-2">
+            <div>
+                <a href="#">
+                    <img src="../../assets/iconos/footer/logo-das-blanco.svg" alt="IRAM" class="img-fluid w-75" >
+                </a>
+            </div>
+            <div class="footer-bot-text mx-5 px-3 text-blanco text-center ">
+                <h5 class="fw-bold d-none d-lg-block">Dirección de Ayuda Social para el Personal del Congreso de la Nación</h5>
+                <P class="m-0 fw-ligther d-none d-lg-block">Teléfono: 0810-222-0317 - Interno: 1556 || Dirección: Adolfo Alsina 1825, C1090 AAA, Cdad. Autónoma de Buenos Aires</P>
+                <P class="m-0 fw-ligther d-none d-lg-block">Nota: La información contenida en este sitio es de dominio público y puede ser utilizada libremente. Se solicita citar la fuente.</P>
+                <p class="d-block m-0 d-lg-none fs-6">Dirección de Ayuda Social</p>
+                <p class="d-block m-0 d-lg-none fs-6">Contacto</p>
+            </div>
+            <div> 
+                <ul class="list-unstyled d-flex m-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <img src="../../assets/iconos/footer/logo-wpp-blanco.svg" alt="wpp">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../../assets/iconos/footer/logo-ig-blanco.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../../assets/iconos/footer/logo-fb-blanco.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../../assets/iconos/footer/logo-yt-blanco.svg" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

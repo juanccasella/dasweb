@@ -264,6 +264,7 @@ body::-webkit-scrollbar-track {
   transition: 0.3s;
 }
 
-.botones-afiliacion small:hover {
+.botones-afiliacion small:hover,
+.botones-discapacidad small:hover {
   color: white;
 }/*# sourceMappingURL=styles-juan.css.map */
