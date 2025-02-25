@@ -52,11 +52,14 @@ body{
 
 /* Estilos del carousel */
 
-.carouselContainer{
+.carousel-container{
     .carousel-caption{
         height: 100%;
         left: 5% !important;
         padding: 0 10% 0 0!important;
+        a:hover{
+            background-color: #00AE97;
+        }
     }
     img{
         margin-left: 50%;
@@ -142,32 +145,48 @@ body{
 
 /* NOTICIAS */
 
-.card-body{
-    overflow: hidden;
+.container-noticias{
+    img{
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .card-body{
+        overflow: hidden;
+        .card-text {
+            max-height: 3.6em; 
+            text-overflow: ellipsis;
+            white-space: wrap; 
+        }
+    }
+    a:hover{
+        background-color: #00AE97
+    }
+    .btn-noticias {
+        a {
+            border: 1px solid #656667;
+        }
+        
+        a:hover {
+            background-color: #00AE97;
+            color: #ffffff;
+            border-color: #00AE97;
+        }
+    }
 }
-.card-text {
-    max-height: 3.6em; 
-    text-overflow: ellipsis;
-    white-space: wrap; 
-}
 
-
-
-
-.noticia-img{
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
 
 
 /* Footer */
 
 // Footer-top
-.logo-casas {
-    max-height: 90px !important;
+.container-casas{
+    img{
+        max-height: 90px !important;
+    }
 }
+
 
 @media (max-width: 1199px){
     .logo-casas{
@@ -244,7 +263,7 @@ body{
     transition: box-shadow 0.3s ease-in-out !important;
 
     &:hover {
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2), 2px 3px 5px rgba(0, 0, 0, 0.2) !important;
     }
 }
 
@@ -294,32 +313,13 @@ body{
 
 
 // Iconos instuticional
-// .container-institucional{
-//     div{
-//         width: 150px;
-//         display: grid;
-        
-//         .icon-button { 
-//             height: 130px;
-//             width: 130px;
-//             border-radius: 50%;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             border: none;
-//             font-size: 40px;
-//             color: white;
-//             transition: 0.3s;
-//         }
-//     }
-// }
 
 .container-institucional {
     display: flex;
     justify-content: center;
 
     div {
-        width: 150px; // Todos los elementos tendrán el mismo ancho
+        width: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;

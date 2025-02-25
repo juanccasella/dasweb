@@ -40,21 +40,24 @@ body::-webkit-scrollbar-track {
   }
 }
 /* Estilos del carousel */
-.carouselContainer .carousel-caption {
+.carousel-container .carousel-caption {
   height: 100%;
   left: 5% !important;
   padding: 0 10% 0 0 !important;
 }
-.carouselContainer img {
+.carousel-container .carousel-caption a:hover {
+  background-color: #00AE97;
+}
+.carousel-container img {
   margin-left: 50%;
 }
-.carouselContainer .carousel-control-prev,
-.carouselContainer .carousel-control-next {
+.carousel-container .carousel-control-prev,
+.carousel-container .carousel-control-next {
   margin: 0 1%;
   opacity: 1 !important;
 }
-.carouselContainer .carousel-control-prev span,
-.carouselContainer .carousel-control-next span {
+.carousel-container .carousel-control-prev span,
+.carousel-container .carousel-control-next span {
   padding: 8px !important;
   height: 50px !important;
   border-radius: 8px;
@@ -113,26 +116,35 @@ body::-webkit-scrollbar-track {
 }
 
 /* NOTICIAS */
-.card-body {
-  overflow: hidden;
-}
-
-.card-text {
-  max-height: 3.6em;
-  text-overflow: ellipsis;
-  white-space: wrap;
-}
-
-.noticia-img {
+.container-noticias img {
   width: 50%;
   height: auto;
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.container-noticias .card-body {
+  overflow: hidden;
+}
+.container-noticias .card-body .card-text {
+  max-height: 3.6em;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.container-noticias a:hover {
+  background-color: #00AE97;
+}
+.container-noticias .btn-noticias a {
+  border: 1px solid #656667;
+}
+.container-noticias .btn-noticias a:hover {
+  background-color: #00AE97;
+  color: #ffffff;
+  border-color: #00AE97;
+}
 
 /* Footer */
-.logo-casas {
+.container-casas img {
   max-height: 90px !important;
 }
 
@@ -198,7 +210,7 @@ body::-webkit-scrollbar-track {
   transition: box-shadow 0.3s ease-in-out !important;
 }
 .btn-shadow:hover {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2), 2px 3px 5px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Background verde */
