@@ -350,3 +350,12 @@ body{
         color: white;
     }
 }
+
+// carousel historia
+.container-carousel-historia{
+    .carousel-item img {
+        width: 100%; 
+        height: 800px; /* Ajusta la altura según necesites */
+        object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+    }
+}
