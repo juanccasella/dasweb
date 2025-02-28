@@ -1,0 +1,63 @@
+body .card .card-body {
+  overflow: hidden;
+}
+body .card .card-body .table-responsive {
+  height: 500px;
+}
+body .card .card-body .table-responsive .table thead tr th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #009B81;
+  color: white;
+}
+body .card .card-body .table-responsive .table tbody {
+  overflow-y: auto;
+}
+body .card .card-body .table-responsive .table tbody th, body .card .card-body .table-responsive .table tbody td {
+  color: #009B81;
+}
+body .card .card-body .table-responsive .table .apertura {
+  white-space: nowrap !important;
+}
+body .card .card-footer {
+  background-color: white !important;
+  padding: 20px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+body .card .card-footer .pagination {
+  justify-content: center;
+  margin: 0;
+}
+body .card .card-footer .pagination .page-item.active .page-link {
+  background-color: #009B81;
+  border-color: #009B81;
+  color: white;
+}
+body .card .card-footer .pagination a {
+  color: #009B81;
+  margin-top: 15px;
+}
+body .btn-res {
+  width: 50%;
+  margin: 0 25%;
+  color: white;
+  background-color: #009B81;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+body .btn-res:hover {
+  background-color: #007D8A;
+  color: white;
+}
+body ::-webkit-scrollbar {
+  width: 10px;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+body ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}/*# sourceMappingURL=licitaciones-y-contrataciones.css.map */

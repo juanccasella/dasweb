@@ -359,3 +359,11 @@ body{
         object-fit: cover; /* Recorta la imagen manteniendo la proporción */
     }
 }
+
+// institucional - comision administradora
+#content1{
+    .list-group{
+        
+        border-top-left-radius: 0 !important;
+    }
+}

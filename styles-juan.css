@@ -287,4 +287,8 @@ body::-webkit-scrollbar-track {
   height: 800px; /* Ajusta la altura según necesites */
   -o-object-fit: cover;
      object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+}
+
+#content1 .list-group {
+  border-top-left-radius: 0 !important;
 }/*# sourceMappingURL=styles-juan.css.map */
