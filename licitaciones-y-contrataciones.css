@@ -1,22 +1,3 @@
-body .card .card-body {
-  overflow: hidden;
-}
-body .card .card-body .table-responsive {
-  height: 500px;
-}
-body .card .card-body .table-responsive .table thead tr th {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #009B81;
-  color: white;
-}
-body .card .card-body .table-responsive .table tbody {
-  overflow-y: auto;
-}
-body .card .card-body .table-responsive .table tbody th, body .card .card-body .table-responsive .table tbody td {
-  color: #009B81;
-}
 body .card .card-body .table-responsive .table .apertura {
   white-space: nowrap !important;
 }
@@ -60,4 +41,24 @@ body ::-webkit-scrollbar-thumb {
 }
 body ::-webkit-scrollbar-track {
   border-radius: 10px;
+}
+
+.container-licitaciones .card-body {
+  overflow: hidden;
+}
+.container-licitaciones .card-body .table-responsive {
+  height: 500px;
+}
+.container-licitaciones .card-body .table-responsive thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #009B81;
+  color: white;
+}
+.container-licitaciones .card-body .table-responsive tbody {
+  overflow-y: auto;
+}
+.container-licitaciones .card-body .table-responsive tbody th, .container-licitaciones .card-body .table-responsive tbody td {
+  color: #009B81;
 }/*# sourceMappingURL=licitaciones-y-contrataciones.css.map */

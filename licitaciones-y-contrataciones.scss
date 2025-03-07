@@ -12,9 +12,9 @@ body{
             // margin: 15px 5% 0 5%;
             // border-top-right-radius: 6px;
             // border-top-left-radius: 6px;
-            overflow: hidden;
+            // overflow: hidden;
             .table-responsive{
-                height: 500px;
+                // height: 500px;
                 .table{
                     // width: 100%;
                     // border-collapse: collapse;
@@ -24,27 +24,27 @@ body{
                             // border-top: 0;
                             th{
                                     // padding: 10px;
-                                    position: sticky;
-                                    top: 0;
-                                    z-index: 10;
+                                    // position: sticky;
+                                    // top: 0;
+                                    // z-index: 10;
                                     // vertical-align: middle;
                                     // text-align: center;
-                                    background-color: #009B81;
-                                    color: white;
+                                    // background-color: #009B81;
+                                    // color: white;
                                     // font-weight: 500;
                                 }    
                             }
                         } 
                     tbody{
-                        overflow-y: auto;
+                        // overflow-y: auto;
                         th, td{
                             // vertical-align: middle;
                             // text-align: center;
                             // font-weight: 300;
-                            color: #009B81;
-                            a{
-                                // text-decoration: none;
-                            }
+                            // color: #009B81;
+                            // a{
+                            //     text-decoration: none;
+                            // }
                         }
                     }
                     .apertura{
@@ -100,3 +100,26 @@ body{
     }
 }
 
+.container-licitaciones{
+    .card-body{
+        overflow: hidden;
+        .table-responsive{
+            height: 500px;
+            thead{
+                th{
+                    position: sticky;
+                    top: 0;
+                    z-index: 10;
+                    background-color: #009B81;
+                    color: white;
+                }
+            }
+            tbody{
+                overflow-y: auto;
+                th, td{
+                    color: #009B81;
+                }
+            }
+        }
+    }
+}
