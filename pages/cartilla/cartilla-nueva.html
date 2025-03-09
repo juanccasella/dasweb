@@ -10,6 +10,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../styles.css"/>
     <link rel="stylesheet" href="../../styles-juan.css"/>
+    <link rel="stylesheet" href="../../cartilla.css"/>
     <!-- Fontawesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Fuentes de texto -->
@@ -254,6 +255,7 @@
         </div>
     </nav>
 
+
 <!-- Cartilla medica  -->
     <div class="container-fluid d-print-none">
         <div class="container d-flex align-items-center justify-content-between banner-container w-90 mt-4">
@@ -268,37 +270,9 @@
     </div>
 
 
-
     <div class="container-fluid w-90">
         <div class="row my-5">
             <div class="col-md-3">
-                <!-- Filtros seleccionados -->
-                <div id="filtrosSeleccionados" class="mb-3">
-                    <div class="mb-2"><strong>Especialidad:</strong></div>
-                    <div class="mb-2" id="especialidades">
-                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                    </div>
-                    <div class="mb-2"><strong>Provincia:</strong></div>
-                    <div class="mb-2" id="provincias">
-                        <span class="badge bg-verde-2 m-2" id="filtroProvincia1">Buenos Aires <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroProvincia2">Córdoba <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                    </div>
-                    <div class="mb-2"><strong>Localidad:</strong></div>
-                    <div class="mb-2" id="localidades">
-                        <span class="badge bg-verde-2 m-2" id="filtroLocalidad1">La Plata <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroLocalidad2">Rosario <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                    </div>
-                    <div class="mb-2"><strong>Profesional:</strong></div>
-                    <div class="mb-2" id="profesionales">
-                        <span class="badge bg-verde-2 m-2" id="filtroProfesional1">Dr. Pérez <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                        <span class="badge bg-verde-2 m-2" id="filtroProfesional2">Dra. Gómez <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
-                    </div>
-                </div>
                 <!-- Filtros de búsqueda -->
                 <div class="mb-3">
                     <label for="especialidad" class="form-label">Especialidad</label>
@@ -371,9 +345,176 @@
                         </div>
                     </div>
                 </div>
+                <!-- Filtros seleccionados -->
+                <div id="filtrosSeleccionados" class="mb-3">
+                    <div class="mb-2"><strong>Especialidad:</strong></div>
+                    <div class="mb-2" id="especialidades">
+                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                    </div>
+                    <div class="mb-2"><strong>Provincia:</strong></div>
+                    <div class="mb-2" id="provincias">
+                        <span class="badge bg-verde-2 m-2" id="filtroProvincia1">Buenos Aires <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroProvincia2">Córdoba <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                    </div>
+                    <div class="mb-2"><strong>Localidad:</strong></div>
+                    <div class="mb-2" id="localidades">
+                        <span class="badge bg-verde-2 m-2" id="filtroLocalidad1">La Plata <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroLocalidad2">Rosario <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                    </div>
+                    <div class="mb-2"><strong>Profesional:</strong></div>
+                    <div class="mb-2" id="profesionales">
+                        <span class="badge bg-verde-2 m-2" id="filtroProfesional1">Dr. Pérez <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" id="filtroProfesional2">Dra. Gómez <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                    </div>
+                </div>
             </div>
+            <!-- Contenido principal -->
+            <main class="col-md-9">
+                <div class="card card-container card-container-cartilla">
+                    <div class="card-header">                    
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">CONSULTORIOS EXTERNOS</li>
+                                <li class="breadcrumb-item">CARDIOLOGÍA</li>
+                                <li class="breadcrumb-item">BUENOS AIRES</li>
+                                <li class="breadcrumb-item active" aria-current="page">SAN ISIDRO</li>
+                            </ol>
+                        </nav>
+                        <button type="button" class="btn btn-serch btn-light" data-bs-toggle="modal" data-bs-target="#modalSerch">
+                            <i class="fas fa-search"></i>
+                            BUSCAR
+                        </button>
+                        <div class="modal fade" id="modalSerch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Busca en consultorios externos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control is-valid" id="FormProv" placeholder="Ingresa la especialidad" autocomplete="off"  value="CARDIOLOGÍA">
+                                            <label for="floatingInput">¿Qué especialidad estás buscando?</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control is-valid" id="FormProv" placeholder="Ingresa la provincia" autocomplete="off" value="BUENOS AIRES">
+                                            <label for="floatingInput">¿En qué provincia estás buscando?</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control is-valid" id="floatingPassword" placeholder="Ingresa la ubicacion" autocomplete="off" value="SAN ISIDRO">
+                                            <label for="floatingPassword">¿En qué localidad estás buscando?</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-modal">Buscar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card card-body-container">
+                            <div class="card-body">
+                                <div class="body-start">
+                                    <h5 class="card-title">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle">
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-location-dot"></i>CARMAN DIEGO 555
+                                        </p>
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-phone"></i>4129-5500
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-end">
+                                    <div class="body-links">
+                                        <a href="#" class="card-link"><i class="fa-solid fa-share-nodes"></i></a>
+                                        <a href="#" class="card-link"><i class="fa-solid fa-print"></i></a>
+                                        <a href="#" class="card-link"><i class="fa-solid fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body-container">
+                            <div class="card-body">
+                                <div class="body-start">
+                                    <h5 class="card-title">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle">
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-location-dot"></i>CARMAN DIEGO 555
+                                        </p>
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-phone"></i>4129-5500
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-end">
+                                    <div class="body-links">
+                                        <a href="#" class="card-link"><i class="fa-solid fa-share-nodes"></i></a>
+                                        <a href="#" class="card-link"><i class="fa-solid fa-print"></i></a>
+                                        <a href="#" class="card-link"><i class="fa-solid fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body-container">
+                            <div class="card-body">
+                                <div class="body-start">
+                                    <h5 class="card-title">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle">
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-location-dot"></i>CARMAN DIEGO 555
+                                        </p>
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-phone"></i>4129-5500
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-end">
+                                    <div class="body-links">
+                                        <a href="#" class="card-link"><i class="fa-solid fa-share-nodes"></i></a>
+                                        <a href="#" class="card-link"><i class="fa-solid fa-print"></i></a>
+                                        <a href="#" class="card-link"><i class="fa-solid fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
+
 
     
 
