@@ -86,7 +86,7 @@
                         CENTRO DAS
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/odontologia.html">ONDONTOLOGÍA</a></li>
+                        <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/odontologia.html">ODONTOLOGÍA</a></li>
                         <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/salud-mental.html">SALUD MENTAL</a></li>
                         <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/cobertura-medicacion.html">COBERTURA MEDICACIÓN</a></li>
                         <li><a class="dropdown-item text-gris-2 my-2" href="../centro-das/vacunatorio.html">VACUNATORIO</a></li>
@@ -177,7 +177,7 @@
                             CENTRO DAS
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-gris-2" href="../centro-das/odontologia.html">ONDONTOLOGÍA</a></li>
+                            <li><a class="dropdown-item text-gris-2" href="../centro-das/odontologia.html">ODONTOLOGÍA</a></li>
                             <li><a class="dropdown-item text-gris-2" href="../centro-das/salud-mental.html">SALUD MENTAL</a></li>
                             <li><a class="dropdown-item text-gris-2" href="../centro-das/cobertura-medicacion.html">COBERTURA MEDICACIÓN</a></li>
                             <li><a class="dropdown-item text-gris-2" href="../centro-das/vacunatorio.html">VACUNATORIO</a></li>
@@ -274,39 +274,8 @@
         <div class="row my-5">
             <div class="col-md-3">
                 <!-- Filtros de búsqueda -->
-                <div class="mb-3">
-                    <label for="especialidad" class="form-label">Especialidad</label>
-                    <select class="form-select" id="especialidad">
-                        <option selected>Seleccionar...</option>
-                        <option value="Cardiología">Cardiología</option>
-                        <option value="Pediatría">Pediatría</option>
-                        <option value="Dermatología">Dermatología</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="provincia" class="form-label">Provincia</label>
-                    <select class="form-select" id="provincia">
-                        <option selected>Seleccionar...</option>
-                        <option value="Buenos Aires">Buenos Aires</option>
-                        <option value="Córdoba">Córdoba</option>
-                        <option value="Santa Fe">Santa Fe</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="localidad" class="form-label">Localidad</label>
-                    <select class="form-select" id="localidad">
-                        <option selected>Seleccionar...</option>
-                        <option value="La Plata">La Plata</option>
-                        <option value="Rosario">Rosario</option>
-                        <option value="Córdoba Capital">Córdoba Capital</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="profesional" class="form-label">Profesional</label>
-                    <input type="text" class="form-control" id="profesional" placeholder="Ingrese el nombre del profesional">
-                </div>
                 <!-- Acordeón -->
-                <div class="accordion" id="accordionPrestadores">
+                <!-- <div class="accordion" id="accordionPrestadores">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingPrestadores">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrestadores" aria-expanded="false" aria-controls="collapsePrestadores">
@@ -344,7 +313,53 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <div class="mb-3">
+                    <label for="especialidad" class="form-label">Prestadores</label>
+                    <select class="form-select" id="especialidad">
+                        <option selected>Guardias</option>
+                        <!-- <option value="Cardiología">Guardias</option> -->
+                        <option value="Pediatría">Internaciones</option>
+                        <option value="Consultorios Externos">Consultorios Externos</option>
+                        <option value="Estudios y Laboratorios">Estudios y Laboratorios</option>
+                        <option value="Odontología">Odontología</option>
+                        <option value="Farmacias">Farmacias</option>
+                        <option value="Ópticas">Ópticas</option>
+                        <option value="Salud Mental">Salud Mental</option>
+                    </select>
                 </div>
+                <div class="mb-3">
+                    <label for="especialidad" class="form-label">Especialidad</label>
+                    <select class="form-select" id="especialidad">
+                        <option selected>Seleccionar...</option>
+                        <option value="Cardiología">Cardiología</option>
+                        <option value="Pediatría">Pediatría</option>
+                        <option value="Dermatología">Dermatología</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="provincia" class="form-label">Provincia</label>
+                    <select class="form-select" id="provincia">
+                        <option selected>Seleccionar...</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="localidad" class="form-label">Localidad</label>
+                    <select class="form-select" id="localidad">
+                        <option selected>Seleccionar...</option>
+                        <option value="La Plata">La Plata</option>
+                        <option value="Rosario">Rosario</option>
+                        <option value="Córdoba Capital">Córdoba Capital</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="profesional" class="form-label">Profesional</label>
+                    <input type="text" class="form-control" id="profesional" placeholder="Ingrese el nombre del profesional">
+                </div>
+
                 <!-- Filtros seleccionados -->
                 <div id="filtrosSeleccionados" class="mb-3">
                     <div class="mb-2"><strong>Especialidad:</strong></div>
