@@ -481,7 +481,19 @@
 
 
     </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop();
+            let listItems = document.querySelectorAll(".list-group-item");
+    
+            listItems.forEach(li => {
+                let link = li.querySelector("a");
+                if (link && link.getAttribute("href") === currentPage) {
+                    li.classList.add("activeLateral");
+                }
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

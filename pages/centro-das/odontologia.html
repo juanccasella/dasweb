@@ -313,20 +313,20 @@
                             Nuestro objetivo principal es prevenir enfermedades dentales, promover la salud oral y mejorar la calidad de vida de nuestros afiliados y afiliadas.
                         </p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-square-caret-right fa-2xs"></i> Solicitar turno:
+                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-caret-right fa-xs"></i> Solicitar turno:
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Llamando al Centro de Información Personalizada (CIP) al <b class="text-azul-2">0810-222-0317</b>, de lunes a viernes de 8 a 20 hs en días hábiles.</li>
+                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Llamando al Centro de Información Personalizada (CIP) al <a href="tel:08102220317" class="text-azul-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</li>
                                     <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> De forma presencial de 9 a 20 hs (<b class="text-azul-2">Alsina 1823, 2.º piso</b>).</li>
                                 </ul>
                             </li>
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-square-caret-right fa-2xs"></i> Primera consulta. Estudios que se realizan: 
+                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-caret-right fa-xs"></i> Primera consulta. Estudios que se realizan: 
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Plan de tratamiento personalizado.</li>
                                     <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Limpieza y prevención.</li>
                                     <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Estudios radiográficos.</li>
                                 </ul>
                             </li>
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-square-caret-right fa-2xs"></i> Plan de tratamiento:
+                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-caret-right fa-xs"></i> Plan de tratamiento:
                                 <p class="border-0 text-gris-2 fw-lighter fs-6 mt-4">Según su plan de tratamiento, el afiliado y/o la afiliada será derivado/a a las distintas especialidades con las que contamos en la DAS:</p>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Endodoncia.</li>
@@ -335,10 +335,10 @@
                                     <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Prótesis.</li>
                                 </ul>
                             </li>
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-square-caret-right fa-2xs"></i> Urgencias o Emergencias odontológicas en DAS:
+                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0"><i class="fa-solid fa-caret-right fa-xs"></i> Urgencias o Emergencias odontológicas en DAS:
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Lunes a viernes de 10 a 16:30 hs (Por orden de llegada).</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Comunicarse previamente al CIP <b class="text-azul-2">0810-222-0317</b>.</li>
+                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6"><i class="fa-solid fa-caret-right fa-2xs"></i> Comunicarse previamente al CIP <a href="tel:08102220317" class="text-azul-2 fw-bold">0810-222-0317</a>.</li>
                                 </ul>
                             </li>
                         </ul>
@@ -523,7 +523,19 @@
 
 
     </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop();
+            let listItems = document.querySelectorAll(".list-group-item");
+    
+            listItems.forEach(li => {
+                let link = li.querySelector("a");
+                if (link && link.getAttribute("href") === currentPage) {
+                    li.classList.add("activeLateral");
+                }
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

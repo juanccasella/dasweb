@@ -291,4 +291,13 @@ body::-webkit-scrollbar-track {
 
 #content1 .list-group {
   border-top-left-radius: 0 !important;
+}
+
+.list-group-item.activeLateral {
+  background-color: #00AE97 !important;
+}
+
+/* Asegurar que el texto dentro del <a> sea blanco */
+.list-group-item.activeLateral a {
+  color: white !important;
 }/*# sourceMappingURL=styles-juan.css.map */
