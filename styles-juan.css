@@ -182,10 +182,13 @@ body::-webkit-scrollbar-track {
 
 /* Img banner */
 .banner-container {
+  overflow: hidden;
   height: 200px !important;
 }
 .banner-container .img-banner {
-  height: 200px !important;
+  width: 600px;
+  max-width: 800px !important;
+  height: auto !important;
 }
 
 .btn-relleno {
