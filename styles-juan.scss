@@ -75,6 +75,11 @@ body{
             border-radius: 8px;
         }
     }
+    @media (max-width: 1400px) {
+    h1 {
+        font-size: x-large;
+    }
+    }   
 }
 
 
@@ -83,25 +88,31 @@ body{
     margin-left: 5%;
 }
 
-@media (max-width: 1199px){
-    .telefonos-home{
-        border: 2px solid #B8B8B8;
-        border-radius: 8px;
-        margin: 1.5rem 0;
-        padding: 1.5rem;
-        .telefonos-icono{
-            margin-right: 1.5rem;
-        }
-        .telefonos-texto{
-            margin-left: 1.5rem;
-            .telefonos-titulo{
-                font-size: 1.5rem;
-            }
-            .telefonos-subtitulo{
-                font-size: 1.25rem;
-            }
-        }
+@media (max-width: 1500px){
+    .telefonos-titulo{
+        font-size: 1.25rem;
     }
+    .telefonos-subtitulo{
+        font-size: 1rem;
+    }
+    // .telefonos-home{
+    //     border: 2px solid #B8B8B8;
+    //     border-radius: 8px;
+    //     margin: 1.5rem 0;
+    //     padding: 1.5rem;
+    //     .telefonos-icono{
+    //         margin-right: 1.5rem;
+    //     }
+    //     .telefonos-texto{
+    //         margin-left: 1.5rem;
+    //         .telefonos-titulo{
+    //             font-size: 1.5rem;
+    //         }
+    //         .telefonos-subtitulo{
+    //             font-size: 1.25rem;
+    //         }
+    //     }
+    // }
 }
 
 @media (max-width: 991px){
@@ -378,7 +389,7 @@ body{
     background-color: #00AE97 !important;
 }
 
-/* Asegurar que el texto dentro del <a> sea blanco */
+
 .list-group-item.activeLateral a {
     color: white !important;
 }

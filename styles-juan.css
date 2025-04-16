@@ -63,30 +63,23 @@ body::-webkit-scrollbar-track {
   height: 50px !important;
   border-radius: 8px;
 }
+@media (max-width: 1400px) {
+  .carousel-container h1 {
+    font-size: x-large;
+  }
+}
 
 /* Telefonos utiles */
 .telefonos-container {
   margin-left: 5%;
 }
 
-@media (max-width: 1199px) {
-  .telefonos-home {
-    border: 2px solid #B8B8B8;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-    padding: 1.5rem;
-  }
-  .telefonos-home .telefonos-icono {
-    margin-right: 1.5rem;
-  }
-  .telefonos-home .telefonos-texto {
-    margin-left: 1.5rem;
-  }
-  .telefonos-home .telefonos-texto .telefonos-titulo {
-    font-size: 1.5rem;
-  }
-  .telefonos-home .telefonos-texto .telefonos-subtitulo {
+@media (max-width: 1500px) {
+  .telefonos-titulo {
     font-size: 1.25rem;
+  }
+  .telefonos-subtitulo {
+    font-size: 1rem;
   }
 }
 @media (max-width: 991px) {
@@ -300,7 +293,6 @@ body::-webkit-scrollbar-track {
   background-color: #00AE97 !important;
 }
 
-/* Asegurar que el texto dentro del <a> sea blanco */
 .list-group-item.activeLateral a {
   color: white !important;
 }/*# sourceMappingURL=styles-juan.css.map */
