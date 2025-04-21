@@ -349,23 +349,25 @@ Centro das: verdes (odonto celeste)-->
     <div class="container-fluid my-5">
         <div class="row telefonos-container w-90">
             
-            <div class="col-12 col-xl-6 col d-flex justify-content-center ps-0 pe-5">   
+            <div class="col-12 col-xl-6 col d-flex justify-content-center ps-0 pe-0 pe-xl-5 mb-4 mb-xl-0">   
                 <button class="border border-2 border-rosa-4 rounded d-flex align-items-center py-4 btn-shadow bg-white w-100" data-bs-toggle="modal" data-bs-target="#modalTelefonos">
                     <img class="telefonos-icono d-none d-lg-block me-3" src="./assets/iconos/telefonos/emergencias.svg"></img>                       
                     <div class="telefonos-texto w-90 ms-3 text-start">
                         <h3 class="telefonos-titulo text-rosa-4 m-0">URGENCIAS Y EMERGENCIAS MÉDICAS</h3>
                         <h5 class="telefonos-subtitulo d-none d-lg-block text-gris-4 mt-2">Teléfonos: 0810-999-767-3876 / (011) 5289-8110</h5>
                     </div>
+                    <i class="fa-solid fa-phone-volume text-rosa-4 d-block d-lg-none"></i>
                 </button>
             </div>
 
-            <div class="col-12 col-xl-6 col d-flex justify-content-center ps-5 pe-0">   
+            <div class="col-12 col-xl-6 col d-flex justify-content-center ps-0 pe-0 ps-xl-5">   
                 <button class="border border-2 border-verde-2 rounded d-flex align-items-center py-4 btn-shadow bg-white w-100" data-bs-toggle="modal" data-bs-target="#modalTelefonos">
                     <img class="telefonos-icono d-none d-lg-block me-3" src="./assets/iconos/telefonos/cip.svg"></img>                       
-                    <div class="telefonos-texto w-90 text-start">
+                    <div class="telefonos-texto w-90 ms-3 text-start">
                         <h3 class="telefonos-titulo text-verde-2 m-0">SOLICITUD DE TURNOS Y GESTIONES</h3>
                         <h5 class="telefonos-subtitulo d-none d-lg-block text-gris-4 mt-2">Teléfonos: 0810-222-0317</h5>
                     </div>
+                    <i class="fa-solid fa-phone-volume text-verde-2 d-block d-lg-none"></i>
                 </button>
             </div>
         </div>
@@ -386,62 +388,81 @@ Centro das: verdes (odonto celeste)-->
                         <div class="row g-0 g-xl-3">
                             <!-- Primera columna -->
                             <div class="col-12 col-xl-6 d-flex flex-column h-100">
-                                <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 me-0 me-xl-3">
-                                    <img src="./assets/iconos/telefonos-utiles/emergencias.svg" alt="Emergencias" class="me-3" style="width: 50px;">
-                                    <div class="text-gris-2">
-                                        <h6 class="mb-1 fw-bold text-rosa-4 fs-5">Emergencias y urgencias</h6>
-                                        <p class="mb-1"><b>Interno 1:</b> 0810-999-3876</p>
-                                        <p class="mb-1"><b>Línea auxiliar:</b> (011) 5289-8110</p>
-                                    </div>
-                                </div>
 
-                                <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 me-0 me-xl-3">
-                                    <img src="./assets/iconos/telefonos-utiles/salud-mental.svg" alt="Policía" class="me-3" style="width: 50px;">
-                                    <div class="text-gris-2">
-                                        <h6 class="mb-1 fw-bold text-verde-2 fs-5">Salud mental</h6>
-                                        <P class="mb-1"><b>Emergencias psiquiátricas 24 hs</b></P>
-                                        <p class="mb-1"><b>Teléfono:</b> 0800-222-3566</p>
+                                <a href="tel:08109993876" class="text-decoration-none">
+                                    <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 me-0 me-xl-3">
+                                        <img src="./assets/iconos/telefonos-utiles/emergencias.svg" alt="Emergencias" class="me-3" style="width: 50px;">
+                                        <div class="text-gris-2">
+                                            <h6 class="mb-1 fw-bold text-rosa-4 fs-5">Emergencias y Urgencias</h6>
+                                            <p class="mb-1 d-none d-md-block"><b>Interno 1:</b> 0810-999-3876</p>
+                                            <p class="mb-1 d-none d-md-block"><b>Línea auxiliar:</b> (011) 5289-8110</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
 
-                                <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 me-0 me-xl-3">
-                                    <img src="./assets/iconos/telefonos-utiles/cip.svg" alt="Bomberos" class="me-3" style="width: 50px;">
-                                    <div class="text-gris-2">
-                                        <h6 class="mb-1 fw-bold text-verde-2 fs-5">Centro de información personalizada</h6>
-                                        <p class="mb-1"><b>Teléfono:</b> 0810-222-0317</p>
-                                        <p class="mb-1"><b>Correo:</b> <a href="mailto:contacto@das.gob.ar" class="text-verde-2">contacto@das.gob.ar</a></p>
+                                <a href="tel:08002223566" class="text-decoration-none">
+                                    <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 me-0 me-xl-3">
+                                        <img src="./assets/iconos/telefonos-utiles/salud-mental.svg" alt="Policía" class="me-3" style="width: 50px;">
+                                        <div class="text-gris-2">
+                                            <h6 class="mb-1 fw-bold text-verde-2 fs-5">Salud Mental</h6>
+                                            <P class="mb-1 d-none d-md-block"><b>Emergencias psiquiátricas 24 hs</b></P>
+                                            <p class="mb-1 d-none d-md-block"><b>Teléfono:</b> 0800-222-3566</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
+
+
+                                <a href="tel:08102220317" class="text-decoration-none">
+                                    <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 me-0 me-xl-3">
+                                        <img src="./assets/iconos/telefonos-utiles/cip.svg" alt="Bomberos" class="me-3" style="width: 50px;">
+                                        <div class="text-gris-2">
+                                            <h6 class="mb-1 fw-bold text-verde-2 fs-5">Centro de Información Personalizada</h6>
+                                            <p class="mb-1 d-none d-md-block text-gris-2"><b>Teléfono:</b> 0810-222-0317</p>
+                                            <p class="mb-1 d-none d-md-block"><b class="text-gris-2">Correo:</b> <a href="mailto:contacto@das.gob.ar" class="text-verde-2">contacto@das.gob.ar</a></p>
+                                        </div>
+                                    </div>
+                                </a>
+
+
                             </div>
+
 
                             <!-- Segunda columna -->
                             <div class="col-12 col-xl-6 d-flex flex-column h-100">
-                                <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 ms-0 ms-xl-3">
-                                    <img src="./assets/iconos/telefonos-utiles/odotnologia.svg" alt="Hospital" class="me-3" style="width: 50px;">
-                                    <div class="text-gris-2">
-                                        <h6 class="mb-1 fw-bold text-verde-2 fs-5">Emergencias odontológicas</h6>
-                                        <p class="mb-1"><b>Clinica ODEM central (CABA y GBA):</b> 4372-2508 / 1113</p>
-                                        <p class="mb-1"><b>Interior del país (Lavalle 1718, CABA):</b> 0810-333-6847</p>
-                                    </div>
-                                </div>
 
-                                <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 ms-0 ms-xl-3">
-                                    <img src="./assets/iconos/telefonos-utiles/sepelios.svg" alt="Turnos" class="me-3" style="width: 50px;">
-                                    <div class="text-gris-2">
-                                        <h6 class="mb-1 fw-bold text-verde-2 fs-5">Sepelios (El Surco Compañía de Seguros):</h6>
-                                        <p class="mb-1"><b>Teléfonos fijos:</b> 0800-666-1575/0800-345-1259</p>
-                                        <p class="mb-1"><b>Teléno celular:</b> (11) 7700-3087</p>
+                                <a href="tel:43722508" class="text-decoration-none">
+                                    <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 ms-0 ms-xl-3">
+                                        <img src="./assets/iconos/telefonos-utiles/odotnologia.svg" alt="Hospital" class="me-3" style="width: 50px;">
+                                        <div class="text-gris-2">
+                                            <h6 class="mb-1 fw-bold text-verde-2 fs-5">Emergencias Odontológicas</h6>
+                                            <p class="mb-1 d-none d-md-block"><b>Clinica ODEM central (CABA y GBA):</b> 4372-2508 / 1113</p>
+                                            <p class="mb-1 d-none d-md-block"><b>Interior del país (Lavalle 1718, CABA):</b> 0810-333-6847</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
 
-                                <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 ms-0 ms-xl-3">
-                                    <img src="./assets/iconos/telefonos-utiles/eva.svg" alt="Asistencia Social" class="me-3" style="width: 50px;">
-                                    <div class="text-gris-2">
-                                        <h6 class="mb-1 fw-bold text-verde-2 fs-5">Chat bot EVA</h6>
-                                        <p class="mb-1"><b>Solo mensajes</b></p>
-                                        <p class="mb-1">Teléfono: (11) 3641-0119</p>
+                                <a href="tel:08006661575" class="text-decoration-none">
+                                    <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 ms-0 ms-xl-3">
+                                        <img src="./assets/iconos/telefonos-utiles/sepelios.svg" alt="Turnos" class="me-3" style="width: 50px;">
+                                        <div class="text-gris-2">
+                                            <h6 class="mb-1 fw-bold text-verde-2 fs-5">Sepelios</h6>
+                                            <p class="mb-1 d-none d-md-block"><b>Teléfonos fijos:</b> 0800-666-1575/0800-345-1259</p>
+                                            <p class="mb-1 d-none d-md-block"><b>Teléno celular:</b> (11) 7700-3087</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
+
+                                <a href="https://wa.me/5491136440119" target="_blank" class="text-decoration-none">
+                                    <div class="d-flex align-items-center p-3 border rounded shadow-sm flex-grow-1 mb-3 ms-0 ms-xl-3">
+                                        <img src="./assets/iconos/telefonos-utiles/eva.svg" alt="Asistencia Social" class="me-3" style="width: 50px;">
+                                        <div class="text-gris-2">
+                                            <h6 class="mb-1 fw-bold text-verde-2 fs-5">Chat Bot EVA</h6>
+                                            <p class="mb-1 d-none d-md-block"><b>Solo mensajes</b></p>
+                                            <p class="mb-1 d-none d-md-block">Teléfono: (11) 3644-0119</p>
+                                        </div>
+                                    </div>
+                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -463,10 +484,10 @@ Centro das: verdes (odonto celeste)-->
         <div class="row gx-0 text-center w-100 justify-content-center">
 
             <!-- Botón home cartilla -->
-            <div class="col">
+            <div class="col-12 col-lg">
                 <a href="./pages/cartilla.html" class="text-decoration-none">
                     <div class="card bg-verde-4 border-0 rounded-0 text-blanco">
-                        <div class="card-body py-5 fs-3 m-0 text-center">
+                        <div class="card-body py-3 py-lg-5 fs-3 m-0 text-center">
                             Cartilla
                         </div>
                     </div>
@@ -474,10 +495,10 @@ Centro das: verdes (odonto celeste)-->
             </div>
 
             <!-- Botón home programas -->
-            <div class="col">
+            <div class="col-12 col-lg">
                 <a href="./pages/programas.html" class="text-decoration-none">
                     <div class="card bg-verde-3 border-0 rounded-0 text-blanco">
-                        <div class="card-body py-5 fs-3 m-0 text-center">
+                        <div class="card-body py-3 py-lg-5 fs-3 m-0 text-center">
                             Programas
                         </div>
                     </div>
@@ -485,10 +506,10 @@ Centro das: verdes (odonto celeste)-->
             </div>
 
             <!-- Botón home sede Alsina -->
-            <div class="col">
+            <div class="col-12 col-lg">
                 <a href="./pages/centrodas.html" class="text-decoration-none">
                     <div class="card bg-azul-4 border-0 rounded-0 text-blanco">
-                        <div class="card-body py-5 fs-3 m-0 text-center">
+                        <div class="card-body py-3 py-lg-5 fs-3 m-0 text-center">
                             Centro DAS
                         </div>
                     </div>
@@ -496,10 +517,10 @@ Centro das: verdes (odonto celeste)-->
             </div>
 
             <!-- Botón home contacto -->
-            <div class="col">
+            <div class="col-12 col-lg">
                 <a href="./pages/institucional/contacto.html" class="text-decoration-none">
                     <div class="card bg-azulV-4 border-0 rounded-0 text-blanco">
-                        <div class="card-body py-5 fs-3 m-0 text-center">
+                        <div class="card-body py-3 py-lg-5 fs-3 m-0 text-center">
                             Contacto
                         </div>
                     </div>
@@ -507,10 +528,10 @@ Centro das: verdes (odonto celeste)-->
             </div>
 
             <!-- Botón home autogestión -->
-            <div class="col">
+            <div class="col-12 col-lg">
                 <a href="https://portal.das.gob.ar/?_gl=1*13gwcht*_ga*NTE3ODYxNTM4LjE3MjgwNTExNjU.*_ga_Z0KDWFJYX4*MTc0MDE1NzIzNi4xODYuMC4xNzQwMTU3MjM2LjAuMC4w" target="_blank" class="text-decoration-none">
                     <div class="card bg-naranja-3 border-0 rounded-0 text-blanco">
-                        <div class="card-body py-5 fs-3 m-0 text-center">
+                        <div class="card-body py-3 py-lg-5 fs-3 m-0 text-center">
                             Autogestión
                         </div>
                     </div>
