@@ -551,7 +551,7 @@ Centro das: verdes (odonto celeste)-->
             <div class="col-12 col-xl-6 mb-4">
                 <div class="card h-100 d-flex flex-row align-items-center">
                     <img src="/assets/img/noticias/iso.jpg" class="img-fluid m-2" alt="noticia">
-                    <div class="card-body">
+                    <div class="card-body p-1 pe-3">
                         <h5 class="card-title text-gris-2">Normas ISO 9001:2015</h5>
                         <p class="card-text d-none d-md-block text-gris-2">Los días 17 y 18 de septiembre, el ente de certificación IRAM realizó las auditorías correspondientes en nuestra institución y determinó, por segundo año consecutivo, que el Sistema de Gestión de ....</p>
                         <div class="mt-auto d-flex justify-content-end">
@@ -564,7 +564,7 @@ Centro das: verdes (odonto celeste)-->
             <div class="col-12 col-xl-6 mb-4">
                 <div class="card h-100 d-flex flex-row align-items-center">
                     <img src="/assets/img/noticias/token.jpg" class="img-fluid m-2" alt="noticia">
-                    <div class="card-body">
+                    <div class="card-body p-1 pe-3">
                         <h5 class="card-title text-gris-2">Nuevo token de seguridad</h5>
                         <p class="card-text d-none d-md-block text-gris-2">Con el fin de mejorar la seguridad y eficiencia de las prestaciones, los profesionales de cartilla y centros de atención de OMINT solicitan un token para acceder a tu consulta médica de ...</p>
                         <div class="mt-auto d-flex justify-content-end">
@@ -577,7 +577,7 @@ Centro das: verdes (odonto celeste)-->
             <div class="col-12 col-xl-6 mb-4">
                 <div class="card h-100 d-flex flex-row align-items-center">
                     <img src="/assets/img/noticias/das.jpg" class="img-fluid m-2" alt="noticia">
-                    <div class="card-body">
+                    <div class="card-body p-1 pe-3">
                         <h5 class="card-title text-gris-2">La DAS en tu sector</h5>
                         <p class="card-text d-none d-md-block text-gris-2">Mediante esta acción, los afiliados y afiliadas a la DAS pueden acercarse a conocer los beneficios que le brinda su cobertura de salud, como así también, tener la posibilidad de iniciar trámites ...</p>
                         <div class="mt-auto d-flex justify-content-end">
@@ -590,7 +590,7 @@ Centro das: verdes (odonto celeste)-->
             <div class="col-12 col-xl-6 mb-4">
                 <div class="card h-100 d-flex flex-row align-items-center">
                     <img src="/assets/img/noticias/biblioteca.jpg" class="img-fluid m-2" alt="noticia">
-                    <div class="card-body">
+                    <div class="card-body p-1 pe-3">
                         <h5 class="card-title text-gris-2">Tercer concurso literario</h5>
                         <p class="card-text d-none d-md-block text-gris-2">La DAS, a través de su Biblioteca Circulante, te invita a participar del 3° Concurso Literario. Pueden participar afiliados/as mayores de 18 años. El cuento, de tema libre, se puede presen...</p>
                         <div class="mt-auto d-flex justify-content-end">
@@ -785,7 +785,7 @@ Centro das: verdes (odonto celeste)-->
             const cardTexts = document.querySelectorAll('.card-text');
         
             cardTexts.forEach(function(cardText) {
-                const maxLength = 100;
+                const maxLength = 90;
                 if (cardText.textContent.length > maxLength) {
                 cardText.textContent = cardText.textContent.slice(0, maxLength) + '...';
                 }
