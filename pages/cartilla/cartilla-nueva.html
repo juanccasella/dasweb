@@ -324,7 +324,7 @@
                 <div id="filtrosSeleccionados" class="mb-3">
                     <div class="mb-2"><strong>Especialidad:</strong></div>
                     <div class="mb-2" id="especialidades">
-                        <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                        <span class="badge bg-verde-2 m-2" title="ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.)" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
                         <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
                         <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
                         <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
@@ -350,119 +350,207 @@
             </div>
             <!-- Contenido principal -->
             <main class="col-md-9">
-                <div class="card card-container card-container-cartilla">
-                    <div class="card-header  py-3">                    
+                <div class="card card-container border-0 card-container-cartilla">
+                    <div class="card-header rounded bg-verde-2 py-3 d-flex justify-content-between">                    
                         <h2 class="text-decoration-none text-blanco fs-3 my-2">Resultados de su busqueda</h2>
+                        <button type="button" class="btn btn-blanco text-gris-2 px-5 fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Filtros
+                        </button>
+
+                        <!-- Modal filtros -->
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Filtros</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-ver" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="card-body">
-                        <div class="card card-body-container">
-                            <div class="card-body">
-                                <div class="body-start">
-                                    <h5 class="card-title">SANATORIO LAS LOMAS</h5>
-                                    <div class="card-subtitle">
+
+                        <div class="card card-body-container text-verde-2 mt-4 border-0 rounded shadow">
+                            <div class="card-body d-flex ps-4">
+                                <div class="body-start w-75">
+                                    <h5 class="card-title border-bottom border-verde-2 pb-3">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle mt-3">
                                         <p class="card-text">
-                                            <i class="fa-solid fa-location-dot"></i>CARMAN DIEGO 555
+                                            <i class="fa-solid fa-location-dot me-2"></i>CARMAN DIEGO 555
                                         </p>
                                         <p class="card-text">
-                                            <i class="fa-solid fa-phone"></i>4129-5500
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="body-end">
-                                    <div class="body-links">
-                                        <a href="#" class="card-link"><i class="fa-solid fa-share-nodes"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-print"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card-body-container">
-                            <div class="card-body">
-                                <div class="body-start">
-                                    <h5 class="card-title">SANATORIO LAS LOMAS</h5>
-                                    <div class="card-subtitle">
-                                        <p class="card-text">
-                                            <i class="fa-solid fa-location-dot"></i>CARMAN DIEGO 555
-                                        </p>
-                                        <p class="card-text">
-                                            <i class="fa-solid fa-phone"></i>4129-5500
+                                            <i class="fa-solid fa-phone me-2"></i>4129-5500
                                         </p>
                                     </div>
                                 </div>
-                                <div class="body-end">
-                                    <div class="body-links">
-                                        <a href="#" class="card-link"><i class="fa-solid fa-share-nodes"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-print"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-plus"></i></a>
+                                <div class="body-end w-25 d-flex justify-content-end me-3">
+                                    <div class="body-links w-75 ali">
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-share-nodes text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-print text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-gris-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-plus text-blanco"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card card-body-container">
-                            <div class="card-body">
-                                <div class="body-start">
-                                    <h5 class="card-title">SANATORIO LAS LOMAS</h5>
-                                    <div class="card-subtitle">
+
+                        <div class="card card-body-container text-verde-2 mt-4 border-0 rounded shadow">
+                            <div class="card-body d-flex ps-4">
+                                <div class="body-start w-75">
+                                    <h5 class="card-title border-bottom border-verde-2 pb-3">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle mt-3">
                                         <p class="card-text">
-                                            <i class="fa-solid fa-location-dot"></i>CARMAN DIEGO 555
+                                            <i class="fa-solid fa-location-dot me-2"></i>CARMAN DIEGO 555
                                         </p>
                                         <p class="card-text">
-                                            <i class="fa-solid fa-phone"></i>4129-5500
+                                            <i class="fa-solid fa-phone me-2"></i>4129-5500
                                         </p>
                                     </div>
                                 </div>
-                                <div class="body-end">
-                                    <div class="body-links">
-                                        <a href="#" class="card-link"><i class="fa-solid fa-share-nodes"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-print"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-plus"></i></a>
+                                <div class="body-end w-25 d-flex justify-content-end me-3">
+                                    <div class="body-links w-75 ali">
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-share-nodes text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-print text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-gris-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-plus text-blanco"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card card-body-container">
-                            <div class="card-body">
-                                <div class="body-start">
-                                    <h5 class="card-title">SANATORIO LAS LOMAS</h5>
-                                    <div class="card-subtitle">
+
+                        <div class="card card-body-container text-verde-2 mt-4 border-0 rounded shadow">
+                            <div class="card-body d-flex ps-4">
+                                <div class="body-start w-75">
+                                    <h5 class="card-title border-bottom border-verde-2 pb-3">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle mt-3">
                                         <p class="card-text">
-                                            <i class="fa-solid fa-location-dot"></i>CARMAN DIEGO 555
+                                            <i class="fa-solid fa-location-dot me-2"></i>CARMAN DIEGO 555
                                         </p>
                                         <p class="card-text">
-                                            <i class="fa-solid fa-phone"></i>4129-5500
+                                            <i class="fa-solid fa-phone me-2"></i>4129-5500
                                         </p>
                                     </div>
                                 </div>
-                                <div class="body-end">
-                                    <div class="body-links">
-                                        <a href="#" class="card-link"><i class="fa-solid fa-share-nodes"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-print"></i></a>
-                                        <a href="#" class="card-link"><i class="fa-solid fa-plus"></i></a>
+                                <div class="body-end w-25 d-flex justify-content-end me-3">
+                                    <div class="body-links w-75 ali">
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-share-nodes text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-print text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-gris-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-plus text-blanco"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-body-container text-verde-2 mt-4 border-0 rounded shadow">
+                            <div class="card-body d-flex ps-4">
+                                <div class="body-start w-75">
+                                    <h5 class="card-title border-bottom border-verde-2 pb-3">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle mt-3">
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-location-dot me-2"></i>CARMAN DIEGO 555
+                                        </p>
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-phone me-2"></i>4129-5500
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-end w-25 d-flex justify-content-end me-3">
+                                    <div class="body-links w-75 ali">
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-share-nodes text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-print text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-gris-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-plus text-blanco"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-body-container text-verde-2 mt-4 border-0 rounded shadow">
+                            <div class="card-body d-flex ps-4">
+                                <div class="body-start w-75">
+                                    <h5 class="card-title border-bottom border-verde-2 pb-3">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle mt-3">
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-location-dot me-2"></i>CARMAN DIEGO 555
+                                        </p>
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-phone me-2"></i>4129-5500
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-end w-25 d-flex justify-content-end me-3">
+                                    <div class="body-links w-75 ali">
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-share-nodes text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-print text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-gris-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-plus text-blanco"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-body-container text-verde-2 mt-4 border-0 rounded shadow">
+                            <div class="card-body d-flex ps-4">
+                                <div class="body-start w-75">
+                                    <h5 class="card-title border-bottom border-verde-2 pb-3">SANATORIO LAS LOMAS</h5>
+                                    <div class="card-subtitle mt-3">
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-location-dot me-2"></i>CARMAN DIEGO 555
+                                        </p>
+                                        <p class="card-text">
+                                            <i class="fa-solid fa-phone me-2"></i>4129-5500
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="body-end w-25 d-flex justify-content-end me-3">
+                                    <div class="body-links w-75 ali">
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-share-nodes text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-verde-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-print text-blanco"></i></a>
+                                        <a href="#" class="card-link m-2 p-2 bg-gris-2 rounded d-flex justify-content-center text-decoration-none"><i class="fa-solid fa-plus text-blanco"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer d-flex justify-content-center bg-blanco">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <a class="page-link text-verde-2" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
                                     </a>
                                 </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">1</a>
+                                <li class="page-item active">
+                                    <a class="page-link text-verde-2 bg-verde-2 border-verde-2 text-blanco" href="#">1</a>
                                 </li>
-                                <li class="page-item active" aria-current="page">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">3</a>
+                                <li class="page-item" aria-current="page">
+                                    <a class="page-link text-verde-2" href="#">2</a>
                                 </li>
                                 <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                    <a class="page-link text-verde-2" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="fa-solid fa-share-nodes"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link text-verde-2" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="fa-solid fa-print"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link text-verde-2" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link text-verde-2" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link text-verde-2" href="#" aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
                                     </a>
                                 </li>
