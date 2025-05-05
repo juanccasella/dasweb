@@ -295,8 +295,4 @@ body::-webkit-scrollbar-track {
 
 .list-group-item.activeLateral a {
   color: white !important;
-}
-
-.btn-close {
-  filter: var(--bs-btn-close-white-filter) !important;
 }/*# sourceMappingURL=styles-juan.css.map */

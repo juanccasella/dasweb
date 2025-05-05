@@ -10,7 +10,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../styles.css"/>
     <link rel="stylesheet" href="../../styles-juan.css"/>
-    <link rel="stylesheet" href="../../cartilla.css"/>
     <!-- Fontawesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Fuentes de texto -->
@@ -239,7 +238,7 @@
                     <li><hr></li>
                     <li class="nav-item d-flex">
                         <button type="button" class="btn my-1">
-                            <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5491136440119&text&type=phone_number&app_absent=0" target="_blank"><img src="../assets/iconos/navbar/logo-wpp.svg" alt="wpp"></a>
+                            <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5491136440119&text&type=phone_number&app_absent=0" target="_blank"><img src="../../assets/iconos/navbar/logo-wpp.svg" alt="wpp"></a>
                         </button>  
                         <button type="button" class="btn my-1">
                             <a class="nav-link" href="https://www.instagram.com/dascongreso/?hl=es" target="_blank"><img src="../assets/iconos/navbar/logo-ig.svg" alt="instagram"></a>
@@ -270,14 +269,16 @@
             </div>
         </div>
     </div>
-
-
     <div class="container-fluid w-90">
         <div class="row my-5">
-            <div class="col-md-3">
+
+
+
+            <!-- Filtros -->
+            <div class="col-3 d-none d-lg-block text-gris-2">
                 <div class="mb-3">
                     <label for="especialidad" class="form-label">Prestadores</label>
-                    <select class="form-select" id="especialidad">
+                    <select class="form-select text-gris-2" id="especialidad">
                         <option selected>Guardias</option>
                         <option value="Pediatría">Internaciones</option>
                         <option value="Consultorios Externos">Consultorios Externos</option>
@@ -290,7 +291,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="especialidad" class="form-label">Especialidad</label>
-                    <select class="form-select" id="especialidad">
+                    <select class="form-select text-gris-2" id="especialidad">
                         <option selected>Seleccionar...</option>
                         <option value="Cardiología">Cardiología</option>
                         <option value="Pediatría">Pediatría</option>
@@ -299,7 +300,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="provincia" class="form-label">Provincia</label>
-                    <select class="form-select" id="provincia">
+                    <select class="form-select text-gris-2" id="provincia">
                         <option selected>Seleccionar...</option>
                         <option value="Buenos Aires">Buenos Aires</option>
                         <option value="Córdoba">Córdoba</option>
@@ -308,7 +309,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="localidad" class="form-label">Localidad</label>
-                    <select class="form-select" id="localidad">
+                    <select class="form-select text-gris-2" id="localidad">
                         <option selected>Seleccionar...</option>
                         <option value="La Plata">La Plata</option>
                         <option value="Rosario">Rosario</option>
@@ -320,8 +321,10 @@
                     <input type="text" class="form-control" id="profesional" placeholder="Ingrese el nombre del profesional">
                 </div>
 
+
+
                 <!-- Filtros seleccionados -->
-                <div id="filtrosSeleccionados" class="mb-3">
+                <div id="filtrosSeleccionados " class="mb-3">
                     <div class="mb-2"><strong>Especialidad:</strong></div>
                     <div class="mb-2" id="especialidades">
                         <span class="badge bg-verde-2 m-2" title="ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.)" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
@@ -348,12 +351,14 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- Contenido principal -->
-            <main class="col-md-9">
+            <main class="col-lg-9 col-12">
                 <div class="card card-container border-0 card-container-cartilla">
                     <div class="card-header rounded bg-verde-2 py-3 d-flex justify-content-between">                    
                         <h2 class="text-decoration-none text-blanco fs-3 my-2">Resultados de su busqueda</h2>
-                        <button type="button" class="btn btn-blanco text-gris-2 px-5 fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-blanco text-gris-2 px-5 fs-5 d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Filtros
                         </button>
 
@@ -363,24 +368,101 @@
                             <div class="modal-dialog modal-fullscreen">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Filtros</h1>
+                                        <h1 class="modal-title fs-5 text-gris-2" id="exampleModalLabel">Filtros</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+
+
+
+                                        <!-- Filtros -->
+                                        <div class="container-fluid text-gris-2">
+                                            <div class="mb-3">
+                                                <label for="especialidad" class="form-label">Prestadores</label>
+                                                <select class="form-select text-gris-2" id="especialidad">
+                                                    <option selected>Guardias</option>
+                                                    <option value="Pediatría">Internaciones</option>
+                                                    <option value="Consultorios Externos">Consultorios Externos</option>
+                                                    <option value="Estudios y Laboratorios">Estudios y Laboratorios</option>
+                                                    <option value="Odontología">Odontología</option>
+                                                    <option value="Farmacias">Farmacias</option>
+                                                    <option value="Ópticas">Ópticas</option>
+                                                    <option value="Salud Mental">Salud Mental</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="especialidad" class="form-label">Especialidad</label>
+                                                <select class="form-select text-gris-2" id="especialidad">
+                                                    <option selected>Seleccionar...</option>
+                                                    <option value="Cardiología">Cardiología</option>
+                                                    <option value="Pediatría">Pediatría</option>
+                                                    <option value="Dermatología">Dermatología</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="provincia" class="form-label">Provincia</label>
+                                                <select class="form-select text-gris-2" id="provincia">
+                                                    <option selected>Seleccionar...</option>
+                                                    <option value="Buenos Aires">Buenos Aires</option>
+                                                    <option value="Córdoba">Córdoba</option>
+                                                    <option value="Santa Fe">Santa Fe</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="localidad" class="form-label">Localidad</label>
+                                                <select class="form-select text-gris-2" id="localidad">
+                                                    <option selected>Seleccionar...</option>
+                                                    <option value="La Plata">La Plata</option>
+                                                    <option value="Rosario">Rosario</option>
+                                                    <option value="Córdoba Capital">Córdoba Capital</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="profesional" class="form-label ">Profesional</label>
+                                                <input type="text" class="form-control" id="profesional" placeholder="Ingrese el nombre del profesional">
+                                            </div>
+                            
+                                            <!-- Filtros seleccionados -->
+                                            <div id="filtrosSeleccionados" class="mb-3">
+                                                <div class="mb-2"><strong>Especialidad:</strong></div>
+                                                <div class="mb-2" id="especialidades">
+                                                    <span class="badge bg-verde-2 m-2" title="ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.)" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroEspecialidad1">ANATOMÍA PATOLÓGICA: CITODIAGNÓSTICO (PAPANICOLAU, ETC.) <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroEspecialidad2">Pediatría <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                </div>
+                                                <div class="mb-2"><strong>Provincia:</strong></div>
+                                                <div class="mb-2" id="provincias">
+                                                    <span class="badge bg-verde-2 m-2" id="filtroProvincia1">Buenos Aires <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroProvincia2">Córdoba <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                </div>
+                                                <div class="mb-2"><strong>Localidad:</strong></div>
+                                                <div class="mb-2" id="localidades">
+                                                    <span class="badge bg-verde-2 m-2" id="filtroLocalidad1">La Plata <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroLocalidad2">Rosario <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                </div>
+                                                <div class="mb-2"><strong>Profesional:</strong></div>
+                                                <div class="mb-2" id="profesionales">
+                                                    <span class="badge bg-verde-2 m-2" id="filtroProfesional1">Dr. Pérez <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                    <span class="badge bg-verde-2 m-2" id="filtroProfesional2">Dra. Gómez <button type="button" class="btn-close btn-close-white" aria-label="Close"></button></span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-ver" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    <div class="modal-footer flex-column border-top">
+                                        <button type="button" class="btn btn-verde-2 text-blanco w-100">Mostrar resultados</button>
+                                        <button type="button" class="btn btn-rosa-4 text-blanco w-100">Borrar todos los filtros</button>
+                                        <button type="button" class="btn border text-verde-2 w-100" data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
+
+                    <!-- resultados cartilla -->
                     <div class="card-body">
-
                         <div class="card card-body-container text-verde-2 mt-4 border-0 rounded shadow">
                             <div class="card-body d-flex ps-4">
                                 <div class="body-start w-75">
@@ -519,6 +601,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- footer cartilla -->
                     <div class="card-footer d-flex justify-content-center bg-blanco">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
