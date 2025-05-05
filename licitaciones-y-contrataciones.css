@@ -1,66 +1,8 @@
-.apertura {
-  white-space: nowrap !important;
-}
-
-.container-pagination {
-  background-color: white !important;
-  padding: 20px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-.container-pagination .pagination {
-  justify-content: center;
-  margin: 0;
-}
-.container-pagination .pagination .page-item.active .page-link {
-  background-color: #009B81;
-  border-color: #009B81;
-  color: white;
-}
-.container-pagination .pagination a {
-  color: #009B81;
-  margin-top: 15px;
-}
-
-.btn-res {
-  width: 50%;
-  margin: 0 25%;
-  color: white;
-  background-color: #009B81;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin-bottom: 15px;
-}
-
-.btn-res:hover {
-  background-color: #007D8A;
-  color: white;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
 .container-licitaciones .card-body {
   overflow: hidden;
 }
 .container-licitaciones .card-body .table-responsive {
   height: 500px;
-}
-.container-licitaciones .card-body .table-responsive thead th {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #009B81;
-  color: white;
 }
 .container-licitaciones .card-body .table-responsive tbody {
   overflow-y: auto;
