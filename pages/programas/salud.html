@@ -267,43 +267,57 @@
                 <h1 class="display-4 fw-bold text-verde-2">Programas</h1>
                 <p class="fs-4 text-gris-4">Chequeo anual de salud</p>
             </div>
-            <div class="text-center d-flex">
+            <div class="text-center d-none d-lg-flex">
                 <img src="/assets/img/banners/programas.png" alt="Imagen banner" class="img-fluid img-banner rounded">
             </div>
         </div>
     </div>
     <div class="container-fluid w-90">
-        <div class="row my-5">
+        <div class="row mt-0 mb-3 mt-lg-4 mb-lg-4">
             <!-- Barra lateral -->
-            <nav class="col-md-3 ">
+            <nav class="col-3 d-none d-lg-flex">
                 <ul class="list-group fs-4">
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="ginecologia.html" class="text-decoration-none text-verde-2">Chequeo Anual Ginecologico</a>
                     </li>
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="salud.html" class="text-decoration-none text-verde-2">Chequeo Anual de Salud</a>
                     </li>
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="discapacidad.html" class="text-decoration-none text-verde-2">Programa Discapacidad</a>
                     </li>
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="diabetes.html" class="text-decoration-none text-verde-2">Programa Diabetes</a>
                     </li>
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="materno-infantil.html" class="text-decoration-none text-verde-2">Plan Materno Infantil</a>
                     </li>
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="odontopediatria.html" class="text-decoration-none text-verde-2">Odontopediatría</a>
                     </li>
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="ingreso-escolar.html" class="text-decoration-none text-verde-2">Ingreso Escolar</a>
                     </li>                    
-                    <li class="list-group-item border-0 border-bottom">
+                    <li class="list-group-item">
                         <a href="adultos-mayores.html" class="text-decoration-none text-verde-2">Adultos Mayores</a>
                     </li> 
                 </ul>
             </nav>
-            <main class="col-md-9">
+
+            <div class="my-4 d-lg-none">
+                <select class="form-select text-verde-2 fs-4 selectpicker " id="especialidad">
+                    <option selected>Afiliaciones</option>
+                    <option value="Odontología">Odontología</option>
+                    <option value="Salud Mental">Salud Mental</option>
+                    <option value="Cobertura Medicación">Cobertura Medicación</option>
+                    <option value="Vacunatorio">Vacunatorio</option>
+                    <option value="Otras Coberturas">Otras Coberturas</option>
+                    <option value="Solicitud de Recetas">Solicitud de Recetas</option>
+                    <option value="Insumos">Insumos</option>
+                </select>
+            </div>
+
+            <main class="col-lg-9">
                 <div class="card card-container shadow-sm">
                     <div class="card-header d-flex text-center justify-content-center bg-azulV-4"> 
                         <h2 class="text-decoration-none text-blanco fs-3 my-2">Evaluación Preventiva de Salud</h2>                   
