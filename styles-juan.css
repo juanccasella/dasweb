@@ -163,7 +163,7 @@ body::-webkit-scrollbar-track {
 }
 
 .cartilla-footer {
-  font-family: "robotto";
+  font-family: "roboto";
   font-size: 13px;
 }
 
@@ -217,4 +217,10 @@ body::-webkit-scrollbar-track {
 
 .list-group-item.activeLateral a {
   color: white !important;
+}
+
+.dropdown-menu-responsive .list-group-item a {
+  padding-left: 0.5rem !important; /* Reduce el padding izquierdo */
+  padding-right: 0.5rem !important; /* Añade un poco de padding derecho si es necesario */
+  display: block;
 }/*# sourceMappingURL=styles-juan.css.map */
