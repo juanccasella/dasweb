@@ -220,28 +220,6 @@ body{
 }
 
 
-/* Img banner */
-
-
-.banner-container{
-    overflow: hidden;
-    height: 200px !important;
-    .img-banner{
-        width: 600px;
-        max-width: 800px !important;
-        height: auto !important;
-    }
-}
-
-.btn-relleno{
-    transition: scale ease-in-out 500ms;
-}
-
-
-.btn-relleno:hover {
-    scale: 1.1;
-    background-color: #00AE97;
-}
 
 /* cartilla */
 
@@ -255,34 +233,34 @@ body{
 }
 
 /* Sombra */
-.btn-shadow {
-    transition: box-shadow 0.3s ease-in-out !important;
+// .btn-shadow {
+//     transition: box-shadow 0.3s ease-in-out !important;
 
-    &:hover {
-        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2), 2px 3px 5px rgba(0, 0, 0, 0.2) !important;
-    }
-}
+//     &:hover {
+//         box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2), 2px 3px 5px rgba(0, 0, 0, 0.2) !important;
+//     }
+// }
 
 /* Background verde */
-.btn-bg{
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out !important;
+// .btn-bg{
+//     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out !important;
 
-    &:hover {
-        background-color: #00AE97 !important;
-        color: #ffffff !important;
-    }
-}
+//     &:hover {
+//         background-color: #00AE97 !important;
+//         color: #ffffff !important;
+//     }
+// }
 
 /* Background + Sombra */
-.btn-bg-shadow {
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+// .btn-bg-shadow {
+//     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
 
-    &:hover {
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
-        background-color: #00AE97 !important;
-        color: #ffffff !important;
-    }
-}
+//     &:hover {
+//         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+//         background-color: #00AE97 !important;
+//         color: #ffffff !important;
+//     }
+// }
 
 
 /* Escala + Sombra */
@@ -296,46 +274,46 @@ body{
 }
 
 /* Background + Sombra + Escala*/
-.btn-bg-shadow-scale {
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+// .btn-bg-shadow-scale {
+//     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
 
-    &:hover {
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
-        background-color: #00AE97 !important;
-        color: #ffffff !important;
-        transform: scale(1.02) !important;
-    }
-}
+//     &:hover {
+//         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+//         background-color: #00AE97 !important;
+//         color: #ffffff !important;
+//         transform: scale(1.02) !important;
+//     }
+// }
 
 
 // Iconos instuticional
 
-.container-institucional {
-    display: flex;
-    justify-content: center;
+// .container-institucional {
+//     display: flex;
+//     justify-content: center;
 
-    div {
-        width: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+//     div {
+//         width: 150px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         text-align: center;
 
-        .icon-button {
-            height: 130px;
-            width: 130px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            font-size: 40px;
-            color: white;
-            transition: 0.3s;
+//         .icon-button {
+//             height: 130px;
+//             width: 130px;
+//             border-radius: 50%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             border: none;
+//             font-size: 40px;
+//             color: white;
+//             transition: 0.3s;
             
-        }
-    }
-}
+//         }
+//     }
+// }
 
 
 // Botones afiliacion
