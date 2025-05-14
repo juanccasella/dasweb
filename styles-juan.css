@@ -223,4 +223,14 @@ body::-webkit-scrollbar-track {
   padding-left: 0.5rem !important; /* Reduce el padding izquierdo */
   padding-right: 0.5rem !important; /* Añade un poco de padding derecho si es necesario */
   display: block;
+}
+
+.nav-link.active-tab-style-adultos {
+  background-color: #c09170 !important;
+  color: #ffffff !important;
+}
+
+.nav-link.active-tab-style-afiliacion {
+  background-color: #215E6A !important;
+  color: #ffffff !important;
 }/*# sourceMappingURL=styles-juan.css.map */

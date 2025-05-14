@@ -8,8 +8,8 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles.css"/>
-    <link rel="stylesheet" href="../styles-juan.css"/>
+    <link rel="stylesheet" href="../../../styles.css"/>
+    <link rel="stylesheet" href="../../../styles-juan.css"/>
     <!-- Fontawesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Fuentes de texto -->
@@ -57,7 +57,6 @@
                 </div>
             </div>
         </nav>
-
         <!-- Header Bottom -->
         <ul class="nav navbar-bot d-none d-lg-flex justify-content-center align-items-center bg-verde-2">
             <li class="nav-item">
@@ -258,122 +257,77 @@
         </div>
     </nav>
 
-    <!-- Centro DAS  -->
-    <!-- Centro DAS - Banner -->
-    <div class="container-fluid">
-        <div class="container d-flex align-items-center justify-content-between w-90 mt-4 overflow-hidden">
-            <div class="mb-0 mb-lg-4 w-100">
-                <h1 class="display-4 fw-bold text-verde-2 text-center text-lg-start">Centro DAS</h1>
-                <p class="fs-4 text-gris-4 text-center text-lg-start">Contamos con una gran cantidad de prestadores de excelencia</p>
+
+
+    <div class="container-fluid px-4">
+        <div class="card mx-auto my-5 w-90 border shadow">
+            <div class="card-header bg-verde-2">                    
+                <div class="table-header">
+                    <div class="p-3 d-flex justify-content-center">
+                        <h2 class="fs-3 my-2 text-blanco">Listado de Agentes</h2>
+                    </div>
+                </div>
             </div>
-            <div class="text-center d-none d-lg-flex w-100 h-100">
-                <img src="/assets/img/banners/centroDas.png" alt="Imagen banner" class="img-fluid img-banner rounded">
+            <div class="card-body">
+                <div class="h-vh">
+                    <table class="table table-bordered table-striped border-verde-4">                       
+                            <thead>
+                                <tr class="text-center fs-5 sticky-top z-2">
+                                    <th scope="col" class="bg-verde-2 text-blanco">Apellido</th>
+                                    <th scope="col" class="bg-verde-2 text-blanco">Nombre</th>
+                                    <th scope="col" class="bg-verde-2 text-blanco">Legajo</th>
+                                    <th scope="col" class="bg-verde-2 text-blanco">Categoría</th>
+                                </tr>
+                            </thead>
+                        <tbody class="fw-light">
+                            <tr class="text-center">
+                                <td>ABOLIO</td>
+                                <td>CRISTINA ADELA</td>
+                                <td>301144</td>
+                                <td>4</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
             </div>
+
+
+            <div class="card-footer d-flex justify-content-center bg-blanco">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link text-verde-2" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link text-verde-2 bg-verde-2 border-verde-2 text-blanco" href="#">1</a>
+                        </li>
+                        <li class="page-item" aria-current="page">
+                            <a class="page-link text-verde-2" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-verde-2" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-verde-2" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-verde-2" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
     </div>
 
-    <!-- Centro DAS - Botones -->
-    <div class="container w-90 my-5">
-        <div class="row gy-4 gx-4">
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/odontologia.html" class="btn shadow px-3 py-4 py-lg-5 rounded w-100 bg-azul-2 btn-scale-shadow text-blanco">
-                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5154 7.05973C16.154 3.13678 6.81478 4.22552 5.649 15.5278C4.47998 26.8646 10.4745 38.8615 13.686 43.455C14.4167 44.4988 15.5987 45 16.8229 45C18.8265 45 20.619 43.6624 21.2977 41.6508L22.4342 38.2947C22.6615 37.6239 23.0777 37.044 23.626 36.6341C24.1743 36.2242 24.828 36.0042 25.498 36.0042C26.168 36.0042 26.8217 36.2242 27.37 36.6341C27.9183 37.044 28.3345 37.6239 28.5618 38.2947L29.6984 41.6508C30.3803 43.6624 32.1728 45 34.1796 45C35.4006 45 36.5826 44.4988 37.31 43.455C40.5248 38.8615 46.5226 26.8646 45.3503 15.5278C44.1845 4.22552 34.8453 3.13678 28.4807 7.05973C26.4836 8.29364 24.519 8.29364 22.5154 7.05973ZM30.2115 12.9321C30.4625 12.8311 30.7299 12.7842 30.9981 12.794C31.2663 12.8037 31.5301 12.87 31.774 12.989C32.018 13.108 32.2374 13.2773 32.4195 13.4872C32.6016 13.697 32.7428 13.9432 32.8349 14.2115C32.927 14.4798 32.9682 14.7649 32.9561 15.0502C32.944 15.3356 32.8789 15.6155 32.7645 15.8739C32.65 16.1323 32.4886 16.364 32.2895 16.5555C32.0904 16.7471 31.8576 16.8947 31.6045 16.9898C29.2827 17.8884 27.3181 18.4069 25.3243 18.4C23.3175 18.3965 21.46 17.8643 19.3396 16.9691C19.0918 16.8642 18.8659 16.7084 18.6747 16.5107C18.4834 16.3129 18.3307 16.0769 18.2252 15.8163C18.1196 15.5557 18.0634 15.2755 18.0596 14.9918C18.0558 14.708 18.1045 14.4262 18.203 14.1625C18.3015 13.8988 18.4479 13.6583 18.6337 13.4548C18.8195 13.2513 19.0412 13.0887 19.286 12.9764C19.5309 12.8641 19.7941 12.8042 20.0607 12.8001C20.3273 12.7961 20.592 12.8479 20.8398 12.9528C22.7135 13.7477 24.0384 14.0761 25.334 14.0796C26.6427 14.083 28.091 13.7547 30.2115 12.9321Z" fill="white"/>
-                    </svg>                      
-                    <h4 class="mt-2">Odontología</h4>
-                    <p class="mb-0 d-none d-lg-block">Prestadores convenidos para consultas y prácticas.</p>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/salud-mental.html" class="btn shadow px-3 px-3 py-4 py-lg-5 rounded w-100 bg-azul-3 btn-scale-shadow text-blanco">
-                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.5016 5C27.387 4.9994 31.1398 6.41261 34.0597 8.97588C36.9795 11.5391 38.8669 15.0773 39.3696 18.93L43.8696 26.008C44.1656 26.474 44.1056 27.168 43.4196 27.464L39.5016 29.14V35C39.5016 36.0609 39.0802 37.0783 38.33 37.8284C37.5799 38.5786 36.5625 39 35.5016 39H31.5036L31.5016 45H13.5016V37.612C13.5016 35.252 12.6296 33.018 11.0116 31.002C9.12702 28.6489 7.94557 25.8113 7.6034 22.816C7.26123 19.8207 7.77225 16.7897 9.0776 14.0722C10.3829 11.3547 12.4295 9.06132 14.9814 7.45623C17.5334 5.85114 20.4869 4.9997 23.5016 5ZM22.4416 16.526C21.7816 15.8883 20.8976 15.5354 19.9799 15.5431C19.0622 15.5509 18.1843 15.9188 17.5352 16.5676C16.8862 17.2164 16.5179 18.0942 16.5098 19.0119C16.5016 19.9296 16.8542 20.8138 17.4916 21.474L23.5016 27.486L29.5116 21.474C29.8458 21.1511 30.1124 20.7648 30.2957 20.3378C30.4791 19.9107 30.5755 19.4514 30.5795 18.9867C30.5834 18.522 30.4948 18.0611 30.3187 17.631C30.1426 17.2009 29.8827 16.8102 29.554 16.4816C29.2253 16.1531 28.8345 15.8932 28.4043 15.7174C27.9741 15.5415 27.5132 15.453 27.0485 15.4571C26.5838 15.4613 26.1245 15.5579 25.6975 15.7414C25.2706 15.9249 24.8844 16.1916 24.5616 16.526L23.5016 17.586L22.4416 16.526Z" fill="white"/>
-                    </svg>                       
-                    <h4 class="mt-2">Salud Mental</h4>
-                    <p class="mb-0 d-none d-lg-block">Prestaciones en DAS y servicios convenido.</p>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/cobertura-medicacion.html" class="btn shadow px-3 px-3 py-4 py-lg-5 rounded w-100 bg-azul-4 btn-scale-shadow text-blanco">
-                    <svg width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M28.5804 26.4599C26.6157 28.271 16.7004 38.8799 13.4604 38.8799C9.68043 38.8799 7.40627 38.4978 5.5168 36.6084C3.62733 34.7189 2.54184 32.1719 2.4875 29.5003C2.43315 26.8288 3.41415 24.2397 5.22521 22.275L22.7752 4.72496C24.74 2.9139 27.329 1.9329 30.0006 1.98725C32.6721 2.0416 35.2191 3.12709 37.1086 5.01655C38.9981 6.90602 39.3804 9.71992 38.8404 12.4199C37.7604 17.8199 30.3915 24.4952 28.5804 26.4599ZM13.998 13.4977L28.5804 26.4599Z" fill="#ffff"/>
-                        <path d="M28.5804 26.4599C26.6157 28.271 16.7004 38.8799 13.4604 38.8799C9.68043 38.8799 7.40627 38.4978 5.5168 36.6084C3.62733 34.7189 2.54184 32.1719 2.4875 29.5003C2.43315 26.8288 3.41415 24.2397 5.22521 22.275L22.7752 4.72496C24.74 2.9139 27.329 1.9329 30.0006 1.98725C32.6721 2.0416 35.2191 3.12709 37.1086 5.01655C38.9981 6.90602 39.3804 9.71992 38.8404 12.4199C37.7604 17.8199 30.3915 24.4952 28.5804 26.4599ZM28.5804 26.4599L13.998 13.4977" stroke="#067d8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M48.0205 32.1975C48.0277 36.127 46.6936 39.9413 44.2389 43.0097C41.7842 46.0781 38.3558 48.2169 34.5205 49.0725C30.6853 48.2169 27.2569 46.0781 24.8022 43.0097C22.3474 39.9413 21.0134 36.127 21.0205 32.1975V27.135C21.0205 26.2399 21.3761 25.3815 22.0091 24.7485C22.642 24.1156 23.5004 23.76 24.3955 23.76H44.6455C45.5406 23.76 46.3991 24.1156 47.032 24.7485C47.665 25.3815 48.0205 26.2399 48.0205 27.135V32.1975ZM34.5205 30.51V40.635ZM29.458 35.5725H39.583Z" fill="#ffff"/>
-                        <path d="M34.5205 30.51V40.635M29.458 35.5725H39.583M48.0205 32.1975C48.0277 36.127 46.6936 39.9413 44.2389 43.0097C41.7842 46.0781 38.3558 48.2169 34.5205 49.0725C30.6853 48.2169 27.2569 46.0781 24.8022 43.0097C22.3474 39.9413 21.0134 36.127 21.0205 32.1975V27.135C21.0205 26.2399 21.3761 25.3815 22.0091 24.7485C22.642 24.1156 23.5004 23.76 24.3955 23.76H44.6455C45.5406 23.76 46.3991 24.1156 47.032 24.7485C47.665 25.3815 48.0205 26.2399 48.0205 27.135V32.1975Z" stroke="#067d8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                       
-                    <h4 class="mt-2">Cobertura Medicación</h4>
-                    <p class="mb-0 d-none d-lg-block">Consultá los tipos de cobertura de medicación y sus requisitos.</p>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/vacunatorio.html" class="btn shadow px-3 px-3 py-4 py-lg-5 rounded w-100 bg-verde-1 btn-scale-shadow text-blanco">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M39.1667 9L47.5 17.3333ZM43.3333 13.1667L33.9583 22.5417ZM27.7083 16.2917L40.2083 28.7917ZM38.125 26.7083L24.5833 40.25H16.25V31.9167L29.7917 18.375M19.375 28.7917L22.5 31.9167ZM10 46.5L16.25 40.25Z" fill="#ffff"/>
-                        <path d="M39.1667 9L47.5 17.3333M43.3333 13.1667L33.9583 22.5417M27.7083 16.2917L40.2083 28.7917M38.125 26.7083L24.5833 40.25H16.25M16.25 40.25V31.9167L29.7917 18.375M16.25 40.25L10 46.5M19.375 28.7917L22.5 31.9167M25.625 22.5417L29.25 26.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M23.9808 23L29 27.9444M20.5 26.5L24.8462 31" stroke="#69C6B5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                    
-                    <h4 class="mt-2">Vacunatorio</h4>
-                    <p class="mb-0 d-none d-lg-block">Conocé los horarios de nuestro Vacunatorio.</p>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/otras-coberturas.html" class="btn shadow px-3 px-3 py-4 py-lg-5 rounded w-100 bg-verde-2 btn-scale-shadow text-blanco">
-                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.9625 4.57296L41.5458 10.0417C42.3402 10.3395 43.0248 10.8727 43.508 11.57C43.9912 12.2672 44.2501 13.0954 44.25 13.9438V25.1167C44.2501 28.5989 43.2805 32.0122 41.4499 34.9743C39.6192 37.9364 36.9999 40.3303 33.8854 41.8876L26.8979 45.3792C26.4639 45.5963 25.9853 45.7093 25.5 45.7093C25.0147 45.7093 24.5361 45.5963 24.1021 45.3792L17.1146 41.8855C14.0001 40.3282 11.3808 37.9344 9.55014 34.9722C7.71952 32.0101 6.74993 28.5968 6.75 25.1146V13.9459C6.74947 13.0972 7.00814 12.2685 7.49139 11.5708C7.97465 10.8731 8.65944 10.3396 9.45417 10.0417L24.0375 4.57296C24.9805 4.21949 26.0195 4.21949 26.9625 4.57296ZM25.5 16.6667C24.9897 16.6668 24.4972 16.8541 24.1159 17.1932C23.7346 17.5323 23.491 17.9995 23.4312 18.5063L23.4167 18.75V22.9167H19.25C18.719 22.9173 18.2083 23.1206 17.8221 23.4851C17.436 23.8497 17.2037 24.3479 17.1726 24.878C17.1414 25.408 17.3139 25.93 17.6547 26.3372C17.9955 26.7444 18.479 27.0061 19.0063 27.0688L19.25 27.0834H23.4167V31.25C23.4173 31.781 23.6206 32.2918 23.9851 32.6779C24.3496 33.064 24.8478 33.2964 25.3779 33.3275C25.908 33.3586 26.43 33.1861 26.8371 32.8453C27.2443 32.5045 27.506 32.0211 27.5687 31.4938L27.5833 31.25V27.0834H31.75C32.281 27.0828 32.7917 26.8795 33.1779 26.5149C33.564 26.1504 33.7963 25.6522 33.8274 25.1221C33.8586 24.5921 33.6861 24.0701 33.3453 23.6629C33.0045 23.2557 32.521 22.994 31.9937 22.9313L31.75 22.9167H27.5833V18.75C27.5833 18.1975 27.3638 17.6676 26.9731 17.2769C26.5824 16.8862 26.0525 16.6667 25.5 16.6667Z" fill="white"/>
-                    </svg>                      
-                    <h4 class="mt-2">Otras Coberturas</h4>
-                    <p class="mb-0 d-none d-lg-block">Celiaquía y Anticonceptivos.</p>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/solicitud-de-recetas.html" class="btn shadow px-3 px-3 py-4 py-lg-5 rounded w-100 bg-verde-3 btn-scale-shadow text-blanco">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M38.2813 45.9895L40.6771 43.5937L31.4063 34.3228L29.0104 36.7187C27.7257 38.0034 27.0833 39.5485 27.0833 41.3541C27.0833 43.1596 27.7257 44.7048 29.0104 45.9895C30.2951 47.2742 31.8403 47.9166 33.6458 47.9166C35.4514 47.9166 36.9965 47.2742 38.2813 45.9895ZM43.5938 40.677L45.9896 38.2812C47.2743 36.9964 47.9167 35.4513 47.9167 33.6457C47.9167 31.8402 47.2743 30.2951 45.9896 29.0103C44.7049 27.7256 43.1597 27.0833 41.3542 27.0833C39.5486 27.0833 38.0035 27.7256 36.7188 29.0103L34.3229 31.4062L43.5938 40.677ZM14.5833 18.7499H35.4167V14.5833H14.5833V18.7499ZM25 8.85409C25.4514 8.85409 25.825 8.70617 26.1208 8.41034C26.4167 8.1145 26.5639 7.74159 26.5625 7.29159C26.5611 6.84159 26.4132 6.46867 26.1188 6.17284C25.8243 5.877 25.4514 5.72909 25 5.72909C24.5486 5.72909 24.1757 5.877 23.8813 6.17284C23.5868 6.46867 23.4389 6.84159 23.4375 7.29159C23.4361 7.74159 23.584 8.1152 23.8813 8.41242C24.1785 8.70964 24.5514 8.85686 25 8.85409ZM23.1771 43.7499H6.25V6.24992H19.1667C19.6181 4.99992 20.3736 3.99297 21.4333 3.22909C22.4931 2.4652 23.6819 2.08325 25 2.08325C26.3181 2.08325 27.5076 2.4652 28.5688 3.22909C29.6299 3.99297 30.3847 4.99992 30.8333 6.24992H43.75V23.177C42.2917 22.8298 40.8424 22.8034 39.4021 23.0978C37.9618 23.3923 36.6333 23.9402 35.4167 24.7416V22.9166H14.5833V27.0833H32.7604L28.5938 31.2499H14.5833V35.4166H24.7396C23.941 36.6319 23.3938 37.9603 23.0979 39.402C22.8021 40.8437 22.8292 42.293 23.1792 43.7499" fill="white"/>
-                    </svg>                       
-                    <h4 class="mt-2">Solicitud de Recetas</h4>
-                    <p class="mb-0 d-none d-lg-block">Conocé cómo solicitar recetas.</p>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/afiliacion.html" class="btn shadow px-3 px-3 py-4 py-lg-5 rounded w-100 bg-verde-4 btn-scale-shadow text-blanco">
-                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.4167 12.5H29.6667L36.5209 5.62504C36.7145 5.42977 36.9449 5.27478 37.1988 5.16901C37.4527 5.06324 37.725 5.00879 38 5.00879C38.275 5.00879 38.5474 5.06324 38.8012 5.16901C39.0551 5.27478 39.2855 5.42977 39.4792 5.62504L44.8542 11.0209C45.2422 11.4112 45.46 11.9392 45.46 12.4896C45.46 13.04 45.2422 13.568 44.8542 13.9584L40.0834 18.75H23.4167V22.9167C23.4167 23.4692 23.1972 23.9991 22.8065 24.3898C22.4158 24.7805 21.8859 25 21.3334 25C20.7808 25 20.2509 24.7805 19.8602 24.3898C19.4695 23.9991 19.25 23.4692 19.25 22.9167V16.6667C19.25 15.5616 19.689 14.5018 20.4704 13.7204C21.2518 12.939 22.3116 12.5 23.4167 12.5ZM10.9167 22.9167V31.25L6.14586 36.0209C5.75783 36.4112 5.54004 36.9392 5.54004 37.4896C5.54004 38.04 5.75783 38.568 6.14586 38.9584L11.5209 44.3542C11.7145 44.5495 11.9449 44.7045 12.1988 44.8102C12.4527 44.916 12.725 44.9704 13 44.9704C13.275 44.9704 13.5474 44.916 13.8012 44.8102C14.0551 44.7045 14.2855 44.5495 14.4792 44.3542L23.4167 35.4167H31.75C32.3026 35.4167 32.8325 35.1972 33.2232 34.8065C33.6139 34.4158 33.8334 33.8859 33.8334 33.3334V31.25H35.9167C36.4692 31.25 36.9991 31.0305 37.3898 30.6398C37.7805 30.2491 38 29.7192 38 29.1667V27.0834H40.0834C40.6359 27.0834 41.1658 26.8639 41.5565 26.4732C41.9472 26.0825 42.1667 25.5526 42.1667 25V22.9167H27.5834V25C27.5834 26.1051 27.1444 27.1649 26.363 27.9463C25.5816 28.7277 24.5218 29.1667 23.4167 29.1667H19.25C18.145 29.1667 17.0851 28.7277 16.3037 27.9463C15.5223 27.1649 15.0834 26.1051 15.0834 25V18.75L10.9167 22.9167Z" fill="white"/>
-                    </svg>                     
-                    <h4 class="mt-2">Afiliaciones</h4>
-                    <p class="mb-0 d-none d-lg-block">Trámites de afiliación y credenciales.</p>
-                </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xxl-3 d-flex align-items-stretch text-center">
-                <a href="./centro-das/afiliacion.html" class="btn shadow px-3 px-3 py-4 py-lg-5 rounded w-100 bg-azulV-2 btn-scale-shadow text-blanco">
-                    <svg width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_3305_4078)">
-                        <path d="M13.8785 15.1096H19.4341V20.6096C19.4341 20.9743 19.5804 21.324 19.8409 21.5819C20.1013 21.8398 20.4546 21.9846 20.823 21.9846H26.3785C26.7469 21.9846 27.1002 21.8398 27.3606 21.5819C27.6211 21.324 27.7674 20.9743 27.7674 20.6096V15.1096H33.323C33.6913 15.1096 34.0446 14.9648 34.3051 14.7069C34.5655 14.449 34.7119 14.0993 34.7119 13.7346V8.23462C34.7119 7.86995 34.5655 7.52021 34.3051 7.26235C34.0446 7.00449 33.6913 6.85962 33.323 6.85962H27.7674V1.35962C27.7674 0.994946 27.6211 0.64521 27.3606 0.387347C27.1002 0.129485 26.7469 -0.0153809 26.3785 -0.0153809H20.823C20.4546 -0.0153809 20.1013 0.129485 19.8409 0.387347C19.5804 0.64521 19.4341 0.994946 19.4341 1.35962V6.85962H13.8785C13.5102 6.85962 13.1569 7.00449 12.8964 7.26235C12.636 7.52021 12.4896 7.86995 12.4896 8.23462V13.7346C12.4896 14.0993 12.636 14.449 12.8964 14.7069C13.1569 14.9648 13.5102 15.1096 13.8785 15.1096ZM49.3117 28.8863C49.0418 28.522 48.702 28.2142 48.3116 27.9803C47.9212 27.7465 47.488 27.5913 47.0369 27.5237C46.5858 27.4561 46.1256 27.4773 45.6828 27.5862C45.24 27.6951 44.8233 27.8896 44.4567 28.1584L34.0686 35.7363H23.599C23.2307 35.7363 22.8774 35.5915 22.6169 35.3336C22.3565 35.0757 22.2101 34.726 22.2101 34.3613C22.2101 33.9967 22.3565 33.6469 22.6169 33.3891C22.8774 33.1312 23.2307 32.9863 23.599 32.9863H30.3907C31.7796 32.9863 33.0599 32.0522 33.2874 30.6995C33.3545 30.3046 33.3339 29.8998 33.2268 29.5136C33.1198 29.1273 32.929 28.7688 32.6677 28.463C32.4064 28.1572 32.0809 27.9115 31.7139 27.7429C31.3469 27.5744 30.9472 27.4871 30.5426 27.4872H16.6537C14.3112 27.4867 12.0397 28.2831 10.2197 29.7431L6.18321 32.9863H1.37766C1.01007 32.9888 0.658257 33.1345 0.39833 33.3918C0.138403 33.6491 -0.00872904 33.9974 -0.0112305 34.3613V42.6113C-0.00872904 42.9752 0.138403 43.3235 0.39833 43.5809C0.658257 43.8382 1.01007 43.9839 1.37766 43.9863H31.4992C33.4258 43.9818 35.3011 43.3718 36.8551 42.2444L48.5764 33.6876C49.3162 33.1468 49.8091 32.3376 49.947 31.4374C50.0848 30.5373 49.8563 29.6198 49.3117 28.8863Z" fill="white"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_3305_4078">
-                        <rect width="50" height="44" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>                     
-                    <h4 class="mt-2">Insumos</h4>
-                    <p class="mb-0 d-none d-lg-block">Leches maternizadas o medicamentosas, Ostomía, prótesis y ortesis.</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-
-    <!-- Footer container -->
+    <!-- Footer container --> 
     <footer class="pt-4">
-        
+
         <!-- Footer top -->
         <div class="container container-casas w-90 mb-5">
             <!-- Título -->
@@ -491,10 +445,11 @@
             </div>
         </div>
 
+
         <!-- Footer bot -->
         <div class="container-fluid d-flex justify-content-center align-items-center bg-verde-3 py-2">
             <div>
-                <a href="../index.html">
+                <a href="#">
                     <img src="/assets/iconos/footer/logo-das-blanco.svg" alt="IRAM" class="img-fluid w-75 btn-scale">
                 </a>
             </div>
