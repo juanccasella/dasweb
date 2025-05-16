@@ -233,4 +233,9 @@ body::-webkit-scrollbar-track {
 .nav-link.active-tab-style-afiliacion {
   background-color: #215E6A !important;
   color: #ffffff !important;
+}
+
+.nav-link.active-tab-style-discapacidad {
+  background-color: #4274b7 !important;
+  color: #ffffff !important;
 }/*# sourceMappingURL=styles-juan.css.map */
