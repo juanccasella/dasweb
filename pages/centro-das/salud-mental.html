@@ -260,8 +260,8 @@
         </div>
     </nav>
 
-    <!-- Salud mental  -->
-    <!-- Salud mental - Banner -->
+
+<!-- Salud mental - Banner -->
     <div class="container-fluid">
         <div class="container d-flex align-items-center justify-content-between w-90 mt-4 overflow-hidden">
             <div class="mb-0 mb-lg-4 w-100">
@@ -276,7 +276,7 @@
 
     <div class="container-fluid w-90">
         <div class="row mt-0 mb-3 mt-lg-4 mb-lg-4">
-            <!-- Barra lateral -->
+<!-- Barra lateral -->
             <nav class="col-3 d-none d-lg-flex">
                 <ul class="list-group fs-4 w-100">
                     <li class="list-group-item">
@@ -306,6 +306,8 @@
                 </ul>
             </nav>
 
+
+<!-- Barra lateral - responsive -->
             <div class="my-4 d-lg-none">
                 <select class="form-select text-verde-2 fs-4 selectpicker " id="especialidad">
                     <option selected>Cobertura Medicación</option>
@@ -320,7 +322,7 @@
             </div>
 
 
-            <!-- Contenido principal -->
+<!-- Contenido principal -->
             <main class="col-lg-9">
                 <div class="card card-container shadow-sm">
                     <div class="card-header d-flex text-center justify-content-center bg-azul-3">                    
@@ -335,71 +337,128 @@
                         </p>
                         <div class="container mt-4">
                             <div class="row">
-                                <!-- PRESTACIONES EN DAS -->
+<!-- PRESTACIONES EN DAS -->
                                 <div class="col-md-12 mt-5">
                                     <div class="card h-100">
                                         <div class="card-header text-azul-3 fw-bold text-center fs-3">Prestaciones en DAS</div>
                                         <div class="card-body text-gris-2">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item fw-bold text-azul-3 fs-5 mt-4 border-0">• Prestaciones:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Evaluaciones neurocognitivas adultos y adultas.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicodiagnósticos adultos y adultas.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Renovación de CUD.</li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-azul-3 fs-5 mt-4 border-0">• Solicitar turno:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Llamando al Centro de Información Personalizada (<b class="text-azul-3">CIP</b>) al <a href="tel:08102220317" class="text-azul-3 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Vía correo electrónico a <a href="mailto:contacto@das.gob.ar" class="text-azul-3 fw-bold">contacto@das.gob.ar</a>.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Se contactarán desde la Subdirección de Salud Mental para otorgarle un turno.</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+<!-- Acrodeon -->
+                                            <div class="accordion" id="SaludMentalAccordion">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingPrestacionesSM">
+                                                        <button class="accordion-button collapsed fw-bold text-azul-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrestacionesSM" aria-expanded="false" aria-controls="collapsePrestacionesSM">
+                                                            Prestaciones: </button>
+                                                    </h2>
+                                                    <div id="collapsePrestacionesSM" class="accordion-collapse collapse" aria-labelledby="headingPrestacionesSM" data-bs-parent="#SaludMentalAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Evaluaciones neurocognitivas adultos y adultas.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicodiagnósticos adultos y adultas.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Renovación de CUD.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingSolicitarTurnoSM"> <button class="accordion-button collapsed fw-bold text-azul-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolicitarTurnoSM" aria-expanded="false" aria-controls="collapseSolicitarTurnoSM">
+                                                            Solicitar turno: </button>
+                                                    </h2>
+                                                    <div id="collapseSolicitarTurnoSM" class="accordion-collapse collapse" aria-labelledby="headingSolicitarTurnoSM" data-bs-parent="#SaludMentalAccordion"> <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Llamando al Centro de Información Personalizada (<b class="text-azul-3">CIP</b>) al <a href="tel:08102220317" class="text-azul-3 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Vía correo electrónico a <a href="mailto:contacto@das.gob.ar" class="text-azul-3 fw-bold">contacto@das.gob.ar</a>.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Se contactarán desde la Subdirección de Salud Mental para otorgarle un turno.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- A TRAVÉS DE LA PRESTADORA MHM -->
+<!-- A TRAVÉS DE LA PRESTADORA MHM -->
                                 <div class="col-md-12 mt-5">
                                     <div class="card h-100">
                                         <div class="card-header text-azul-3 fw-bold text-center fs-3">A través de la prestadora MHM</div>
                                         <div class="card-body text-gris-2">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item fw-bold text-azul-3 fs-5 mt-4 border-0">• Prestaciones cubiertas de atención ambulatoria:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicología.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psiquiatría.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicopedagogía.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicoterapia individual.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicodiagnóstico.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicoterapia de familia.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicoterapia de pareja.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Trastornos de la conducta alimentaria.</li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-azul-3 fs-5 mt-4 border-0">• Prestaciones a domicilio:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psiquiatría.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Psicología.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Acompañante Terapéutico.</li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-azul-3 fs-5 mt-4 border-0">• Prestaciones de Internación:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Internación aguda.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Hospital de Día - HHD (media jornada y jornada completa).</li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-azul-3 fs-5 mt-4 border-0">• Medios de contacto Mental Health Management(MHM):
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-bold fs-6">Atención telefónica de lunes a viernes de 9 a 16hs</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Teléfonos: <a href="tel:48123898" class="text-azul-3"><b>4812-3898</b></a> // <a href="tel:48165540" class="text-azul-3 fw-bold">4816-5540/21</a>.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Turnos de psiquiatras solo WhatsApp: <a href="https://wa.me/5491123318372" class="text-azul-3 fw-bold" target="_blank">+54 9 11 2331-8372</a>.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Pedido de recetas: <a href="mailto:recetas@mhmsaludmental.com" class="text-azul-3 fw-bold">recetas@mhmsaludmental.com</a>.</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            <div class="accordion" id="SaludMentalPrestacionesAccordion">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingPrestacionesAmbulatorias">
+                                                        <button class="accordion-button collapsed fw-bold text-azul-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrestacionesAmbulatorias" aria-expanded="false" aria-controls="collapsePrestacionesAmbulatorias">
+                                                            Prestaciones cubiertas de atención ambulatoria:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePrestacionesAmbulatorias" class="accordion-collapse collapse" aria-labelledby="headingPrestacionesAmbulatorias" data-bs-parent="#SaludMentalPrestacionesAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Evaluaciones neurocognitivas adultos y adultas.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicodiagnósticos adultos y adultas.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicopedagogía.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicoterapia individual.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicodiagnóstico.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicoterapia de familia.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicoterapia de pareja.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Trastornos de la conducta alimentaria.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingPrestacionesDomicilio">
+                                                        <button class="accordion-button collapsed fw-bold text-azul-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrestacionesDomicilio" aria-expanded="false" aria-controls="collapsePrestacionesDomicilio">
+                                                            Prestaciones a domicilio:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePrestacionesDomicilio" class="accordion-collapse collapse" aria-labelledby="headingPrestacionesDomicilio" data-bs-parent="#SaludMentalPrestacionesAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psiquiatría.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Psicología.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Acompañante Terapéutico.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingPrestacionesInternacion">
+                                                        <button class="accordion-button collapsed fw-bold text-azul-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInternacion" aria-expanded="false" aria-controls="collapseInternacion">
+                                                            Prestaciones de Internación:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseInternacion" class="accordion-collapse collapse" aria-labelledby="headingInternacion" data-bs-parent="#SaludMentalPrestacionesAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Internación aguda.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Hospital de Día - HHD (media jornada y jornada completa).</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingContactoMHM">
+                                                        <button class="accordion-button collapsed fw-bold text-azul-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContactoMHM" aria-expanded="false" aria-controls="collapseContactoMHM">
+                                                            Medios de contacto Mental Health Management(MHM):
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseContactoMHM" class="accordion-collapse collapse" aria-labelledby="headingContactoMHM" data-bs-parent="#SaludMentalPrestacionesAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fw-bold fs-6 ps-3">Atención telefónica de lunes a viernes de 9 a 16hs</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Teléfonos: <a href="tel:48123898" class="text-azul-3"><b>4812-3898</b></a> // <a href="tel:48165540" class="text-azul-3 fw-bold">4816-5540/21</a>.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Turnos de psiquiatras solo WhatsApp: <a href="https://wa.me/5491123318372" class="text-azul-3 fw-bold" target="_blank">+54 9 11 2331-8372</a>.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Pedido de recetas: <a href="mailto:recetas@mhmsaludmental.com" class="text-azul-3 fw-bold">recetas@mhmsaludmental.com</a>.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

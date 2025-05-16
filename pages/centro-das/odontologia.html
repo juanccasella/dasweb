@@ -261,9 +261,8 @@
         </div>
     </nav>
 
-    <!-- Odontologia  -->
 
-    <!-- Odontologia - Banner -->
+<!-- Odontologia - Banner -->
     <div class="container-fluid">
         <div class="container d-flex align-items-center justify-content-between w-90 mt-4 overflow-hidden">
             <div class="mb-0 mb-lg-4 w-100">
@@ -276,9 +275,13 @@
         </div>
     </div>
 
+
+
+<!-- Odontologia - Container -->
     <div class="container-fluid w-90">
         <div class="row mt-0 mb-3 mt-lg-4 mb-lg-4">
-            <!-- Barra lateral -->
+
+<!-- Barra lateral -->
             <nav class="col-3 d-none d-lg-flex">
                 <ul class="list-group fs-4 w-100">
                     <li class="list-group-item">
@@ -308,6 +311,7 @@
                 </ul>
             </nav>
 
+<!-- Barra lateral - Responsive -->
             <div class="my-4 d-lg-none">
                 <select class="form-select text-verde-2 fs-4 selectpicker " id="especialidad">
                     <option selected>Cobertura Medicación</option>
@@ -322,7 +326,7 @@
             </div>
 
 
-            <!-- Contenido principal -->
+<!-- Contenido principal -->
             <main class="col-lg-9">
                 <div class="card card-container shadow-sm">
                     <div class="card-header d-flex text-center justify-content-center bg-azul-2"> 
@@ -335,36 +339,75 @@
                         <p class="text-gris-2">
                             Nuestro objetivo principal es prevenir enfermedades dentales, promover la salud oral y mejorar la calidad de vida de nuestros afiliados y afiliadas.
                         </p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0">● Solicitar turno:
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Llamando al Centro de Información Personalizada (CIP) al <a href="tel:08102220317" class="text-azul-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• De forma presencial de 9 a 20 hs (<b class="text-azul-2">Alsina 1823, 2.º piso</b>).</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0">• Primera consulta. Estudios que se realizan: 
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Plan de tratamiento personalizado.</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Limpieza y prevención.</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Estudios radiográficos.</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0">• Plan de tratamiento:
-                                <p class="border-0 text-gris-2 fw-lighter fs-6 mt-4">Según su plan de tratamiento, el afiliado y/o la afiliada será derivado/a a las distintas especialidades con las que contamos en la DAS:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Endodoncia.</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Extracciones.</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Periodoncia.</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Prótesis.</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item fw-bold text-azul-2 fs-5 mt-4 border-0">• Urgencias o Emergencias odontológicas en DAS:
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Lunes a viernes de 10 a 16:30 hs (Por orden de llegada).</li>
-                                    <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Comunicarse previamente al CIP <a href="tel:08102220317" class="text-azul-2 fw-bold">0810-222-0317</a>.</li>
-                                </ul>
-                            </li>
-                        </ul>
+
+<!-- Acordeon -->
+                        <div class="accordion mt-5" id="TurnosAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSolicitarTurno">
+                                    <button class="accordion-button collapsed fw-bold text-azul-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolicitarTurno" aria-expanded="false" aria-controls="collapseSolicitarTurno">
+                                        Solicitar turno: </button>
+                                </h2>
+                                <div id="collapseSolicitarTurno" class="accordion-collapse collapse" aria-labelledby="headingSolicitarTurno" data-bs-parent="#TurnosAccordion">
+                                    <div class="accordion-body p-0">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Llamando al Centro de Información Personalizada (CIP) al <a href="tel:08102220317" class="text-azul-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</li>
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• De forma presencial de 9 a 20 hs (<b class="text-azul-2">Alsina 1823, 2.º piso</b>).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingPrimeraConsulta">
+                                    <button class="accordion-button collapsed fw-bold text-azul-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrimeraConsulta" aria-expanded="false" aria-controls="collapsePrimeraConsulta">
+                                        Primera consulta. Estudios que se realizan: </button>
+                                </h2>
+                                <div id="collapsePrimeraConsulta" class="accordion-collapse collapse" aria-labelledby="headingPrimeraConsulta" data-bs-parent="#TurnosAccordion">
+                                    <div class="accordion-body p-0">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Plan de tratamiento personalizado.</li>
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Limpieza y prevención.</li>
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Estudios radiográficos.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingPlanTratamiento">
+                                    <button class="accordion-button collapsed fw-bold text-azul-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlanTratamiento" aria-expanded="false" aria-controls="collapsePlanTratamiento">
+                                        Plan de tratamiento: </button>
+                                </h2>
+                                <div id="collapsePlanTratamiento" class="accordion-collapse collapse" aria-labelledby="headingPlanTratamiento" data-bs-parent="#TurnosAccordion">
+                                    <div class="accordion-body p-0">
+                                        <p class="text-gris-2 fs-6 ps-3 pt-2 mb-2">Según su plan de tratamiento, el afiliado y/o la afiliada será derivado/a a las distintas especialidades con las que contamos en la DAS:</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Endodoncia.</li>
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Extracciones.</li>
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Periodoncia.</li>
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Prótesis.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingUrgencias">
+                                    <button class="accordion-button collapsed fw-bold text-azul-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUrgencias" aria-expanded="false" aria-controls="collapseUrgencias">
+                                        Urgencias o Emergencias odontológicas en DAS: </button>
+                                </h2>
+                                <div id="collapseUrgencias" class="accordion-collapse collapse" aria-labelledby="headingUrgencias" data-bs-parent="#TurnosAccordion">
+                                    <div class="accordion-body p-0">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Lunes a viernes de 10 a 16:30 hs (Por orden de llegada).</li>
+                                            <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Comunicarse previamente al CIP <a href="tel:08102220317" class="text-azul-2 fw-bold">0810-222-0317</a>.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </main>
@@ -539,12 +582,8 @@
 
 
     </footer>
-   
-   
-   
-   
-   
-   <script>
+
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             let currentPage = window.location.pathname.split("/").pop();
             let listItems = document.querySelectorAll(".list-group-item");

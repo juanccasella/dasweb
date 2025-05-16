@@ -259,7 +259,8 @@
         </div>
     </nav>
 
-    <!-- Discapacidad  -->
+<!-- Discapacidad container -->
+<!-- Discapacidad banner -->
     <div class="container-fluid">
         <div class="container d-flex align-items-center justify-content-between w-90 mt-4 overflow-hidden">
             <div class="mb-0 mb-lg-4 w-100">
@@ -271,15 +272,15 @@
             </div>
         </div>
     </div>
+
+
     <div class="container-fluid w-90">
         <div class="row mt-0 mb-3 mt-lg-4 mb-lg-4">
-
-
-            <!-- Barra lateral -->
+<!-- Barra lateral -->
             <nav class="col-3 d-none d-lg-flex">
                 <ul class="list-group fs-4 w-100">
                     <li class="list-group-item">
-                        <a href="ginecologia.html" class="text-decoration-none text-verde-2">Chequeo Anual Ginecologico</a>
+                        <a href="ginecologia.html" class="text-decoration-none text-verde-2">Chequeo Anual Ginecológico</a>
                     </li>
                     <li class="list-group-item">
                         <a href="salud.html" class="text-decoration-none text-verde-2">Chequeo Anual de Salud</a>
@@ -305,6 +306,7 @@
                 </ul>
             </nav>
 
+<!-- Barra lateral - responsive -->
             <div class="my-4 d-lg-none">
                 <select class="form-select text-verde-2 fs-4 selectpicker " id="especialidad">
                     <option selected>Afiliaciones</option>
@@ -319,7 +321,7 @@
             </div>
 
 
-            <!-- Contenido principal -->
+<!-- Contenido principal - discapacidad -->
             <main class="col-lg-9">
                 <div class="card card-container shadow-sm">
                     <div class="card-header d-flex text-center justify-content-center bg-azulV-3"> 
@@ -371,7 +373,8 @@
 
                                             <div class="row g-3 botones-discapacidad mx-3 mb-3">
 
-                                                <!-- Btn Prestaciones de apoyo -->
+
+<!-- Btn Prestaciones de apoyo -->
                                                 <div class="col-6 d-flex">
                                                     <button class="btn btn-outline-azulV-3  w-100 h-100 d-flex flex-column justify-content-between align-items-center text-center" 
                                                         data-bs-toggle="modal" data-bs-target="#modalDiscaPrestacionesApoyo">
@@ -408,7 +411,8 @@
                                                     </div>
                                                 </div>
 
-                                                <!-- Btn Prestaciones de transporte -->
+
+<!-- Btn Prestaciones de transporte -->
                                                 <div class="col-6 d-flex">
                                                     <button class="btn btn-outline-azulV-3  w-100 h-100 d-flex flex-column justify-content-between align-items-center text-center" 
                                                         data-bs-toggle="modal" data-bs-target="#modalDiscaPrestacionesTransporte">
@@ -446,7 +450,7 @@
                                                 </div>
 
 
-                                                <!-- Btn Integracion escolar (equipo) -->
+<!-- Btn Integracion escolar (equipo) -->
                                                 <div class="col-6 d-flex">
                                                     <button class="btn btn-outline-azulV-3  w-100 h-100 d-flex flex-column justify-content-between align-items-center text-center" 
                                                         data-bs-toggle="modal" data-bs-target="#modalDiscaIntegracionEscolar">
@@ -483,10 +487,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            
-                                            
-                                                
-                                                <!-- Btn Cobertura medicacion %100 -->
+
+
+<!-- Btn Cobertura medicacion %100 -->
                                                 <div class="col-6 d-flex">
                                                     <button class="btn btn-outline-azulV-3  w-100 h-100 d-flex flex-column justify-content-between align-items-center text-center" 
                                                         data-bs-toggle="modal" data-bs-target="#modalDiscaMedicacion100">
@@ -518,7 +521,7 @@
                                                 </div>
 
 
-                                                <!-- Btn Cobertura medicacion %100 -->
+<!-- Btn Cobertura medicacion %100 -->
                                                 <div class="col-12 d-flex">
                                                     <button class="btn btn-outline-azulV-3  w-100 h-100 d-flex flex-column justify-content-between align-items-center text-center" 
                                                         data-bs-toggle="modal" data-bs-target="#modalDiscaCentroDeDia">
@@ -553,262 +556,12 @@
                                                     </div>
                                                 </div>
 
-
-
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 mt-5">
-                                    <div class="card h-100">
-                                        <div class="card-header text-azulV-3 fw-bold text-center fs-3">Cobertura en insumos</div>
-                                        <div class="card-body text-gris-2">
-                                            <p class="my-4">
-                                                Para más <b class="text-azulV-3">información</b>, o <b class="text-azulV-3">envío de documentación</b>, comunicarse vía correo electrónico a: <b class="text-azulV-3">contacto@das.gob.ar</b>, o bien, a través del Centro de Información Personalizada (<b class="text-azulV-3">CIP</b>) al <b class="text-azulV-3">0810-222-0317</b> los días hábiles de <b class="text-azulV-3">lunes a viernes de 8 a 20 hs</b>.
-                                            </p>
 
-                                            <main>
-                                                <div class="card-body">
-
-                                                    <div class="container mt-4 border rounded p-1">
-                                                        <ul class="nav nav-pills rounded flex-column mb-5" id="myTabs">
-                                                            <li class="nav-item">
-                                                                <a class="flex-fill fs-4 text-center nav-link text-azulV-3 fw-bold active active-tab-style-discapacidad border mt-2" id="tab1" href="#" onclick="showTab(event, 'content1')">Medicación al 100%</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="flex-fill fs-4 text-center nav-link text-azulV-3 fw-bold border mt-2" id="tab2" href="#" onclick="showTab(event, 'content2')">Pañales</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="flex-fill fs-4 text-center nav-link text-azulV-3 fw-bold border mt-2" id="tab3" href="#" onclick="showTab(event, 'content3')">Audífonos - Implantes cocleares - Procesadores del habla - Pilas</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="flex-fill fs-4 text-center nav-link text-azulV-3 fw-bold border mt-2" id="tab4" href="#" onclick="showTab(event, 'content4')">Prótesis / Ortesis</a>
-                                                            </li>
-                                                        </ul>
-
-
-
-                                                        <div class="px-3">
-
-                                                            <!-- Medicacion 100% -->
-                                                            <div id="content1" class="tab-content">
-                                                                <div class="accordion" id="accordionMedicacion100">
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="accordionItemMedicacion1">
-                                                                            <button class="accordion-button text-azulV-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedicacion1" aria-expanded="true" aria-controls="collapseMedicacion1">
-                                                                                • Información general:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapseMedicacion1" class="accordion-collapse collapse show" aria-labelledby="accordionItemMedicacion1" data-bs-parent="#accordionMedicacion100">
-                                                                            <div class="accordion-body">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">La DAS cuenta con el beneficio de tener el 100% de cobertura en ciertos medicamentos dentro de nuestro vademécum, los cuales podrán adquirir en las farmacias convenidas.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="accordionItemMedicacion2">
-                                                                        <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedicacion2" aria-expanded="false" aria-controls="collapseMedicacion2">
-                                                                            • Para acceder a la cobertura:
-                                                                        </button>
-                                                                        </h2>
-                                                                        <div id="collapseMedicacion2" class="accordion-collapse collapse" aria-labelledby="accordionItemMedicacion2" data-bs-parent="#accordionMedicacion100">
-                                                                            <div class="accordion-body text-gris-2">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Completar formulario de inscripción según patología. El mismo debe completarse e incluir datos y firma del médico tratante. Requisito excluyente.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Receta médica con fecha vigente, datos filiatorios, diagnóstico y firma con sello médico.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Resumen de historia clínica actualizado donde el medico justifique el uso de la medicación solicitada. La misma debe estar relacionada directamente la patología vinculada a la resolución 014/01.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Esquema terapéutico.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Estudios complementarios.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="accordionItemMedicacion3">
-                                                                            <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedicacion3" aria-expanded="false" aria-controls="collapseMedicacion3">
-                                                                                • Para retirar la medicación:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapseMedicacion3" class="accordion-collapse collapse" aria-labelledby="accordionItemMedicacion3" data-bs-parent="#accordionMedicacion100">
-                                                                            <div class="accordion-body">
-                                                                                <ul class="list-group list-group-flush fw-bold text-azulV-3">Presentar en farmacias convenidas:
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presentar orden médica de indicación del insumo.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Resumen de historia clínica, detallando tipo de hipoacusia, etiología, localización de la lesión, grado de la pérdida y tiempo de evolución.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Audiometría.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Logoaudiometría.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Estudios previos, si posee.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Prueba de Sistema Osteointegrado, si corresponde.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presupuesto de la empresa proveedora.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Firma del consentimiento informado sobre los alcances de cobertura del insumo.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-                                                            <!-- Pañales -->
-                                                            <div id="content2" class="tab-content">
-                                                                <div class="accordion" id="acordeonPañales">
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemPañales1">
-                                                                            <button class="accordion-button text-azulV-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePañales1" aria-expanded="true" aria-controls="collapsePañales1">
-                                                                                • Destinado para afiliados y afiliadas:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapsePañales1" class="accordion-collapse collapse show" aria-labelledby="acordeonItemPañales1" data-bs-parent="#acordeonPañales">
-                                                                            <div class="accordion-body">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">Con incontinencia.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemPañales2">
-                                                                        <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePañales2" aria-expanded="false" aria-controls="collapsePañales2">
-                                                                            • Para acceder a la cobertura:
-                                                                        </button>
-                                                                        </h2>
-                                                                        <div id="collapsePañales2" class="accordion-collapse collapse" aria-labelledby="acordeonItemPañales2" data-bs-parent="#acordeonPañales">
-                                                                            <div class="accordion-body text-gris-2">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presentar indicación médica donde conste diagnóstico, cantidad de pañales y marca comercial.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Resumen de historia clínica.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemPañales3">
-                                                                            <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePañales3" aria-expanded="false" aria-controls="collapsePañales3">
-                                                                                • Para retirar el insumo:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapsePañales3" class="accordion-collapse collapse" aria-labelledby="acordeonItemPañales3" data-bs-parent="#acordeonPañales">
-                                                                            <div class="accordion-body">
-                                                                                <P>Una vez aprobado el beneficio, presentar en farmacia <b class="text-azulV-3">Orien</b class="text-azulV-3"> (Av. Entre Ríos 205, CABA):</P>
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Carnet de DAS/OMINT.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ DNI.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Autorización.</li>
-                                                                                </ul>
-                                                                                <P>Si te encontrás en el interior del país, el prestador, coordinará la entrega en tu domicilio.</P>
-                                                                                <P class="text-azulV-3">El retiro o entrega, corresponde a toda la cantidad mensual y no es acumulable.</P>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- Audifonos e implantes cocleares -->
-                                                            <div id="content3" class="tab-content">
-                                                                <div class="accordion" id="acordeonAudifonos">
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemAudifonos1">
-                                                                            <button class="accordion-button text-azulV-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudifonos1" aria-expanded="true" aria-controls="collapseAudifonos1">
-                                                                                • Destinado para afiliados y afiliadas:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapseAudifonos1" class="accordion-collapse collapse" aria-labelledby="acordeonItemAudifonos1" data-bs-parent="#acordeonAudifonos">
-                                                                            <div class="accordion-body">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">Que posean Certificado Único de Discapacidad (Auditiva).</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemAudifonos2">
-                                                                        <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudifonos2" aria-expanded="false" aria-controls="collapseAudifonos2">
-                                                                            • Para acceder a los audífonos:
-                                                                        </button>
-                                                                        </h2>
-                                                                        <div id="collapseAudifonos2" class="accordion-collapse collapse" aria-labelledby="acordeonItemAudifonos2" data-bs-parent="#acordeonAudifonos">
-                                                                            <div class="accordion-body text-gris-2">
-                                                                                <p>Los afiliados o afiliadas deberán concurrir a las dos empresas de prestadores convenidos: <strong class="text-azulV-3">Widex</strong> y <strong class="text-azulV-3">Auditron</strong>.</p>
-                                                                                <p>Presentar:</p>
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Orden médica de selección de audífonos.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Resumen de historia clínica, detallando tipo de hipoacusia, etiología, localización de la lesión, grado de la pérdida y tiempo de evolución.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Audiometría.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Logoaudiometría.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Estudios previos, si posee.</li>
-                                                                                </ul>
-                                                                                <p>Si ya es usuario/a de audífonos: debe realizar el rendimiento de los audífonos actuales.</p>
-                                                                                <p>Para los afiliados o afiliadas <strong class="text-azulV-3">menores de 16 años</strong>: Agregar el informe fonoaudiológico sobre el desarrollo del lenguaje y el porcentaje de discriminación de la palabra en ambiente silencioso, en función de la relación señal- ruido.</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemAudifonos3">
-                                                                            <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudifonos3" aria-expanded="false" aria-controls="collapseAudifonos3">
-                                                                                • Para acceder a los implantes cocleares y procesadores del habla:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapseAudifonos3" class="accordion-collapse collapse" aria-labelledby="acordeonItemAudifonos3" data-bs-parent="#acordeonAudifonos">
-                                                                            <div class="accordion-body">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presentar orden médica de indicación del insumo.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Resumen de historia clínica, detallando tipo de hipoacusia, etiología, localización de la lesión, grado de la pérdida y tiempo de evolución.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Audiometría.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Logoaudiometría.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Estudios previos, si posee.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Prueba de Sistema Osteointegrado, si corresponde.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presupuesto de la empresa proveedora.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Firma del consentimiento informado sobre los alcances de cobertura del insumo.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemAudifonos4">
-                                                                            <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudifonos4" aria-expanded="false" aria-controls="collapseAudifonos4">
-                                                                                • Para acceder a la calibración o reparación:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapseAudifonos4" class="accordion-collapse collapse" aria-labelledby="acordeonItemAudifonos4" data-bs-parent="#acordeonAudifonos">
-                                                                            <div class="accordion-body">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presentar orden médica.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Informe técnico.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presupuesto.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="accordion-item">
-                                                                        <h2 class="accordion-header" id="acordeonItemAudifonos5">
-                                                                            <button class="accordion-button text-azulV-3 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAudifonos5" aria-expanded="false" aria-controls="collapseAudifonos5">
-                                                                                • Para acceder a pilas o baterías:
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div id="collapseAudifonos5" class="accordion-collapse collapse" aria-labelledby="acordeonItemAudifonos5" data-bs-parent="#acordeonAudifonos">
-                                                                            <div class="accordion-body">
-                                                                                <ul class="list-group list-group-flush fw-bold text-gris-2">
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presentar orden médica de indicación del elemento a proveer (modelo y cantidad).</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Resumen de historia clínica.</li>
-                                                                                    <li class="list-group-item border-0 fw-lighter text-gris-2">৹ Presupuesto de la empresa proveedora.</li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
