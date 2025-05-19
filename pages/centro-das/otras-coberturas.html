@@ -276,7 +276,6 @@
     
     <div class="container-fluid w-90">
         <div class="row mt-0 mb-3 mt-lg-4 mb-lg-4">
-            <!-- Barra lateral -->
             <nav class="col-3 d-none d-lg-flex">
                 <ul class="list-group fs-4 w-100">
                     <li class="list-group-item">
@@ -307,7 +306,7 @@
             </nav>
 
             <div class="my-4 d-lg-none">
-                <select class="form-select text-verde-2 fs-4 selectpicker " id="especialidad">
+                <select class="form-select text-verde-2 fs-4 selectpicker" id="especialidad">
                     <option selected>Cobertura Medicación</option>
                     <option value="Odontología">Odontología</option>
                     <option value="Salud Mental">Salud Mental</option>
@@ -319,107 +318,417 @@
                 </select>
             </div>
 
-
-            <!-- Contenido principal -->
             <main class="col-lg-9">
                 <div class="card card-container shadow-sm">
-                    <div class="card-header d-flex text-center justify-content-center bg-verde-2">                    
-                        <h2 class="text-decoration-none text-blanco fs-3 my-2">Otras Coberturas</a>
+                    <div class="card-header d-flex text-center justify-content-center bg-verde-2">
+                        <h2 class="text-decoration-none text-blanco fs-3 my-2">Otras Coberturas</h2>
                     </div>
                     <div class="card-body mx-4 mb-4">
                         <div class="container">
                             <div class="row">
-                                <!-- Celiaquía -->
+
+
+<!-- Celiaquía -->
                                 <div class="col-md-12 mt-5">
                                     <div class="card h-100">
-                                        <div class="card-header text-verde-2 fw-bold text-center fs-3">Celiaquía</div>
+                                        <div class="card-header text-verde-2 fw-bold text-center fs-3">
+                                            Celiaquía
+                                        </div>
                                         <div class="card-body text-gris-2">
-                                            <ul class="list-group list-group-flush">
-                                                <p>Mediante la Ley Nº 26.588, el Estado Nacional, dispuso la cobertura en concepto de alimentos libres de gluten.</p>
-                                                <p>Tiene como objetivo <b class="text-verde-2">mejorar la calidad de vida</b> de las personas, facilitando su adherencia a una dieta sin gluten y <b class="text-verde-2">reducir las barreras económicas</b> para acceder dichos productos.</p>
-                                                <p>El monto es actualizado periódicamente por resoluciones que se publican en el boletín oficial.</p>
-                                                <p>Para obtener más <b class="text-verde-2">información</b> o <b class="text-verde-2">enviar la documentación</b> requerida, por favor comunicarse con nosotros a través del correo electrónico a <a href="mailto:contacto@das.gob.ar" class="text-verde-2 fw-bold">contacto@das.gob.ar</a> o llamando al Centro de Información Personalizada (<b class="text-verde-2">CIP</b>) al <a href="tel:08102220317" class="text-verde-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</p>
-                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• Destinado para afiliados y afiliadas:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Con diagnóstico avalado.</li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• Para acceder a la cobertura:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">Presentar la siguiente documentación:</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Nota de solicitud.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Resumen de Historia Clínica.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Estudios que avalen el diagnóstico (laboratorio de anticuerpos antigliadina y antiendomisio + endoscopia digestiva con biopsia).</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• Planilla de datos bancarios + Comprobante de CBU. <a href="https://das.gob.ar/wp-content/uploads/2023/09/Planilla-Deposito-bancario-titular-GAA.SDCA_.FO08-REV01.pdf" target="_blank" class="text-verde-2 fw-bold">Descargar formulario de la planilla</a>.</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+
+                                            <p>Mediante la Ley Nº 26.588, el Estado Nacional, dispuso la cobertura en concepto de alimentos libres de gluten.</p>
+                                            <p>Tiene como objetivo <b class="text-verde-2">mejorar la calidad de vida</b> de las personas, facilitando su adherencia a una dieta sin gluten y <b class="text-verde-2">reducir las barreras económicas</b> para acceder dichos productos.</p>
+                                            <p>El monto es actualizado periódicamente por resoluciones que se publican en el boletín oficial.</p>
+                                            <p>Para obtener más <b class="text-verde-2">información</b> o <b class="text-verde-2">enviar la documentación</b> requerida, por favor comunicarse con nosotros a través del correo electrónico a <a href="mailto:contacto@das.gob.ar" class="text-verde-2 fw-bold">contacto@das.gob.ar</a> o llamando al Centro de Información Personalizada (<b class="text-verde-2">CIP</b>) al <a href="tel:08102220317" class="text-verde-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</p>
+
+                                            <div class="accordion" id="CeliaquiaAccordion">
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingDestinadoCeliaquia">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDestinadoCeliaquia" aria-expanded="false" aria-controls="collapseDestinadoCeliaquia">
+                                                            Destinado para afiliados y afiliadas:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseDestinadoCeliaquia" class="accordion-collapse collapse" aria-labelledby="headingDestinadoCeliaquia" data-bs-parent="#CeliaquiaAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Con diagnóstico avalado.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingAccederCoberturaCeliaquia">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccederCoberturaCeliaquia" aria-expanded="false" aria-controls="collapseAccederCoberturaCeliaquia">
+                                                            Para acceder a la cobertura:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseAccederCoberturaCeliaquia" class="accordion-collapse collapse" aria-labelledby="headingAccederCoberturaCeliaquia" data-bs-parent="#CeliaquiaAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">Presentar la siguiente documentación:</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Nota de solicitud.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Resumen de Historia Clínica.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Estudios que avalen el diagnóstico (laboratorio de anticuerpos antigliadina y antiendomisio + endoscopia digestiva con biopsia).</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Planilla de datos bancarios + Comprobante de CBU. <a href="https://das.gob.ar/wp-content/uploads/2023/09/Planilla-Deposito-bancario-titular-GAA.SDCA_.FO08-REV01.pdf" target="_blank" class="text-verde-2 fw-bold">Descargar formulario de la planilla</a>.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Anticonceptivos -->
+
+
+<!-- Anticonceptivos -->
                                 <div class="col-md-12 mt-5">
                                     <div class="card h-100">
                                         <div class="card-header text-verde-2 fw-bold text-center fs-3">Anticonceptivos</div>
                                         <div class="card-body text-gris-2">
-                                            <ul class="list-group list-group-flush">
-                                                <p>Mediante la Ley Nº 25.673, para dar cumplimiento a la Ley Nacional de Salud y Procreación Responsable y sus ampliaciones, se dispuso la cobertura en diferentes métodos anticonceptivos.</p>
-                                                <p>Tiene como objetivo brindar <b class="text-verde-2">acceso equitativo a opciones anticonceptivas</b>, fomentando la autonomía y el control de la fertilidad de las personas.</p>
-                                                <p>Para obtener más <b class="text-verde-2">información</b> o <b class="text-verde-2">enviar la documentación</b> requerida, por favor comunicarse con nosotros a través del correo electrónico a <a href="mailto:contacto@das.gob.ar" class="text-verde-2 fw-bold">contacto@das.gob.ar</a> o llamando al Centro de Información Personalizada (<b class="text-verde-2">CIP</b>) al <a href="tel:08102220317" class="text-verde-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</p>
-                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• Anticonceptivos orales e inyectables, incluidos en vademécum:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fw-lighter fs-6">• <b class="fw-bold"> Para acceder a la cobertura</b> necesitas la autorización y la confirmación del empadronamiento.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fw-bold fs-6">• Para retirar, presentar en farmacias convenidas:
+
+                                            <p>Mediante la Ley Nº 25.673, para dar cumplimiento a la Ley Nacional de Salud y Procreación Responsable y sus ampliaciones, se dispuso la cobertura en diferentes métodos anticonceptivos.</p>
+                                            <p>Tiene como objetivo brindar <b class="text-verde-2">acceso equitativo a opciones anticonceptivas</b>, fomentando la autonomía y el control de la fertilidad de las personas.</p>
+                                            <p>Para obtener más <b class="text-verde-2">información</b> o <b class="text-verde-2">enviar la documentación</b> requerida, por favor comunicarse con nosotros a través del correo electrónico a <a href="mailto:contacto@das.gob.ar" class="text-verde-2 fw-bold">contacto@das.gob.ar</a> o llamando al Centro de Información Personalizada (<b class="text-verde-2">CIP</b>) al <a href="tel:08102220317" class="text-verde-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</p>
+
+                                            <div class="accordion" id="AnticonceptivosAccordion">
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingOralesInyectables">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOralesInyectables" aria-expanded="false" aria-controls="collapseOralesInyectables">
+                                                            Anticonceptivos orales e inyectables, incluidos en vademécum:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOralesInyectables" class="accordion-collapse collapse" aria-labelledby="headingOralesInyectables" data-bs-parent="#AnticonceptivosAccordion">
+                                                        <div class="accordion-body p-0">
                                                             <ul class="list-group list-group-flush">
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• Carnet de DAS/OMINT.</li>
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• DNI.</li>
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• Indicación médica correspondiente firmada y sellada por un prestador de DAS.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• <b class="fw-bold"> Para acceder a la cobertura</b> necesitas la autorización y la confirmación del empadronamiento.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fw-bold fs-6 ps-3">• Para retirar, presentar en farmacias convenidas:
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Carnet de DAS/OMINT.</li>
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• DNI.</li>
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Indicación médica correspondiente firmada y sellada por un prestador de DAS.</li>
+                                                                    </ul>
+                                                                </li>
                                                             </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• Anticoncepción hormonal de emergencia:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 text-gris-2 fs-6">• Para retirar, presentar en farmacias convenidas:
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingEmergenciaAnticonceptivos">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmergenciaAnticonceptivos" aria-expanded="false" aria-controls="collapseEmergenciaAnticonceptivos">
+                                                            Anticoncepción hormonal de emergencia:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseEmergenciaAnticonceptivos" class="accordion-collapse collapse" aria-labelledby="headingEmergenciaAnticonceptivos" data-bs-parent="#AnticonceptivosAccordion">
+                                                        <div class="accordion-body p-0">
                                                             <ul class="list-group list-group-flush">
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• Carnet de DAS/OMINT.</li>
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• DNI.</li>
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• Indicación médica correspondiente firmada y sellada por un prestador de DAS.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Para retirar, presentar en farmacias convenidas:
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Carnet de DAS/OMINT.</li>
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• DNI.</li>
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Indicación médica correspondiente firmada y sellada por un prestador de DAS.</li>
+                                                                    </ul>
+                                                                </li>
                                                             </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• Implante subdérmico y anticonceptivos orales, fuera de vademecum:
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• <b class="fw-bold"> Para acceder a la cobertura</b> presentar nota de solicitud, indicación médica y resumen de Historia Clínica.</li>
-                                                        <li class="list-group-item border-0 fw-bold text-gris-2 fs-6">• Beneficio con vencimiento con la posibilidad de ser renovado.</li>
-                                                        <li class="list-group-item border-0 text-gris-2 fs-6">• Para retirar, presentar en farmacia Orien (Av. Entre Ríos 205, CABA):
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingImplanteFueraVademecumAnticonceptivos">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImplanteFueraVademecumAnticonceptivos" aria-expanded="false" aria-controls="collapseImplanteFueraVademecumAnticonceptivos">
+                                                            Implante subdérmico y anticonceptivos orales, fuera de vademecum:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseImplanteFueraVademecumAnticonceptivos" class="accordion-collapse collapse" aria-labelledby="headingImplanteFueraVademecumAnticonceptivos" data-bs-parent="#AnticonceptivosAccordion">
+                                                        <div class="accordion-body p-0">
                                                             <ul class="list-group list-group-flush">
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• Carnet de DAS/OMINT.</li>
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• DNI.</li>
-                                                                <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• Indicación médica correspondiente firmada y sellada por un prestador de DAS.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• <b class="fw-bold"> Para acceder a la cobertura</b> presentar nota de solicitud, indicación médica y resumen de Historia Clínica.</li>
+                                                                <li class="list-group-item border-0 fw-bold text-gris-2 fs-6 ps-3">• Beneficio con vencimiento con la posibilidad de ser renovado.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Para retirar, presentar en farmacia Orien (Av. Entre Ríos 205, CABA):
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Carnet de DAS/OMINT.</li>
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• DNI.</li>
+                                                                        <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Indicación médica correspondiente firmada y sellada por un prestador de DAS.</li>
+                                                                    </ul>
+                                                                </li>
                                                             </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• DIU de cobre y DIU Mirena (Levonogestrel):
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• <b class="fw-bold"> Para acceder a la cobertura</b> presentar nota de solicitud, indicación médica y resumen de Historia Clínica.</li>
-                                                        <li class="list-group-item border-0 fw-bold text-gris-2 fs-6">• Luego de la evaluación de auditoria médica, se te informará si corresponde la cobertura del 50% o 100%.</li>
-                                                        <li class="list-group-item border-0 fw-bold text-gris-2 fs-6">• El DIU de cobre se encuentra incluido en la práctica de colocación.</li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• Preservativos (mediante reintegro):
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item border-0 fw-lighter text-gris-2 fs-6">• <b class="fw-bold"> Para acceder al reintegro</b> presentar indicación médica, Factura B o C, planilla de datos bancarios + Comprobante de CBU. <a href="https://das.gob.ar/wp-content/uploads/2023/09/Planilla-Deposito-bancario-titular-GAA.SDCA_.FO08-REV01.pdf" target="_blank" class="text-verde-2 fw-bold">Descargar formulario de la planilla</a>.</li>
-                                                        <li class="list-group-item border-0 fw-bold text-gris-2 fs-6">• Reintegro de hasta 36 unidades con un tope máximo en pesos, mensuales.</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingPreservativosReintegroAnticonceptivos">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreservativosReintegroAnticonceptivos" aria-expanded="false" aria-controls="collapsePreservativosReintegroAnticonceptivos">
+                                                            Preservativos (mediante reintegro):
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapsePreservativosReintegroAnticonceptivos" class="accordion-collapse collapse" aria-labelledby="headingPreservativosReintegroAnticonceptivos" data-bs-parent="#AnticonceptivosAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• <b class="fw-bold"> Para acceder al reintegro</b> presentar indicación médica, Factura B o C, planilla de datos bancarios + Comprobante de CBU. <a href="https://das.gob.ar/wp-content/uploads/2023/09/Planilla-Deposito-bancario-titular-GAA.SDCA_.FO08-REV01.pdf" target="_blank" class="text-verde-2 fw-bold">Descargar formulario de la planilla</a>.</li>
+                                                                <li class="list-group-item border-0 fw-bold text-gris-2 fs-6 ps-3">• Reintegro de hasta 36 unidades con un tope máximo en pesos, mensuales.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
+
+
+                                
+<!-- Leches -->
+                                <div class="col-md-12 mt-5">
+                                    <div class="card h-100">
+                                        <div class="card-header text-azulV-2 fw-bold text-center fs-3">Leches maternizadas o medicamentosas</div>
+                                        <div class="card-body text-gris-2">
+
+                                            <p>Tanto para afiliados y afiliadas adheridos al plan materno infantil, como para dar cumplimiento a la Ley Nº 27.305, la DAS posee una <b class="text-azulV-2 fw-bold">cobertura del 100%</b> en leches maternizadas o medicamentosas, respectivamente.</p>
+
+                                            <h5 class="fw-bold text-gris-2 fs-4  mt-4 mb-3">Leches maternizadas</h5>
+
+                                            <div class="accordion" id="LechesMaternizadasAccordion">
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingDestinadoLechesM">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDestinadoLechesM" aria-expanded="false" aria-controls="collapseDestinadoLechesM">
+                                                            Destinado para afiliados y afiliadas:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseDestinadoLechesM" class="accordion-collapse collapse" aria-labelledby="headingDestinadoLechesM" data-bs-parent="#LechesMaternizadasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Inscriptos en el Plan materno infantil, hasta el primer año de edad.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingCoberturaLechesM">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoberturaLechesM" aria-expanded="false" aria-controls="collapseCoberturaLechesM">
+                                                            Cobertura:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCoberturaLechesM" class="accordion-collapse collapse" aria-labelledby="headingCoberturaLechesM" data-bs-parent="#LechesMaternizadasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• 4 kg o 20 litros.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingAccederLechesM">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccederLechesM" aria-expanded="false" aria-controls="collapseAccederLechesM">
+                                                            Para acceder a la cobertura:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseAccederLechesM" class="accordion-collapse collapse" aria-labelledby="headingAccederLechesM" data-bs-parent="#LechesMaternizadasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Presentar indicación médica, especificando marca comercial y presentación.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingRetirarLechesM">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRetirarLechesM" aria-expanded="false" aria-controls="collapseRetirarLechesM">
+                                                            Para retirar el insumo:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseRetirarLechesM" class="accordion-collapse collapse" aria-labelledby="headingRetirarLechesM" data-bs-parent="#LechesMaternizadasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• <b class="text-azulV-2 fw-bold">Presentar en farmacia Orien</b> (Av. Entre Ríos 205, CABA) u otras tres sucursales que constan en la autorización (Adolfo Alsina 1801, Av. Santa Fe 4228, Av. Rivadavia 5444, Av. Corrientes 1880): carnet de DAS/OMINT, DNI y autorización.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Si te encontrás en el <b class="text-azulV-2 fw-bold">interior del país</b>, el prestador, coordinará la entrega en tu domicilio.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingImportanteLechesM">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImportanteLechesM" aria-expanded="false" aria-controls="collapseImportanteLechesM">
+                                                            IMPORTANTE:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseImportanteLechesM" class="accordion-collapse collapse" aria-labelledby="headingImportanteLechesM" data-bs-parent="#LechesMaternizadasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• En todos los casos, el retiro o entrega, corresponde a toda la cantidad mensual y <b class="text-azulV-2 fw-bold">no es acumulable</b>.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div> <h5 class="fw-bold text-gris-2 fs-4 mt-4 mb-3">Leches medicamentosas</h5>
+
+                                            <div class="accordion" id="LechesMedicamentosasAccordion">
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingDestinadoLechesMed">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDestinadoLechesMed" aria-expanded="false" aria-controls="collapseDestinadoLechesMed">
+                                                            Destinado para afiliados y afiliadas:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseDestinadoLechesMed" class="accordion-collapse collapse" aria-labelledby="headingDestinadoLechesMed" data-bs-parent="#LechesMedicamentosasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Que padecen alergia a la proteína de la leche vacuna (APLV), como así también, aquellos que padecen desórdenes, enfermedades o trastornos gastrointestinales y enfermedades metabólicas incluidas en el PMO, hasta los 3 años de edad.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingCoberturaLechesMed">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoberturaLechesMed" aria-expanded="false" aria-controls="collapseCoberturaLechesMed">
+                                                            Cobertura:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCoberturaLechesMed" class="accordion-collapse collapse" aria-labelledby="headingCoberturaLechesMed" data-bs-parent="#LechesMedicamentosasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• 4 kg o 20 litros.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingAccederLechesMed">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccederLechesMed" aria-expanded="false" aria-controls="collapseAccederLechesMed">
+                                                            Para acceder a la cobertura:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseAccederLechesMed" class="accordion-collapse collapse" aria-labelledby="headingAccederLechesMed" data-bs-parent="#LechesMedicamentosasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• <b class="text-azulV-2 fw-bold">Si el insumo esta convenido por DAS, presentar:</b> indicación médica especificando marca comercial y presentación.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• <b class="text-azulV-2 fw-bold">Si el insumo no está incluido en vademécum, presentar:</b> nota de solicitud indicando los motivos de la cobertura, indicación médica, resumen de historia clínica (detallando justificación de prescripción y plan de tratamiento), estudios complementarios que avalen el diagnóstico y recibo de haberes.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingRetirarLechesMed">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRetirarLechesMed" aria-expanded="false" aria-controls="collapseRetirarLechesMed">
+                                                            Para retirar el insumo:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseRetirarLechesMed" class="accordion-collapse collapse" aria-labelledby="headingRetirarLechesMed" data-bs-parent="#LechesMedicamentosasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• <b class="text-azulV-2 fw-bold">Presentar en cualquier farmacia de la red:</b> carnet de DAS/OMINT, DNI e indicación médica.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Si te encontrás en el <b class="text-azulV-2 fw-bold">interior del país</b>, el prestador, coordinará la entrega en tu domicilio.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingImportanteLechesMed">
+                                                        <button class="accordion-button collapsed text-azulV-2 fs-5 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImportanteLechesMed" aria-expanded="false" aria-controls="collapseImportanteLechesMed">
+                                                            IMPORTANTE:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseImportanteLechesMed" class="accordion-collapse collapse" aria-labelledby="headingImportanteLechesMed" data-bs-parent="#LechesMedicamentosasAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• En todos los casos, el retiro o entrega, corresponde a toda la cantidad mensual y <b class="text-azulV-2 fw-bold">no es acumulable</b>.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+<!-- PAñales -->                      
+                                <div class="col-md-12 mt-5">
+                                    <div class="card h-100">
+                                        <div class="card-header text-verde-2 fw-bold text-center fs-3">Pañales</div>
+                                        <div class="card-body text-gris-2">
+
+                                            <p class="fw-bold">Para ver información sobre pañales pediátricos, hace <a href="../programas/materno-infantil.html" class="text-verde-2">clic acá</a></p>
+
+                                            <div class="accordion" id="PañalesAccordion">
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingDestinadoPañales">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDestinadoPañales" aria-expanded="false" aria-controls="collapseDestinadoPañales">
+                                                            Destinado para afiliados y afiliadas:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseDestinadoPañales" class="accordion-collapse collapse" aria-labelledby="headingDestinadoPañales" data-bs-parent="#PañalesAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Con incontinencia.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingAccederCoberturaPañales">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccederCoberturaPañales" aria-expanded="false" aria-controls="collapseAccederCoberturaPañales">
+                                                            Para acceder a la cobertura:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseAccederCoberturaPañales" class="accordion-collapse collapse" aria-labelledby="headingAccederCoberturaPañales" data-bs-parent="#PañalesAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Presentar indicación médica donde conste diagnóstico, cantidad de pañales y marca comercial.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Resumen de Historia Clínica.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingRetirarInsumoPañales">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRetirarInsumoPañales" aria-expanded="false" aria-controls="collapseRetirarInsumoPañales">
+                                                            Para retirar el insumo:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseRetirarInsumoPañales" class="accordion-collapse collapse" aria-labelledby="headingRetirarInsumoPañales" data-bs-parent="#PañalesAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <p class="text-gris-2 fs-6 ps-3 pt-2">Una vez aprobado el beneficio, presentar en farmacia Orien (Av. Entre Ríos 205, CABA):</p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Carnet de DAS/OMINT.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• DNI.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-4">• Autorización.</li>
+                                                            </ul>
+                                                            <p class="text-gris-2 fs-6 ps-3 pt-2">Si te encontrás en el interior del país, el prestador, coordinará la entrega en tu domicilio.</p>
+                                                            <p class="fw-bold text-gris-2 fs-6 ps-3">El retiro o entrega, corresponde a toda la cantidad mensual y no es acumulable.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

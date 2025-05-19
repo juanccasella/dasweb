@@ -271,49 +271,127 @@
         </div>
     </div>
 
-    <!-- Formularios body -->
-    <div class="container-fluid w-90">
-        <div class="row my-5">
-            <!-- Barra lateral -->
-            <nav class="col-md-3 border-end border-verde-2">
-                <ul class="list-group">
-                    <li class="list-group-item border-0">
-                        <a href="ginecologia.html" class="text-decoration-none text-verde-2 fs-4"><i class="fa-solid fa-minus fa-2xs"></i> Afiliación</a>
-                        <ul class="list-group fs-5">
-                            <li class="list-group-item border-0 text-gris-2"><i class="fa-solid fa-minus fa-2xs"></i> <a href="" class="text-decoration-none text-gris-2">Af. de Titualres</a></li>
-                            <li class="list-group-item border-0 text-gris-2"><i class="fa-solid fa-minus fa-2xs"></i> <a href="" class="text-decoration-none text-gris-2">Af. Grupo Familiar sin Cargo</a></li>
-                            <li class="list-group-item border-0 text-gris-2"><i class="fa-solid fa-minus fa-2xs"></i> <a href="" class="text-decoration-none text-gris-2">Af. Grupo Familiar con Cargo</a></li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="salud.html" class="text-decoration-none text-verde-2 fs-4"><i class="fa-solid fa-minus fa-2xs"></i> Coberturas en Medicación</a>
-                        <ul class="list-group fs-5">
-                            <li class="list-group-item border-0 text-gris-2"><i class="fa-solid fa-minus fa-2xs"></i> <a href="" class="text-decoration-none text-gris-2">100%</a></li>
-                            <li class="list-group-item border-0 text-gris-2"><i class="fa-solid fa-minus fa-2xs"></i> <a href="" class="text-decoration-none text-gris-2">50%</a></li>
-                        </ul>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <a href="discapacidad.html" class="text-decoration-none text-verde-2 fs-4"><i class="fa-solid fa-minus fa-2xs"></i> Otras Coberturas</a>
-                        <ul class="list-group fs-5">
-                            <li class="list-group-item border-0 text-gris-2"><i class="fa-solid fa-minus fa-2xs"></i> <a href="" class="text-decoration-none text-gris-2">Celiauía</a></li>
-                            <li class="list-group-item border-0 text-gris-2"><i class="fa-solid fa-minus fa-2xs"></i> <a href="" class="text-decoration-none text-gris-2">Anticonceptivos</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Contenido principal -->
-            <main class="col-md-9">
-                <h1 class="text-verde-2">Bienvenido</h1>
-                <p class="text-gris-2">Selecciona una opción del menú para cargar contenido aquí.</p>
-            </main>
-        </div>
-    </div>
-    
 
         <!-- PRUEBA -->
 
         <div class="container-fluid w-90">
+            <div class="row my-5">
+
+                <nav class="col-md-3 border-end border-verde-2">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-afiliacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-afiliacion" type="button" role="tab" aria-controls="v-pills-afiliacion" aria-selected="true">Afiliación</button>
+
+                        <button class="nav-link" id="v-pills-medicacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-medicacion" type="button" role="tab" aria-controls="v-pills-medicacion" aria-selected="false">Coberturas en Medicación</button>
+
+                        <button class="nav-link" id="v-pills-otrascoberturas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-otrascoberturas" type="button" role="tab" aria-controls="v-pills-otrascoberturas" aria-selected="false">Otras Coberturas</button>
+                    </div>
+                </nav>
+
+
+                <main class="col-md-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+
+
+                        <div class="tab-pane fade show active" id="v-pills-afiliacion" role="tabpanel" aria-labelledby="v-pills-afiliacion-tab">
+                            <h2 class="text-gris-2">Contenido Afiliación</h2>
+                            <div class="accordion" id="AfiliacionSubAccordion">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingAfilTitulares">
+                                        <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilTitulares" aria-expanded="false" aria-controls="collapseAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
+                                            Afil. de Tituales
+                                        </button>
+                                    </h2>
+                                    <div id="collapseAfilTitulares" class="accordion-collapse collapse" aria-labelledby="headingAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
+                                        <div class="accordion-body p-0">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingAfilFamiliarSinCargo">
+                                        <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarSinCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                            Afil. de Grupo Familiar sin Cargo
+                                        </button>
+                                    </h2>
+                                    <div id="collapseAfilFamiliarSinCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                        <div class="accordion-body p-0">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingAfilFamiliarConCargo">
+                                        <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarConCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                            Afil. de Grupo Familiar con Cargo
+                                        </button>
+                                    </h2>
+                                    <div id="collapseAfilFamiliarConCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                        <div class="accordion-body p-0">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> 
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-medicacion" role="tabpanel" aria-labelledby="v-pills-medicacion-tab">
+                            <h2 class="text-gris-2">Contenido Coberturas en Medicación</h2>
+                            <div class="tab-pane fade show active" id="v-pills-afiliacion" role="tabpanel" aria-labelledby="v-pills-afiliacion-tab">
+                                <div class="accordion" id="AfiliacionSubAccordion">
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingAfilTitulares">
+                                            <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilTitulares" aria-expanded="false" aria-controls="collapseAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
+                                                Actualización de Historia Clnica
+                                            </button>
+                                        </h2>
+                                        <div id="collapseAfilTitulares" class="accordion-collapse collapse" aria-labelledby="headingAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
+                                            <div class="accordion-body p-0">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingAfilFamiliarSinCargo">
+                                            <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarSinCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                                Medicación al 100%
+                                            </button>
+                                        </h2>
+                                        <div id="collapseAfilFamiliarSinCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                            <div class="accordion-body p-0">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingAfilFamiliarConCargo">
+                                            <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarConCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                                Medicación al 70%
+                                            </button>
+                                        </h2>
+                                        <div id="collapseAfilFamiliarConCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                            <div class="accordion-body p-0">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-otrascoberturas" role="tabpanel" aria-labelledby="v-pills-otrascoberturas-tab">
+                            <h2>Contenido Otras Coberturas</h2>
+                            <p>Este es el párrafo que se muestra cuando se selecciona "Otras Coberturas".</p>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+
+
+        <!-- <div class="container-fluid w-90">
             <div class="row my-5">
                 <nav class="col-md-3 border-end border-verde-2">       
                     <div class="accordion" id="sideMenuAccordion">
@@ -350,9 +428,6 @@
                                         <a class="btn btn-blanco d-block text-start border-bottom" href="#" role="button">Actualización de Historia Clínica</a>
                                         <a class="btn btn-blanco d-block text-start border-bottom" href="#" role="button">70%</a>
                                         <a class="btn btn-blanco d-block text-start border-bottom" href="#" role="button">100%</a>
-                                        <!-- <li class="list-group-item"><a href="#" class="text-decoration-none text-body ps-3">Actualización de Historia Clínica</a></li>
-                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-body ps-3">70%</a></li>
-                                        <li class="list-group-item"><a href="#" class="text-decoration-none text-body ps-3">100%</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -446,7 +521,7 @@
                 </main>
         
             </div> 
-        </div> 
+        </div>  -->
 
     <!-- Footer container -->
     <footer class="pt-4">

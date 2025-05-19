@@ -275,7 +275,7 @@
     </div>
     <div class="container-fluid w-90">
         <div class="row mt-0 mb-3 mt-lg-4 mb-lg-4">
-            <!-- Barra lateral -->
+<!-- Barra lateral -->
             <nav class="col-3 d-none d-lg-flex">
                 <ul class="list-group fs-4 w-100">
                     <li class="list-group-item">
@@ -304,7 +304,8 @@
                     </li>
                 </ul>
             </nav>
-            <!-- Contenido principal -->
+
+<!-- Contenido principal -->
             <main class="col-lg-9">
                 <div class="card card-container shadow-sm">
                     <div class="card-header d-flex text-center justify-content-center bg-verde-1">                    
@@ -315,15 +316,15 @@
                             <div class="row">
                                 <div class="col-md-12 mt-5">
                                     <div class="card h-100">
-                                        <div class="card-header text-verde-1 fw-bold text-center fs-3">Calendario de vacunación en DAS</div>
+                                        <div class="card-header text-verde-2 fw-bold text-center fs-3">Calendario de vacunación en DAS</div>
                                         <div class="card-body text-gris-2">
-                                            <P>La DAS cuenta con un sector de vacunación en <b class="text-verde-1">Adolfo Alsina 1823 – 1er piso</b> para nuestros afiliados, ofreciendo acceso a las vacunas de calendario nacional del Ministerio de Salud. Obtenga más información en el <a href="https://bancos.salud.gob.ar/recurso/plan-de-vacunacion-por-etapas-de-vida-2023" target="_blank" class="text-verde-1 fw-bold">plan de vacunación por etapas de vida – 2023.</a></P>
-                                            <p><b class="text-verde-1">Para consultas adicionales, comuníquese Centro de Información Personalizada (CIP) al <a href="tel:08102220317" class="text-verde-1 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</b></p>
+                                            <P>La DAS cuenta con un sector de vacunación en <b class="text-verde-2">Adolfo Alsina 1823 – 1er piso</b> para nuestros afiliados, ofreciendo acceso a las vacunas de calendario nacional del Ministerio de Salud. Obtenga más información en el <a href="https://bancos.salud.gob.ar/recurso/plan-de-vacunacion-por-etapas-de-vida-2023" target="_blank" class="text-verde-2 fw-bold">plan de vacunación por etapas de vida – 2023.</a></P>
+                                            <p><b class="text-verde-2">Para consultas adicionales, comuníquese Centro de Información Personalizada (CIP) al <a href="tel:08102220317" class="text-verde-2 fw-bold">0810-222-0317</a>, de lunes a viernes de 8 a 20 hs en días hábiles.</b></p>
                                             <a href="https://www.argentina.gob.ar/sites/default/files/2025-01-v2-calendario-nacional-vacunacion.pdf" target="_blank">
                                                 <img src="/assets/img/vacunatorio/calendario-nacional-vacunacion.jpg" alt="Calendario de Vacunación DAS" class="img-fluid w-75 d-block mx-auto btn-scale-shadow">
                                             </a>
                                             <ul class="list-group">
-                                                <li class="list-group-item fw-bold text-verde-1 fs-5 mt-4 border-0">• Horarios de atención:
+                                                <li class="list-group-item fw-bold text-verde-2 fs-5 mt-4 border-0">• Horarios de atención:
                                                     <ul class="list-group fs-6">
                                                         <li class="list-group-item border-0 fw-lighter fs-6 text-gris-2">
                                                             • Pediátrico: Viernes de 10 a 16 hs.
@@ -338,53 +339,82 @@
                                     </div>
                                 </div>
 
-                                
+<!-- Campaña actual en DAS -->
                                 <div class="col-md-12 mt-5">
                                     <div class="card h-100">
-                                        <div class="card-header text-verde-1 fw-bold text-center fs-4">Campaña actual en DAS:</div>
+                                        <div class="card-header text-verde-2 fw-bold text-center fs-4">Campaña actual en DAS:</div>
                                         <div class="card-body text-gris-2">
-                                            <ul class="list-group">
-                                                <li class="list-group-item border-0 fw-bold fs-6 text-verde-1">• Vacunación anual antigripal
-                                                    <ul class="list-group fs-6">
-                                                        <li class="list-group-item border-0 text-verde-1">• ¿Cuándo puedo ir a vacunarme?:
-                                                            <ul class="list-group">
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Pediátrico: Viernes de 10 a 16 hs.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Adultos y adultas: Lunes a jueves de 10 a 16 hs.</li>
+
+                                            <h5 class="fw-bold fw-bold text-verde-2 fs-5 mb-3">Vacunación anual antigripal</h5>
+
+                                            <div class="accordion" id="CampañaAntigripalSubAccordion">
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingCuandoVacunarme">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCuandoVacunarme" aria-expanded="false" aria-controls="collapseCuandoVacunarme">
+                                                            ¿Cuándo puedo ir a vacunarme?:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseCuandoVacunarme" class="accordion-collapse collapse" aria-labelledby="headingCuandoVacunarme" data-bs-parent="#CampañaAntigripalSubAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Pediátrico: Viernes de 10 a 16 hs.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Adultos y adultas: Lunes a jueves de 10 a 16 hs.</li>
                                                             </ul>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="list-group  fs-6">
-                                                        <li class="list-group-item border-0  text-verde-1">• Destinado para afiliados y afiliadas:
-                                                            <ul class="list-group ">
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Niños y niñas de hasta 2 años.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Embarazadas en cualquier momento de la gestación y puérperas hasta 10 días post nacimiento.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Mayores de 65 años.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Personal de Salud.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Personas de 2 a 64 años con factores de riesgo – deberán presentar prescripción médica debidamente confeccionada, indicando que pertenecen a población de riesgo (FR).</li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingDestinadoAntigripal">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDestinadoAntigripal" aria-expanded="false" aria-controls="collapseDestinadoAntigripal">
+                                                            Destinado para afiliados y afiliadas:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseDestinadoAntigripal" class="accordion-collapse collapse" aria-labelledby="headingDestinadoAntigripal" data-bs-parent="#CampañaAntigripalSubAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Niños y niñas de hasta 2 años.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Embarazadas en cualquier momento de la gestación y puérperas hasta 10 días post nacimiento.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Mayores de 65 años.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Personal de Salud.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Personas de 2 a 64 años con factores de riesgo – deberán presentar prescripción médica debidamente confeccionada, indicando que pertenecen a población de riesgo (FR).</li>
                                                             </ul>
-                                                        </li>    
-                                                        <li class="list-group-item border-0 text-verde-1">• Factores de riesgo:  
-                                                            <ul class="list-group">
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Enfermedades respiratorias crónicas.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Enfermedades cardíacas.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Enfermedades renales.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Obesidad (índice de masa corporal mayor a 40 kg/m2).</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Diabetes.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Infección por VIH/SIDA.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Inmunodeficiencias congénitas o adquiridas (no oncohematológica).</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Utilización de medicación inmunosupresora o corticoides en altas dosis.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Pacientes oncológicos, trasplantados y sus convivientes.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Retraso madurativo grave en menores de 18 años.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Personas con síndromes genéticos, enfermedades neuromusculares con compromiso respiratorio y malformaciones congénitas graves. </li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Asplenia (personas sin bazo).</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Tratamiento crónico con aspirina en menores de 18 años.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Convivientes de niños/as prematuros/as con un peso menor a 1.500 gramos.</li>
-                                                                <li class="list-group-item text-gris-2 border-0 fw-lighter">• Convivientes con inmunosuprimidos.</li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="headingFactoresRiesgo">
+                                                        <button class="accordion-button collapsed fw-bold text-verde-2 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFactoresRiesgo" aria-expanded="false" aria-controls="collapseFactoresRiesgo">
+                                                            Factores de riesgo:
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseFactoresRiesgo" class="accordion-collapse collapse" aria-labelledby="headingFactoresRiesgo" data-bs-parent="#CampañaAntigripalSubAccordion">
+                                                        <div class="accordion-body p-0">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Enfermedades respiratorias crónicas.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Enfermedades cardíacas.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Enfermedades renales.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Obesidad (índice de masa corporal mayor a 40 kg/m2).</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Diabetes.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Infección por VIH/SIDA.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Inmunodeficiencias congénitas o adquiridas (no oncohematológica).</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Utilización de medicación inmunosupresora o corticoides en altas dosis.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Pacientes oncológicos, trasplantados y sus convivientes.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Retraso madurativo grave en menores de 18 años.</li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Personas con síndromes genéticos, enfermedades neuromusculares con compromiso respiratorio y malformaciones congénitas graves. </li>
+                                                                <li class="list-group-item text-gris-2 border-0 fs-6 ps-3">• Asplenia (personas sin bazo).</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Tratamiento crónico con aspirina en menores de 18 años.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Convivientes de niños/as prematuros/as con un peso menor a 1.500 gramos.</li>
+                                                                <li class="list-group-item border-0 text-gris-2 fs-6 ps-3">• Convivientes con inmunosuprimidos.</li>
                                                             </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
