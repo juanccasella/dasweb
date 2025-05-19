@@ -342,33 +342,33 @@
                             En el área de Afiliaciones, sito <strong>Adolfo Alsina 1823 – entrepiso</strong>, ofrecemos servicios para realizar trámites de afiliación y obtener tu carnet físico, entre otros servicios relacionados. Nuestro equipo estará encantado de brindarte asistencia en todo lo que necesites para garantizar que recibas los beneficios y servicios correspondientes.
                         </p>
                         <div class="container mt-4 border rounded p-1">
-
-                            <ul class="nav nav-pills rounded flex-column flex-xl-row" id="myTabs">
+                            <ul class="nav nav-pills rounded flex-column flex-xl-row pills-afiliaciones" id="afiliacionTiposTabs" role="tablist">
                                 <li class="nav-item">
-                                    <a class="flex-fill fs-5 text-center nav-link text-verde-4 fw-bold active active-tab-style-afiliacion m-0" id="tab1" href="#" onclick="showTab(event, 'content1')">Activos/as</a>
+                                    <button class="flex-fill fs-5 text-center nav-link text-verde-4 fw-bold active m-0" id="afiliacion-activos-tab" data-bs-toggle="pill" data-bs-target="#afiliacion-activos-content" type="button" role="tab" aria-controls="afiliacion-activos-content" aria-selected="true">Activos/as</button>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="flex-fill fs-5 text-center nav-link text-verde-4 fw-bold" id="tab2" href="#" onclick="showTab(event, 'content2')">Voluntarios/as - Jubilados/as</a>
+                                    <button class="flex-fill fs-5 text-center nav-link text-verde-4 fw-bold" id="afiliacion-voluntarios-tab" data-bs-toggle="pill" data-bs-target="#afiliacion-voluntarios-content" type="button" role="tab" aria-controls="afiliacion-voluntarios-content" aria-selected="false">Voluntarios/as - Jubilados/as</button>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="flex-fill fs-5 text-center nav-link text-verde-4 fw-bold" id="tab3" href="#" onclick="showTab(event, 'content3')">Participantes principales</a>
+                                    <button class="flex-fill fs-5 text-center nav-link text-verde-4 fw-bold" id="afiliacion-participantes-tab" data-bs-toggle="pill" data-bs-target="#afiliacion-participantes-content" type="button" role="tab" aria-controls="afiliacion-participantes-content" aria-selected="false">Participantes principales</button>
                                 </li>
                             </ul>
 
-                            <div >
-                                <div id="content1" class="tab-content">
+                            <div class="tab-content" id="afiliacionTiposTabContent">
+                                <div id="afiliacion-activos-content" class="tab-pane fade show active" role="tabpanel" aria-labelledby="afiliacion-activos-tab">
                                     <ul class="list-group list-group-flush fw-bold text-gris-2">
                                         <li class="list-group-item border-0 fw-lighter text-gris-2">1. Memo de alta emitido por la oficina de personal (con N° de legajo y fecha del nombramiento, categoría, N° de Resolución). Esta información tiene <strong>validez de cinco (5) días hábiles</strong></li>
                                         <li class="list-group-item border-0 fw-lighter text-gris-2">2. Presentación de apto físico, con el aval de la oficina de personal del sector donde trabaja.</li>
                                         <li class="list-group-item border-0 fw-lighter text-gris-2">3. Completar el formulario de afiliación, incluyendo una foto tipo carnet. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-TITULAR-Y-GRUPO-FAMILIAR-GAA.AFI_.FO05-REV02.pdf" target="_blank" class="text-verde-4"><strong> Descargar formulario</strong></a>.</li>
                                     </ul>
                                 </div>
-                                <div id="content2" class="tab-content p-3  d-none">
+
+                                <div id="afiliacion-voluntarios-content" class="tab-pane fade p-3" role="tabpanel" aria-labelledby="afiliacion-voluntarios-tab">
                                     <p class="text-gris-2">
                                         <strong>La afiliación será voluntaria e independiente de los descuentos de obra social efectuados por la ANSeS en el recibo de haberes jubilatorios.</strong>
                                     </p>
                                     <p class="text-gris-2">
-                                        <strong>Tiene un plazo para afiliarse de 180 días hábiles.</strong>                                     
+                                        <strong>Tiene un plazo para afiliarse de 180 días hábiles.</strong>
                                     </p>
                                     <ul class="list-group list-group-flush fw-bold text-gris-2">
                                         <li class="list-group-item border-0 fw-lighter text-gris-2">1. Memo de baja emitido por la oficina de Personal de la dependencia donde prestaba servicios, donde se indique fecha de baja y que la misma es para acogerse al beneficio jubilatorio/ o copia de la Resolución de la dependencia en la que prestaba servicios donde fue aceptada su renuncia para acogerse al beneficio jubilatorio.</li>
@@ -380,15 +380,16 @@
                                         <strong>La cuota de afiliación, se abonará a partir del día en que presente la solicitud de afiliación en base en base al 3,5% de los haberes jubilatorios (o en base al 3,5% del último haber percibido, en el caso de no cobrar aún la jubilación) hasta que se gestione el descuento directo ante la ANSeS.</strong>
                                     </p>
                                     <p class="text-gris-2">
-                                        La afiliación en carácter de Voluntario también puede ser solicitada por aquellos agentes que hayan cumplido función como trabajador en actividad <strong>durante 10 años seguidos o interrumpidos</strong> en el Congreso de la Nación y <strong>cuya baja no haya sido fundada en sumario</strong>. La cuota de afiliación en estos casos, se calculará sobre la base de la última categoría ocupada en actividad actualizada.                                     
+                                        La afiliación en carácter de Voluntario también puede ser solicitada por aquellos agentes que hayan cumplido función como trabajador en actividad <strong>durante 10 años seguidos o interrumpidos</strong> en el Congreso de la Nación y <strong>cuya baja no haya sido fundada en sumario</strong>. La cuota de afiliación en estos casos, se calculará sobre la base de la última categoría ocupada en actividad actualizada.
                                     </p>
                                 </div>
-                                <div id="content3" class="tab-content p-3  d-none">
+
+                                <div id="afiliacion-participantes-content" class="tab-pane fade p-3" role="tabpanel" aria-labelledby="afiliacion-participantes-tab">
                                     <p class="text-gris-2">
                                         Producido el fallecimiento del afiliado, o afiliada, titular, los familiares declarados a cargo, pueden continuar con los servicios que presta la DAS.
                                     </p>
                                     <p class="text-gris-2">
-                                        El familiar de mayor edad será quién quede como titular de la afiliación.                                     
+                                        El familiar de mayor edad será quién quede como titular de la afiliación.
                                     </p>
                                     <p class="text-gris-2">
                                         <strong>La afiliación de Participante Principal da continuidad a los familiares del titular fallecido, por lo cual, las cuotas de afiliación, deberán liquidarse a partir del día siguiente al fallecimiento del titular del cual deviene el derecho de afiliación.</strong>
@@ -406,6 +407,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="container mt-4">
                             <div class="row">
                                 <div class="col-md-12 mt-5">
@@ -1055,29 +1058,7 @@
     </footer>
     
     
-    <script>
-        function showTab(event, contentId) {
-            event.preventDefault(); // Evitar que la página se recargue
 
-            // Quitar la clase 'active' y 'active-tab-style-afiliacion' de todas las pestañas
-            document.querySelectorAll('.nav-link').forEach(tab => {
-                tab.classList.remove('active');
-                tab.classList.remove('active-tab-style-afiliacion');
-            });
-
-            // Ocultar todos los contenidos
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.add('d-none');
-            });
-
-            // Agregar 'active' y 'active-tab-style-afiliacion' a la pestaña seleccionada
-            event.target.classList.add('active');
-            event.target.classList.add('active-tab-style-afiliacion');
-
-            // Mostrar el contenido correspondiente
-            document.getElementById(contentId).classList.remove('d-none');
-        }
-    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let currentPage = window.location.pathname.split("/").pop();

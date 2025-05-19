@@ -365,18 +365,17 @@ body{
     }
 }
 
-// Tabla
-.nav-link.active-tab-style-adultos {
+// Tabla pills
+.pills-adultos-mayores {
+    .active{
     background-color: #c09170 !important;
     color: #ffffff !important;
+    }
 }
 
-.nav-link.active-tab-style-afiliacion{
+.pills-afiliaciones{
+    .active{
     background-color: #215E6A !important;
     color: #ffffff !important;
-}
-
-.nav-link.active-tab-style-discapacidad{
-    background-color: #4274b7 !important;
-    color: #ffffff !important;
+    }
 }

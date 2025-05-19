@@ -277,115 +277,214 @@
         <div class="container-fluid w-90">
             <div class="row my-5">
 
-                <nav class="col-md-3 border-end border-verde-2">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-afiliacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-afiliacion" type="button" role="tab" aria-controls="v-pills-afiliacion" aria-selected="true">Afiliación</button>
+            <nav class="col-md-3 border-end border-verde-2">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-afiliacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-afiliacion" type="button" role="tab" aria-controls="v-pills-afiliacion" aria-selected="true">Afiliación</button>
 
-                        <button class="nav-link" id="v-pills-medicacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-medicacion" type="button" role="tab" aria-controls="v-pills-medicacion" aria-selected="false">Coberturas en Medicación</button>
+                    <button class="nav-link" id="v-pills-medicacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-medicacion" type="button" role="tab" aria-controls="v-pills-medicacion" aria-selected="false">Coberturas en Medicación</button>
 
-                        <button class="nav-link" id="v-pills-otrascoberturas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-otrascoberturas" type="button" role="tab" aria-controls="v-pills-otrascoberturas" aria-selected="false">Otras Coberturas</button>
-                    </div>
-                </nav>
+                    <button class="nav-link" id="v-pills-otrascoberturas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-otrascoberturas" type="button" role="tab" aria-controls="v-pills-otrascoberturas" aria-selected="false">Otras Coberturas</button>
 
+                    <button class="nav-link" id="v-pills-insumos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-insumos" type="button" role="tab" aria-controls="v-pills-insumos" aria-selected="false">Insumos</button>
 
-                <main class="col-md-9">
-                    <div class="tab-content" id="v-pills-tabContent">
+                    <button class="nav-link" id="v-pills-diabetes-tab" data-bs-toggle="pill" data-bs-target="#v-pills-diabetes" type="button" role="tab" aria-controls="v-pills-diabetes" aria-selected="false">Diabetes</button>
 
+                    <button class="nav-link" id="v-pills-discapacidad-tab" data-bs-toggle="pill" data-bs-target="#v-pills-discapacidad" type="button" role="tab" aria-controls="v-pills-discapacidad" aria-selected="false">Discapacidad</button>
+                </div>
+            </nav>
 
-                        <div class="tab-pane fade show active" id="v-pills-afiliacion" role="tabpanel" aria-labelledby="v-pills-afiliacion-tab">
-                            <h2 class="text-gris-2">Contenido Afiliación</h2>
-                            <div class="accordion" id="AfiliacionSubAccordion">
+            <main class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingAfilTitulares">
-                                        <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilTitulares" aria-expanded="false" aria-controls="collapseAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
-                                            Afil. de Tituales
-                                        </button>
-                                    </h2>
-                                    <div id="collapseAfilTitulares" class="accordion-collapse collapse" aria-labelledby="headingAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
-                                        <div class="accordion-body p-0">
-                                        </div>
+                    <div class="tab-pane fade show active" id="v-pills-afiliacion" role="tabpanel" aria-labelledby="v-pills-afiliacion-tab">
+                        <h2 class="text-gris-2 mb-4">Afiliación</h2>
+                        <div class="accordion" id="AfiliacionSubAccordion">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingAfilTitulares">
+                                    <button class="accordion-button collapsed text-decoration-none ps-3 text-verde-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilTitulares" aria-expanded="false" aria-controls="collapseAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
+                                        Afiliación de Tituales
+                                    </button>
+                                </h2>
+                                <div id="collapseAfilTitulares" class="accordion-collapse collapse" aria-labelledby="headingAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
+                                    <div class="accordion-body text-gris-2">
+                                        <p>• Formulario de Afiliación - Activos/as. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-TITULAR-Y-GRUPO-FAMILIAR-GAA.AFI_.FO05-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Formulario de Voluntarios/as - Jubilados/as. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-VOLUNTARIO-GAA.AFI_.FO10-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Formulario de Participantes Principales. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-VOLUNTARIO-GAA.AFI_.FO10-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
                                     </div>
                                 </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingAfilFamiliarSinCargo">
-                                        <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarSinCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                            Afil. de Grupo Familiar sin Cargo
-                                        </button>
-                                    </h2>
-                                    <div id="collapseAfilFamiliarSinCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                        <div class="accordion-body p-0">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingAfilFamiliarConCargo">
-                                        <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarConCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                            Afil. de Grupo Familiar con Cargo
-                                        </button>
-                                    </h2>
-                                    <div id="collapseAfilFamiliarConCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                        <div class="accordion-body p-0">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div> 
-                        </div>
-
-                        <div class="tab-pane fade" id="v-pills-medicacion" role="tabpanel" aria-labelledby="v-pills-medicacion-tab">
-                            <h2 class="text-gris-2">Contenido Coberturas en Medicación</h2>
-                            <div class="tab-pane fade show active" id="v-pills-afiliacion" role="tabpanel" aria-labelledby="v-pills-afiliacion-tab">
-                                <div class="accordion" id="AfiliacionSubAccordion">
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAfilTitulares">
-                                            <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilTitulares" aria-expanded="false" aria-controls="collapseAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
-                                                Actualización de Historia Clnica
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAfilTitulares" class="accordion-collapse collapse" aria-labelledby="headingAfilTitulares" data-bs-parent="#AfiliacionSubAccordion">
-                                            <div class="accordion-body p-0">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAfilFamiliarSinCargo">
-                                            <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarSinCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                                Medicación al 100%
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAfilFamiliarSinCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                            <div class="accordion-body p-0">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAfilFamiliarConCargo">
-                                            <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarConCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                                Medicación al 70%
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAfilFamiliarConCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
-                                            <div class="accordion-body p-0">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div> 
                             </div>
-                        </div>
 
-                        <div class="tab-pane fade" id="v-pills-otrascoberturas" role="tabpanel" aria-labelledby="v-pills-otrascoberturas-tab">
-                            <h2>Contenido Otras Coberturas</h2>
-                            <p>Este es el párrafo que se muestra cuando se selecciona "Otras Coberturas".</p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingAfilFamiliarSinCargo">
+                                    <button class="accordion-button collapsed text-decoration-none ps-3 text-verde-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarSinCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                        Afiliación de Grupo Familiar sin Cargo
+                                    </button>
+                                </h2>
+                                <div id="collapseAfilFamiliarSinCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarSinCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                    <div class="accordion-body text-gris-2">
+                                        <p>• Hijos/as hasta 22 años. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-TITULAR-Y-GRUPO-FAMILIAR-GAA.AFI_.FO05-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Hijos/as hasta 25 años, estudiantes. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-HIJO_A-HIJASTRO_A-HERMANO_A-MENOR-ESTUDIANTE-GAA.AFI_.FO01-REV03.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Cónyuge. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-DE-AFILIACION-CONYUGE-GAA.AFI_.FO07-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Conviviente. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-DE-AFILIACION-CONVIVIENTE-GAA.AFI_.FO06-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingAfilFamiliarConCargo">
+                                    <button class="accordion-button collapsed text-decoration-none ps-3 text-verde-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfilFamiliarConCargo" aria-expanded="false" aria-controls="collapseAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                        Afiliación de Grupo Familiar con Cargo
+                                    </button>
+                                </h2>
+                                <div id="collapseAfilFamiliarConCargo" class="accordion-collapse collapse" aria-labelledby="headingAfilFamiliarConCargo" data-bs-parent="#AfiliacionSubAccordion">
+                                    <div class="accordion-body text-gris-2">
+                                        <p>• Hijos/as de 22 a 25 años, que no estudien. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-DE-AFILIACION-DE-HIJO_A-HIJASTRO_A-MAYOR-DESOCUPADO-DE-22-A-25-ANOS-RES.C.A.-035-GAA.AFI_.FO03-REV02-1.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Hijos/as de 25 a 32 años. <a href="https://das.gob.ar/wp-content/uploads/2025/02/Solicitud-para-afiliacion-de-hijo-a-hijos-as-mayores-de-25-a-32-anos.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Hijos/as de unión de hecho, menores de 22 años. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-HIJO_A-HIJASTRO_A-HERMANO_A-MENOR-ESTUDIANTE-GAA.AFI_.FO01-REV03.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Hijos/as de unión de hecho, mayores de 22 años, estudiantes. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-HIJO_A-HIJASTRO_A-HERMANO_A-MENOR-ESTUDIANTE-GAA.AFI_.FO01-REV03.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Hermanos menores de 19 años y hermanas menores de 22 años. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-HIJO_A-HIJASTRO_A-HERMANO_A-MENOR-ESTUDIANTE-GAA.AFI_.FO01-REV03.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Hermanos mayores de 19 años y hermanas mayores de 22 años. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-HIJO_A-HIJASTRO_A-HERMANO_A-MENOR-ESTUDIANTE-GAA.AFI_.FO01-REV03.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Padre y/o madre. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-PARA-AFILIACION-DE-PADRE-MADRE-FORMULARIO-7-GAA.AFI_.FO09-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Prenatal cónyuge. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-DE-AFILIACION-CONYUGE-GAA.AFI_.FO07-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Prenatal conviviente. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-DE-AFILIACION-CONVIVIENTE-GAA.AFI_.FO06-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Guardas, tenencias o tutelas. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-HIJO_A-HIJASTRO_A-HERMANO_A-MENOR-ESTUDIANTE-GAA.AFI_.FO01-REV03.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Nietos/as. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-AFILIACION-NIETO_A-GAA.AFI_.FO04-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </main>
+
+                    <div class="tab-pane fade" id="v-pills-medicacion" role="tabpanel" aria-labelledby="v-pills-medicacion-tab">
+                        <h2 class="text-gris-2">Coberturas en Medicación</h2>
+                        <div class="accordion" id="MedicacionAccordion">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMedicacionHistoriaClinica">
+                                    <button class="accordion-button collapsed text-decoration-none ps-3 text-verde-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedicacionHistoriaClinica" aria-expanded="false" aria-controls="collapseMedicacionHistoriaClinica" data-bs-parent="#MedicacionAccordion">
+                                        Actualización de Historia Clnica
+                                    </button>
+                                </h2>
+                                <div id="collapseMedicacionHistoriaClinica" class="accordion-collapse collapse" aria-labelledby="headingMedicacionHistoriaClinica" data-bs-parent="#MedicacionAccordion">
+                                    <div class="accordion-body text-gris-2">
+                                        <p>• Formulario para la actualización de la historia clínica. <a href="https://das.gob.ar/wp-content/uploads/2023/10/FORMULARIO-DE-ACTUALIZACION-DE-H.C-GAA.PreDi_.FO05-REV00.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMedicacion100">
+                                    <button class="accordion-button collapsed text-decoration-none ps-3 text-verde-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedicacion100" aria-expanded="false" aria-controls="collapseMedicacion100" data-bs-parent="#MedicacionAccordion">
+                                        Medicación al 70%
+                                    </button>
+                                </h2>
+                                <div id="collapseMedicacion100" class="accordion-collapse collapse" aria-labelledby="headingMedicacion100" data-bs-parent="#MedicacionAccordion">
+                                    <div class="accordion-body text-gris-2">
+                                        <p>• Formulario para la medicación para enfermedades crónicas prevalentes. <a href="https://das.gob.ar/wp-content/uploads/2023/09/Planilla-para-Medicacion-Cronica-70-GAA.SDCA_.FO09-REV01.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMedicacion70">
+                                    <button class="accordion-button collapsed text-decoration-none ps-3 text-verde-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedicacion70" aria-expanded="false" aria-controls="collapseMedicacion70" data-bs-parent="#MedicacionAccordion">
+                                        Medicación al 100%
+                                    </button>
+                                </h2>
+                                <div id="collapseMedicacion70" class="accordion-collapse collapse" aria-labelledby="headingMedicacion70" data-bs-parent="#MedicacionAccordion">
+                                    <div class="accordion-body text-gris-2">
+                                        <p>• VIH. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-MEDICACION-MEDICACION-ANTIRRETROVIRAL-GAA.PAES_.FO18-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Tuberculosis, lepra, chagas, enfermedades de transmisión sexual y hepatitis B. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-MEDICACION-HEPATITIS-B-GAA.PAES_.FO15-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• Hepatitis C. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-MEDICACION-HEPATITIS-C-GAA.PAES_.FO16-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                        <p>• VIH. <a href="https://das.gob.ar/wp-content/uploads/2024/03/SOLICITUD-MEDICACION-MEDICACION-ANTIRRETROVIRAL-GAA.PAES_.FO18-REV02.pdf" class="text-verde-2" target="_blank">Formulario</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-otrascoberturas" role="tabpanel" aria-labelledby="v-pills-otrascoberturas-tab">
+                        <h2>Contenido Otras Coberturas</h2>
+                        <p>Este es el párrafo que se muestra cuando se selecciona "Otras Coberturas".</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-discapacidad" role="tabpanel" aria-labelledby="v-pills-discapacidad-tab">
+                        <h2 class="text-gris-2">Programa para Personas con Discapacidad</h2>
+                        <div class="accordion" id="NuevoAccordion">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNuevo1">
+                                    <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNuevo1" aria-expanded="false" aria-controls="collapseNuevo1" data-bs-parent="#NuevoAccordion">
+                                        Acordeón Nuevo 1
+                                    </button>
+                                </h2>
+                                <div id="collapseNuevo1" class="accordion-collapse collapse" aria-labelledby="headingNuevo1" data-bs-parent="#NuevoAccordion">
+                                    <div class="accordion-body p-0">
+                                        <p>Aquí va el contenido del primer acordeón del Nuevo Botón.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNuevo2">
+                                    <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNuevo2" aria-expanded="false" aria-controls="collapseNuevo2" data-bs-parent="#NuevoAccordion">
+                                        Acordeón Nuevo 2
+                                    </button>
+                                </h2>
+                                <div id="collapseNuevo2" class="accordion-collapse collapse" aria-labelledby="headingNuevo2" data-bs-parent="#NuevoAccordion">
+                                    <div class="accordion-body p-0">
+                                        <p>Aquí va el contenido del segundo acordeón del Nuevo Botón.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNuevo3">
+                                    <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNuevo3" aria-expanded="false" aria-controls="collapseNuevo3" data-bs-parent="#NuevoAccordion">
+                                        Acordeón Nuevo 3
+                                    </button>
+                                </h2>
+                                <div id="collapseNuevo3" class="accordion-collapse collapse" aria-labelledby="headingNuevo3" data-bs-parent="#NuevoAccordion">
+                                    <div class="accordion-body p-0">
+                                        <p>Aquí va el contenido del tercer acordeón del Nuevo Botón.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNuevo4">
+                                    <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNuevo4" aria-expanded="false" aria-controls="collapseNuevo4" data-bs-parent="#NuevoAccordion">
+                                        Acordeón Nuevo 4
+                                    </button>
+                                </h2>
+                                <div id="collapseNuevo4" class="accordion-collapse collapse" aria-labelledby="headingNuevo4" data-bs-parent="#NuevoAccordion">
+                                    <div class="accordion-body p-0">
+                                        <p>Aquí va el contenido del cuarto acordeón del Nuevo Botón.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNuevo5">
+                                    <button class="accordion-button collapsed text-decoration-none text-body ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNuevo5" aria-expanded="false" aria-controls="collapseNuevo5" data-bs-parent="#NuevoAccordion">
+                                        Acordeón Nuevo 5
+                                    </button>
+                                </h2>
+                                <div id="collapseNuevo5" class="accordion-collapse collapse" aria-labelledby="headingNuevo5" data-bs-parent="#NuevoAccordion">
+                                    <div class="accordion-body p-0">
+                                        <p>Aquí va el contenido del quinto acordeón del Nuevo Botón.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </main>
 
             </div>
         </div>

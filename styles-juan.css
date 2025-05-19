@@ -225,17 +225,12 @@ body::-webkit-scrollbar-track {
   display: block;
 }
 
-.nav-link.active-tab-style-adultos {
+.pills-adultos-mayores .active {
   background-color: #c09170 !important;
   color: #ffffff !important;
 }
 
-.nav-link.active-tab-style-afiliacion {
+.pills-afiliaciones .active {
   background-color: #215E6A !important;
-  color: #ffffff !important;
-}
-
-.nav-link.active-tab-style-discapacidad {
-  background-color: #4274b7 !important;
   color: #ffffff !important;
 }/*# sourceMappingURL=styles-juan.css.map */

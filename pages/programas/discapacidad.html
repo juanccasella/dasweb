@@ -762,29 +762,6 @@
     
     
     <script>
-        function showTab(event, contentId) {
-            event.preventDefault(); // Evitar que la página se recargue
-
-            // Quitar la clase 'active' y 'active-tab-style-discapacidad' de todas las pestañas
-            document.querySelectorAll('.nav-link').forEach(tab => {
-                tab.classList.remove('active');
-                tab.classList.remove('active-tab-style-discapacidad');
-            });
-
-            // Ocultar todos los contenidos
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.add('d-none');
-            });
-
-            // Agregar 'active' y 'active-tab-style-discapacidad' a la pestaña seleccionada
-            event.target.classList.add('active');
-            event.target.classList.add('active-tab-style-discapacidad');
-
-            // Mostrar el contenido correspondiente
-            document.getElementById(contentId).classList.remove('d-none');
-        }
-    </script>
-    <script>
         document.addEventListener("DOMContentLoaded", function () {
             let currentPage = window.location.pathname.split("/").pop();
             let listItems = document.querySelectorAll(".list-group-item");

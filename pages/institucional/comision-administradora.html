@@ -283,25 +283,25 @@
             <p class="text-end text-gris-2">
                 <b>Para mayor información haga <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/104485/texact.htm#:~:text=%E2%80%94%20La%20Direcci%C3%B3n%20de%20Ayuda%20Social,los%20fines%20de%20su%20creaci%C3%B3n." target="_blank" class="text-decoration-none text-verde-2">click acá.</a></b>
             </p>
-            <div class="container mt-4 border rounded bg-gris-1 py-3">
-                <ul class="nav nav-tabs rounded bg-blanco" id="myTabs">
-                    <li class="nav-item">
-                        <a class="nav-link text-verde-2 fw-bold bg-gris-1 active" id="tab1" href="#" onclick="showTab(event, 'content1')">Autoridades</a>
+            <div class="container mt-4 border py-3">
+                <ul class="nav nav-tabs" id="comisionDirectivaTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-verde-2 fw-bold active" id="comision-autoridades-tab" data-bs-toggle="tab" data-bs-target="#content1" type="button" role="tab" aria-controls="content1" aria-selected="true">Autoridades</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-verde-2 fw-bold" id="tab2" href="#" onclick="showTab(event, 'content2')">Comisiones</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-verde-2 fw-bold" id="comision-comisiones-tab" data-bs-toggle="tab" data-bs-target="#content2" type="button" role="tab" aria-controls="content2" aria-selected="false">Comisiones</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-verde-2 fw-bold" id="tab3" href="#" onclick="showTab(event, 'content3')">Miembros titulares</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-verde-2 fw-bold" id="comision-titulares-tab" data-bs-toggle="tab" data-bs-target="#content3" type="button" role="tab" aria-controls="content3" aria-selected="false">Miembros titulares</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-verde-2 fw-bold" id="tab4" href="#" onclick="showTab(event, 'content4')">Vocales suplentes</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-verde-2 fw-bold" id="comision-suplentes-tab" data-bs-toggle="tab" data-bs-target="#content4" type="button" role="tab" aria-controls="content4" aria-selected="false">Vocales suplentes</button>
                     </li>
                 </ul>
-            
-                <div class="container-comision-adminsitradora ">
-                    <div id="content1" class="tab-content bg-gris-1">
-                        <ul class="list-group fw-bold rounded bg-gris-1">
+
+                <div class="tab-content" id="comisionDirectivaTabContent">
+                    <div id="content1" class="tab-pane fade show active bg-gris-1" role="tabpanel" aria-labelledby="comision-autoridades-tab">
+                        <ul class="list-group fw-bold bg-gris-1">
                             <li class="list-group-item fw-lighter text-gris-2 border-0 pt-4">• PRESIDENTE: Dra. Laura Emilia Oriolo.</li>
                             <li class="list-group-item fw-lighter text-gris-2 border-0">• VICEPRESIDENTE: Lastiri, Raúl Oscar.</li>
                             <li class="list-group-item fw-lighter text-gris-2 border-0">• SECRETARIO: Di Próspero, Norberto.</li>
@@ -311,9 +311,8 @@
                         </ul>
                     </div>
 
-
-                    <div id="content2" class="tab-content d-none">
-                        <ul class="list-group fw-bold rounded">
+                    <div id="content2" class="tab-pane fade" role="tabpanel" aria-labelledby="comision-comisiones-tab">
+                        <ul class="list-group fw-bold">
                             <li class="list-group-item fw-lighter text-gris-2 border-0 pt-4">• COMISIÓN ASUNTOS ASISTENCIALES: Núñez, Nicolás.</li>
                             <li class="list-group-item fw-lighter text-gris-2 border-0">• COMISIÓN ASUNTOS ADMINISTRATIVOS: Leiva Orellana, Ana María.</li>
                             <li class="list-group-item fw-lighter text-gris-2 border-0">• COMISIÓN AFILIACIONES: Giménez, María Fernanda.</li>
@@ -325,8 +324,7 @@
                         </ul>
                     </div>
 
-
-                    <div id="content3" class="tab-content d-none">
+                    <div id="content3" class="tab-pane fade" role="tabpanel" aria-labelledby="comision-titulares-tab">
                         <ul class="list-group fw-bold">
                             <li class="list-group-item fw-lighter text-gris-2 border-0 pt-4">• Lopez, Rodrigo Daniel.</li>
                             <li class="list-group-item fw-lighter text-gris-2 border-0">• Gimenez, María Fernanda.</li>
@@ -337,7 +335,7 @@
                         </ul>
                     </div>
 
-                    <div id="content4" class="tab-content d-none">
+                    <div id="content4" class="tab-pane fade" role="tabpanel" aria-labelledby="comision-suplentes-tab">
                         <ul class="list-group fw-bold">
                             <li class="list-group-item fw-lighter text-gris-2 border-0 pt-4">• Rodriguez, Silvina.</li>
                             <li class="list-group-item fw-lighter text-gris-2 border-0">• Penovi, Gabriel Alejandro.</li>
@@ -521,27 +519,7 @@
 
 
     </footer>
-    <script>
-        function showTab(event, contentId) {
-            event.preventDefault(); // Evitar que la página se recargue
-    
-            // Quitar la clase 'active' de todas las pestañas
-            document.querySelectorAll('.nav-link').forEach(tab => {
-                tab.classList.remove('active');
-            });
-    
-            // Ocultar todos los contenidos
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.add('d-none');
-            });
-    
-            // Agregar 'active' a la pestaña seleccionada
-            event.target.classList.add('active');
-    
-            // Mostrar el contenido correspondiente
-            document.getElementById(contentId).classList.remove('d-none');
-        }
-    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
