@@ -233,4 +233,9 @@ body::-webkit-scrollbar-track {
 .pills-afiliaciones .active {
   background-color: #215E6A !important;
   color: #ffffff !important;
+}
+
+.pills-formularios .active {
+  background-color: #00AE97 !important;
+  color: #ffffff !important;
 }/*# sourceMappingURL=styles-juan.css.map */
